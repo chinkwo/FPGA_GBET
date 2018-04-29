@@ -1,0 +1,180 @@
+# do {tb_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 Feb 13 2016
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 16:52:04 on Apr 02,2018
+# vlog -64 -incr -work xil_defaultlib "+incdir+../../../../project_1.srcs/sources_1/ip/clk_ddr3" "+incdir+../../../../project_1.srcs/sources_1/ip/pll3_125m" "+incdir+../../../../project_1.srcs/sources_1/ip/pll2_50M" "+incdir+../../../../project_1.srcs/sources_1/ip/pll1_50M" "+incdir+../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/example_design/sim" "+incdir+D:/Xilinx/vivado1704/Vivado/2017.4/data/xilinx_vip/include" ../../../../project_1.srcs/sources_1/ip/fifo_generator_0/sim/fifo_generator_0.v ../../../../project_1.srcs/sources_1/ip/ram_2048x8/sim/ram_2048x8.v 
+# -- Skipping module fifo_generator_0
+# -- Skipping module ram_2048x8
+# 
+# Top level modules:
+# 	fifo_generator_0
+# 	ram_2048x8
+# End time: 16:52:04 on Apr 02,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: (vcom-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vcom 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 16:52:04 on Apr 02,2018
+# vcom -64 -93 -work xil_defaultlib ../../../../project_1.srcs/sources_1/ip/mult_gen_0/sim/mult_gen_0.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mult_gen_0
+# -- Compiling architecture mult_gen_0_arch of mult_gen_0
+# End time: 16:52:04 on Apr 02,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 16:52:04 on Apr 02,2018
+# vlog -64 -incr -work xil_defaultlib "+incdir+../../../../project_1.srcs/sources_1/ip/clk_ddr3" "+incdir+../../../../project_1.srcs/sources_1/ip/pll3_125m" "+incdir+../../../../project_1.srcs/sources_1/ip/pll2_50M" "+incdir+../../../../project_1.srcs/sources_1/ip/pll1_50M" "+incdir+../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/example_design/sim" "+incdir+D:/Xilinx/vivado1704/Vivado/2017.4/data/xilinx_vip/include" ../../../../project_1.srcs/sources_1/ip/ram_64x8/sim/ram_64x8.v ../../../../project_1.srcs/sources_1/ip/fifo_in128_o32_2048/sim/fifo_in128_o32_2048.v ../../../../project_1.srcs/sources_1/ip/fifo_in32_o128/sim/fifo_in32_o128.v ../../../../project_1.srcs/sources_1/ip/clk_ddr3/clk_ddr3_clk_wiz.v ../../../../project_1.srcs/sources_1/ip/clk_ddr3/clk_ddr3.v ../../../../project_1.srcs/sources_1/ip/pll3_125m/pll3_125m_clk_wiz.v ../../../../project_1.srcs/sources_1/ip/pll3_125m/pll3_125m.v ../../../../project_1.srcs/sources_1/ip/pll2_50M/pll2_50M_clk_wiz.v ../../../../project_1.srcs/sources_1/ip/pll2_50M/pll2_50M.v ../../../../project_1.srcs/sources_1/ip/pll1_50M/pll1_50M_clk_wiz.v ../../../../project_1.srcs/sources_1/ip/pll1_50M/pll1_50M.v ../../../../project_1.srcs/sources_1/ip/rd_data/sim/rd_data.v ../../../../project_1.srcs/sources_1/ip/cmd_fifo/sim/cmd_fifo.v ../../../../project_1.srcs/sources_1/ip/wr_data/sim/wr_data.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/clocking/mig_7series_v4_0_clk_ibuf.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/clocking/mig_7series_v4_0_infrastructure.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/clocking/mig_7series_v4_0_iodelay_ctrl.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/clocking/mig_7series_v4_0_tempmon.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/controller/mig_7series_v4_0_arb_mux.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/controller/mig_7series_v4_0_arb_row_col.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/controller/mig_7series_v4_0_arb_select.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/controller/mig_7series_v4_0_bank_cntrl.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/controller/mig_7series_v4_0_bank_common.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/controller/mig_7series_v4_0_bank_compare.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/controller/mig_7series_v4_0_bank_mach.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/controller/mig_7series_v4_0_bank_queue.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/controller/mig_7series_v4_0_bank_state.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/controller/mig_7series_v4_0_col_mach.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/controller/mig_7series_v4_0_mc.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/controller/mig_7series_v4_0_rank_cntrl.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/controller/mig_7series_v4_0_rank_common.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/controller/mig_7series_v4_0_rank_mach.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/controller/mig_7series_v4_0_round_robin_arb.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/ecc/mig_7series_v4_0_ecc_buf.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/ecc/mig_7series_v4_0_ecc_dec_fix.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/ecc/mig_7series_v4_0_ecc_gen.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/ecc/mig_7series_v4_0_ecc_merge_enc.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/ecc/mig_7series_v4_0_fi_xor.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/ip_top/mig_7series_v4_0_memc_ui_top_std.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/ip_top/mig_7series_v4_0_mem_intfc.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/phy/mig_7series_v4_0_ddr_byte_group_io.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/phy/mig_7series_v4_0_ddr_byte_lane.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/phy/mig_7series_v4_0_ddr_calib_top.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/phy/mig_7series_v4_0_ddr_if_post_fifo.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/phy/mig_7series_v4_0_ddr_mc_phy.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/phy/mig_7series_v4_0_ddr_mc_phy_wrapper.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/phy/mig_7series_v4_0_ddr_of_pre_fifo.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_4lanes.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_ck_addr_cmd_delay.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_dqs_found_cal.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_dqs_found_cal_hr.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_init.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_ocd_cntlr.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_ocd_data.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_ocd_edge.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_ocd_lim.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_ocd_mux.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_ocd_po_cntlr.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_ocd_samp.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_oclkdelay_cal.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_prbs_rdlvl.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_rdlvl.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_tempmon.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_top.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_wrcal.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_wrlvl.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/phy/mig_7series_v4_0_ddr_phy_wrlvl_off_delay.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/phy/mig_7series_v4_0_ddr_prbs_gen.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/phy/mig_7series_v4_0_ddr_skip_calib_tap.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/phy/mig_7series_v4_0_poc_cc.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/phy/mig_7series_v4_0_poc_edge_store.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/phy/mig_7series_v4_0_poc_meta.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/phy/mig_7series_v4_0_poc_pd.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/phy/mig_7series_v4_0_poc_tap_base.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/phy/mig_7series_v4_0_poc_top.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/ui/mig_7series_v4_0_ui_cmd.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/ui/mig_7series_v4_0_ui_rd_data.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/ui/mig_7series_v4_0_ui_top.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/ui/mig_7series_v4_0_ui_wr_data.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/A7_ddr3_mig_mig_sim.v ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/user_design/rtl/A7_ddr3_mig.v ../../../../project_1.srcs/sources_1/new/GBET_TX/add_checksum.v ../../../../project_1.srcs/sources_1/new/contrl_clk.v ../../../../project_1.srcs/sources_1/new/GBET_TX/crc32_d8_send_02.v ../../../../project_1.srcs/sources_1/new/ddr3/ddr3_ctrl.v ../../../../project_1.srcs/sources_1/new/ddr3/ddr3_p1_write.v ../../../../project_1.srcs/sources_1/new/ddr3/ddr3_p5_read.v ../../../../project_1.srcs/sources_1/new/ddr3/ddr3_p6_read.v ../../../../project_1.srcs/sources_1/new/hdmi/encode.v ../../../../project_1.srcs/sources_1/new/ddr3/fifo_arbit.v ../../../../project_1.srcs/sources_1/new/GBET_RX/iddr_ctrl.v ../../../../project_1.srcs/sources_1/new/GBET_RX/image_ctrl.v ../../../../project_1.srcs/sim_1/new/oddr_ctrl.v ../../../../project_1.srcs/sources_1/new/hdmi/par2ser.v ../../../../project_1.srcs/sources_1/new/ddr3/rd_ctrl.v ../../../../project_1.srcs/sources_1/new/ddr3/rd_fifo_path.v ../../../../project_1.srcs/sources_1/new/ddr3/rd_path_ctrl.v ../../../../project_1.srcs/sources_1/new/GBET_TX/rgmii_tx..v ../../../../project_1.srcs/sources_1/new/GBET_RX/run_clk_ctrl.v ../../../../project_1.srcs/sources_1/new/GBET_RX/top_GBET.v ../../../../project_1.srcs/sources_1/new/GBET_TX/top_GBET_tx.v ../../../../project_1.srcs/sources_1/new/top_ddr3_GEBT_HDMI.v ../../../../project_1.srcs/sources_1/new/hdmi/top_hdmi_out.v ../../../../project_1.srcs/sim_1/new/tx_data_up.v ../../../../project_1.srcs/sources_1/new/GBET_TX/tx_gen_frame.v ../../../../project_1.srcs/sources_1/new/hdmi/vga.v ../../../../project_1.srcs/sources_1/new/ddr3/wr_ctrl.v ../../../../project_1.srcs/sources_1/new/ddr3/wr_fifo_path.v ../../../../project_1.srcs/sources_1/new/ddr3/wr_path_ctrl.v 
+# -- Skipping module ram_64x8
+# -- Skipping module fifo_in128_o32_2048
+# -- Skipping module fifo_in32_o128
+# -- Skipping module clk_ddr3_clk_wiz
+# -- Skipping module clk_ddr3
+# -- Skipping module pll3_125m_clk_wiz
+# -- Skipping module pll3_125m
+# -- Skipping module pll2_50M_clk_wiz
+# -- Skipping module pll2_50M
+# -- Skipping module pll1_50M_clk_wiz
+# -- Skipping module pll1_50M
+# -- Skipping module rd_data
+# -- Skipping module cmd_fifo
+# -- Skipping module wr_data
+# -- Skipping module mig_7series_v4_0_clk_ibuf
+# -- Skipping module mig_7series_v4_0_infrastructure
+# -- Skipping module mig_7series_v4_0_iodelay_ctrl
+# -- Skipping module mig_7series_v4_0_tempmon
+# -- Skipping module mig_7series_v4_0_arb_mux
+# -- Skipping module mig_7series_v4_0_arb_row_col
+# -- Skipping module mig_7series_v4_0_arb_select
+# -- Skipping module mig_7series_v4_0_bank_cntrl
+# -- Skipping module mig_7series_v4_0_bank_common
+# -- Skipping module mig_7series_v4_0_bank_compare
+# -- Skipping module mig_7series_v4_0_bank_mach
+# -- Skipping module mig_7series_v4_0_bank_queue
+# -- Skipping module mig_7series_v4_0_bank_state
+# -- Skipping module mig_7series_v4_0_col_mach
+# -- Skipping module mig_7series_v4_0_mc
+# -- Skipping module mig_7series_v4_0_rank_cntrl
+# -- Skipping module mig_7series_v4_0_rank_common
+# -- Skipping module mig_7series_v4_0_rank_mach
+# -- Skipping module mig_7series_v4_0_round_robin_arb
+# -- Skipping module mig_7series_v4_0_ecc_buf
+# -- Skipping module mig_7series_v4_0_ecc_dec_fix
+# -- Skipping module mig_7series_v4_0_ecc_gen
+# -- Skipping module mig_7series_v4_0_ecc_merge_enc
+# -- Skipping module mig_7series_v4_0_fi_xor
+# -- Skipping module mig_7series_v4_0_memc_ui_top_std
+# -- Skipping module mig_7series_v4_0_mem_intfc
+# -- Skipping module mig_7series_v4_0_ddr_byte_group_io
+# -- Skipping module mig_7series_v4_0_ddr_byte_lane
+# -- Skipping module mig_7series_v4_0_ddr_calib_top
+# -- Skipping module mig_7series_v4_0_ddr_if_post_fifo
+# -- Skipping module mig_7series_v4_0_ddr_mc_phy
+# -- Skipping module mig_7series_v4_0_ddr_mc_phy_wrapper
+# -- Skipping module mig_7series_v4_0_ddr_of_pre_fifo
+# -- Skipping module mig_7series_v4_0_ddr_phy_4lanes
+# -- Skipping module mig_7series_v4_0_ddr_phy_ck_addr_cmd_delay
+# -- Skipping module mig_7series_v4_0_ddr_phy_dqs_found_cal
+# -- Skipping module mig_7series_v4_0_ddr_phy_dqs_found_cal_hr
+# -- Skipping module mig_7series_v4_0_ddr_phy_init
+# -- Skipping module mig_7series_v4_0_ddr_phy_ocd_cntlr
+# -- Skipping module mig_7series_v4_0_ddr_phy_ocd_data
+# -- Skipping module mig_7series_v4_0_ddr_phy_ocd_edge
+# -- Skipping module mig_7series_v4_0_ddr_phy_ocd_lim
+# -- Skipping module mig_7series_v4_0_ddr_phy_ocd_mux
+# -- Skipping module mig_7series_v4_0_ddr_phy_ocd_po_cntlr
+# -- Skipping module mig_7series_v4_0_ddr_phy_ocd_samp
+# -- Skipping module mig_7series_v4_0_ddr_phy_oclkdelay_cal
+# -- Skipping module mig_7series_v4_0_ddr_phy_prbs_rdlvl
+# -- Skipping module mig_7series_v4_0_ddr_phy_rdlvl
+# -- Skipping module mig_7series_v4_0_ddr_phy_tempmon
+# -- Skipping module mig_7series_v4_0_ddr_phy_top
+# -- Skipping module mig_7series_v4_0_ddr_phy_wrcal
+# -- Skipping module mig_7series_v4_0_ddr_phy_wrlvl
+# -- Skipping module mig_7series_v4_0_ddr_phy_wrlvl_off_delay
+# -- Skipping module mig_7series_v4_0_ddr_prbs_gen
+# -- Skipping module mig_7series_v4_0_ddr_skip_calib_tap
+# -- Skipping module mig_7series_v4_0_poc_cc
+# -- Skipping module mig_7series_v4_0_poc_edge_store
+# -- Skipping module mig_7series_v4_0_poc_meta
+# -- Skipping module mig_7series_v4_0_poc_pd
+# -- Skipping module mig_7series_v4_0_poc_tap_base
+# -- Skipping module mig_7series_v4_0_poc_top
+# -- Skipping module mig_7series_v4_0_ui_cmd
+# -- Skipping module mig_7series_v4_0_ui_rd_data
+# -- Skipping module mig_7series_v4_0_ui_top
+# -- Skipping module mig_7series_v4_0_ui_wr_data
+# -- Skipping module A7_ddr3_mig_mig
+# -- Skipping module A7_ddr3_mig
+# -- Skipping module add_checksum
+# -- Skipping module contrl_clk
+# -- Skipping module crc32_d8_send_02
+# -- Skipping module ddr3_ctrl
+# -- Skipping module ddr3_p1_write
+# -- Skipping module ddr3_p5_read
+# -- Skipping module ddr3_p6_read
+# -- Skipping module encode
+# -- Skipping module fifo_arbit
+# -- Skipping module iddr_ctrl
+# -- Skipping module image_ctrl
+# -- Skipping module oddr_ctrl
+# -- Skipping module par2ser
+# -- Skipping module rd_ctrl
+# -- Skipping module rd_fifo_path
+# -- Skipping module rd_path_ctrl
+# -- Skipping module rgmii_tx
+# -- Skipping module run_clk_ctrl
+# -- Skipping module top_GBET_RX
+# -- Skipping module top_GBET_tx
+# -- Compiling module top_ddr3_GEBT_HDMI
+# -- Skipping module top_hdmi_out
+# -- Skipping module tx_data_up
+# -- Skipping module tx_geb_frame
+# -- Skipping module vga
+# -- Skipping module wr_ctrl
+# -- Skipping module wr_fifo_path
+# -- Skipping module wr_path_ctrl
+# 
+# Top level modules:
+# 	oddr_ctrl
+# 	top_ddr3_GEBT_HDMI
+# 	tx_data_up
+# End time: 16:52:06 on Apr 02,2018, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 1
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 16:52:08 on Apr 02,2018
+# vlog -64 -incr -sv -L xil_defaultlib -work xil_defaultlib "+incdir+../../../../project_1.srcs/sources_1/ip/clk_ddr3" "+incdir+../../../../project_1.srcs/sources_1/ip/pll3_125m" "+incdir+../../../../project_1.srcs/sources_1/ip/pll2_50M" "+incdir+../../../../project_1.srcs/sources_1/ip/pll1_50M" "+incdir+../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/example_design/sim" "+incdir+D:/Xilinx/vivado1704/Vivado/2017.4/data/xilinx_vip/include" ../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/example_design/sim/ddr3_model.sv 
+# -- Skipping module ddr3_model
+# 
+# Top level modules:
+# 	ddr3_model
+# End time: 16:52:08 on Apr 02,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 16:52:08 on Apr 02,2018
+# vlog -64 -incr -work xil_defaultlib "+incdir+../../../../project_1.srcs/sources_1/ip/clk_ddr3" "+incdir+../../../../project_1.srcs/sources_1/ip/pll3_125m" "+incdir+../../../../project_1.srcs/sources_1/ip/pll2_50M" "+incdir+../../../../project_1.srcs/sources_1/ip/pll1_50M" "+incdir+../../../../project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig/example_design/sim" "+incdir+D:/Xilinx/vivado1704/Vivado/2017.4/data/xilinx_vip/include" ../../../../project_1.srcs/sim_1/new/tb.v 
+# -- Skipping module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 16:52:08 on Apr 02,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 16:52:08 on Apr 02,2018
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 16:52:08 on Apr 02,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

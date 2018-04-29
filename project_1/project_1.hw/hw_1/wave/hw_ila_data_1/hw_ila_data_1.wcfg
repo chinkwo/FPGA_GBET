@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="F:/DDR3_HDMI/project_1/project_1.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="2053000fs"></ZoomStartTime>
+      <ZoomEndTime time="13473001fs"></ZoomEndTime>
+      <Cursor1Time time="5183000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="134"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="11" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject fp_name="top_GBET_tx_inst/Tx_start_en" type="logic">
+      <obj_property name="ElementShortName">top_GBET_tx_inst/Tx_start_en</obj_property>
+      <obj_property name="ObjectShortName">Tx_start_en</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="top_GBET_tx_inst/Rx_end_flag" type="logic">
+      <obj_property name="ElementShortName">top_GBET_tx_inst/Rx_end_flag</obj_property>
+      <obj_property name="ObjectShortName">Rx_end_flag</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="top_GBET_tx_inst/Rx_end_flag_dly" type="logic">
+      <obj_property name="ElementShortName">top_GBET_tx_inst/Rx_end_flag_dly</obj_property>
+      <obj_property name="ObjectShortName">Rx_end_flag_dly</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="top_GBET_tx_inst/read_fifo3_rd_en" type="logic">
+      <obj_property name="ElementShortName">top_GBET_tx_inst/read_fifo3_rd_en</obj_property>
+      <obj_property name="ObjectShortName">read_fifo3_rd_en</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="top_GBET_tx_inst/po_gen_data" type="array">
+      <obj_property name="ElementShortName">top_GBET_tx_inst/po_gen_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">po_gen_data[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="top_GBET_tx_inst/po_gen_data_en" type="logic">
+      <obj_property name="ElementShortName">top_GBET_tx_inst/po_gen_data_en</obj_property>
+      <obj_property name="ObjectShortName">po_gen_data_en</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="top_GBET_tx_inst/tx_check_sum_en" type="logic">
+      <obj_property name="ElementShortName">top_GBET_tx_inst/tx_check_sum_en</obj_property>
+      <obj_property name="ObjectShortName">tx_check_sum_en</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="top_GBET_tx_inst/tx_check_sum_data" type="array">
+      <obj_property name="ElementShortName">top_GBET_tx_inst/tx_check_sum_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_check_sum_data[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="top_GBET_tx_inst/tx_data_crc_en" type="logic">
+      <obj_property name="ElementShortName">top_GBET_tx_inst/tx_data_crc_en</obj_property>
+      <obj_property name="ObjectShortName">tx_data_crc_en</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="top_GBET_tx_inst/tx_data_crc" type="array">
+      <obj_property name="ElementShortName">top_GBET_tx_inst/tx_data_crc[7:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_data_crc[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="top_GBET_tx_inst/frame_head_flag" type="logic">
+      <obj_property name="ElementShortName">top_GBET_tx_inst/frame_head_flag</obj_property>
+      <obj_property name="ObjectShortName">frame_head_flag</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+</wave_config>

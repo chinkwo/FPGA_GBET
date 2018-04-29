@@ -1,0 +1,20 @@
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/vivado1704/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 89149a5099744f6aa2f88ab98454eab5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot top_hdmi_out_behav xil_defaultlib.top_hdmi_out xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.vga
+Compiling module xil_defaultlib.encode
+Compiling secureip modules ...
+Compiling module unisims_ver.OSERDESE2(DATA_WIDTH=10,TRISTATE...
+Compiling secureip modules ...
+Compiling module unisims_ver.OSERDESE2(DATA_WIDTH=10,SERDES_M...
+Compiling module unisims_ver.OBUFDS
+Compiling module xil_defaultlib.par2ser
+Compiling module xil_defaultlib.top_hdmi_out
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot top_hdmi_out_behav

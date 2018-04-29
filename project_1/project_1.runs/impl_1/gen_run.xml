@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tfgg484-2" LaunchTime="1522669088">
+  <File Type="PWROPT-DCP" Name="top_ddr3_GEBT_HDMI_pwropt.dcp"/>
+  <File Type="ROUTE-PWR" Name="top_ddr3_GEBT_HDMI_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="top_ddr3_GEBT_HDMI.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="top_ddr3_GEBT_HDMI_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="top_ddr3_GEBT_HDMI_reports.tcl"/>
+  <File Type="BG-DRC" Name="top_ddr3_GEBT_HDMI.drc"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="top_ddr3_GEBT_HDMI_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="top_ddr3_GEBT_HDMI_timing_summary_init.rpt"/>
+  <File Type="OPT-HWDEF" Name="top_ddr3_GEBT_HDMI.hwdef"/>
+  <File Type="OPT-DCP" Name="top_ddr3_GEBT_HDMI_opt.dcp"/>
+  <File Type="OPT-DRC" Name="top_ddr3_GEBT_HDMI_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="top_ddr3_GEBT_HDMI_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DRC" Name="top_ddr3_GEBT_HDMI_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="top_ddr3_GEBT_HDMI_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="top_ddr3_GEBT_HDMI_placed.dcp"/>
+  <File Type="PLACE-IO" Name="top_ddr3_GEBT_HDMI_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="top_ddr3_GEBT_HDMI_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="top_ddr3_GEBT_HDMI_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="top_ddr3_GEBT_HDMI_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="top_ddr3_GEBT_HDMI_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="top_ddr3_GEBT_HDMI_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="top_ddr3_GEBT_HDMI_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="top_ddr3_GEBT_HDMI_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="top_ddr3_GEBT_HDMI_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="top_ddr3_GEBT_HDMI_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="top_ddr3_GEBT_HDMI_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="top_ddr3_GEBT_HDMI_drc_physopted.rpt"/>
+  <File Type="BG-BIT" Name="top_ddr3_GEBT_HDMI.bit"/>
+  <File Type="PHYSOPT-TIMING" Name="top_ddr3_GEBT_HDMI_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="top_ddr3_GEBT_HDMI_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="top_ddr3_GEBT_HDMI_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="top_ddr3_GEBT_HDMI_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="top_ddr3_GEBT_HDMI_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="top_ddr3_GEBT_HDMI_drc_routed.pb"/>
+  <File Type="BITSTR-MSK" Name="top_ddr3_GEBT_HDMI.msk"/>
+  <File Type="ROUTE-DRC-RPX" Name="top_ddr3_GEBT_HDMI_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="top_ddr3_GEBT_HDMI.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="top_ddr3_GEBT_HDMI_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-RBT" Name="top_ddr3_GEBT_HDMI.rbt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="top_ddr3_GEBT_HDMI_methodology_drc_routed.rpx"/>
+  <File Type="BG-BIN" Name="top_ddr3_GEBT_HDMI.bin"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="top_ddr3_GEBT_HDMI_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="top_ddr3_GEBT_HDMI_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="top_ddr3_GEBT_HDMI_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="top_ddr3_GEBT_HDMI_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="top_ddr3_GEBT_HDMI_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="top_ddr3_GEBT_HDMI_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="top_ddr3_GEBT_HDMI_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="top_ddr3_GEBT_HDMI_incremental_reuse_routed.rpt"/>
+  <File Type="RDI-RDI" Name="top_ddr3_GEBT_HDMI.vdi"/>
+  <File Type="ROUTE-CLK" Name="top_ddr3_GEBT_HDMI_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="top_ddr3_GEBT_HDMI_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="top_ddr3_GEBT_HDMI_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="top_ddr3_GEBT_HDMI_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="top_ddr3_GEBT_HDMI_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="top_ddr3_GEBT_HDMI_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="top_ddr3_GEBT_HDMI.nky"/>
+  <File Type="BITSTR-BMM" Name="top_ddr3_GEBT_HDMI_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="top_ddr3_GEBT_HDMI.mmi"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="top_ddr3_GEBT_HDMI.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="top_ddr3_GEBT_HDMI.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/ip/fifo_ddr3_rd_p6/fifo_ddr3_rd_p6.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/mult_gen_0/mult_gen_0.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/ram_64x8/ram_64x8.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/fifo_in128_o32_2048/fifo_in128_o32_2048.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/fifo_in32_o128/fifo_in32_o128.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/clk_ddr3/clk_ddr3.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/pll3_125m/pll3_125m.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/pll2_50M/pll2_50M.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/pll1_50M/pll1_50M.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/rd_data/rd_data.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/cmd_fifo/cmd_fifo.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/wr_data/wr_data.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/GBET_TX/add_checksum.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/contrl_clk.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/GBET_TX/crc32_d8_send_02.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ddr3/ddr3_ctrl.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ddr3/ddr3_p1_write.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ddr3/ddr3_p5_read.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ddr3/ddr3_p6_read.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/hdmi/encode.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ddr3/fifo_arbit.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/GBET_RX/iddr_ctrl.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/GBET_RX/image_ctrl.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/hdmi/par2ser.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ddr3/rd_ctrl.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ddr3/rd_fifo_path.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ddr3/rd_path_ctrl.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/GBET_TX/rgmii_tx..v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/GBET_RX/run_clk_ctrl.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/GBET_RX/top_GBET.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/GBET_TX/top_GBET_tx.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/hdmi/top_hdmi_out.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/GBET_TX/tx_gen_frame.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/hdmi/vga.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ddr3/wr_ctrl.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ddr3/wr_fifo_path.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ddr3/wr_path_ctrl.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/top_ddr3_GEBT_HDMI.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/A7_ddr3_mig/mig_b.prj">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="ScopedToCell" Val="A7_ddr3_mig"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="top_ddr3_GEBT_HDMI"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/abc.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="ram_2048x8"/>
+</GenRun>
