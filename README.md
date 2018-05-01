@@ -4,7 +4,7 @@
 ## 项目概况(Project Overview)  
 使用FPGA实现千兆以太网MAC层协议记忆UDP协议，完成与PC机或者其他设备进行千兆以太网通信。千兆以太网联合DDR3等存储器可以实现图像的存储，显示和传输的功能。  
 ## 结构框图(Structure Diagram)  
-![结构框图](https://github.com/chinkwo/FPGA-multiboot/blob/master/img-folder/%E7%BB%93%E6%9E%84%E6%A1%86%E5%9B%BE.png) 
+![结构框图](https://github.com/chinkwo/FPGA_GBET/blob/master/img-folder/%E5%8D%83%E5%85%86%E7%BB%93%E6%9E%84%E5%9B%BE.png) 
 ## 效果描述(Effect Description)  
 通过上位机软件和下位机逻辑系统完成不同平台之间的数据交互，上位机软件可以实时显示来自逻辑系统的图像。此项目是一个通用平台，可以用于多路数据采集等不同应用。
 ## 应用案例(Applications)   
