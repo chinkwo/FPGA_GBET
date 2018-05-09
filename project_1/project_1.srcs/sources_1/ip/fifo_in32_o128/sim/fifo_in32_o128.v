@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:ip:fifo_generator:13.2
-// IP Revision: 1
+// IP Revision: 2
 
 `timescale 1ns/1ps
 
@@ -85,7 +85,7 @@ output wire full;
 output wire empty;
 output wire [7 : 0] rd_data_count;
 
-  fifo_generator_v13_2_1 #(
+  fifo_generator_v13_2_2 #(
     .C_COMMON_CLOCK(0),
     .C_SELECT_XPM(0),
     .C_COUNT_TYPE(0),

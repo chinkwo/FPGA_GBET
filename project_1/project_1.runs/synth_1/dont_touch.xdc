@@ -3,20 +3,8 @@
 
 # XDC: new/abc.xdc
 
-# IP: ip/fifo_ddr3_rd_p6/fifo_ddr3_rd_p6.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==fifo_ddr3_rd_p6 || ORIG_REF_NAME==fifo_ddr3_rd_p6} -quiet] -quiet
-
-# IP: ip/mult_gen_0/mult_gen_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==mult_gen_0 || ORIG_REF_NAME==mult_gen_0} -quiet] -quiet
-
 # IP: ip/ram_64x8/ram_64x8.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ram_64x8 || ORIG_REF_NAME==ram_64x8} -quiet] -quiet
-
-# IP: ip/fifo_in128_o32_2048/fifo_in128_o32_2048.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==fifo_in128_o32_2048 || ORIG_REF_NAME==fifo_in128_o32_2048} -quiet] -quiet
-
-# IP: ip/fifo_in32_o128/fifo_in32_o128.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==fifo_in32_o128 || ORIG_REF_NAME==fifo_in32_o128} -quiet] -quiet
 
 # IP: ip/clk_ddr3/clk_ddr3.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==clk_ddr3 || ORIG_REF_NAME==clk_ddr3} -quiet] -quiet
@@ -32,15 +20,6 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==pll1_50M || ORI
 
 # IP: ip/rd_data/rd_data.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==rd_data || ORIG_REF_NAME==rd_data} -quiet] -quiet
-
-# IP: ip/cmd_fifo/cmd_fifo.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==cmd_fifo || ORIG_REF_NAME==cmd_fifo} -quiet] -quiet
-
-# IP: ip/wr_data/wr_data.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==wr_data || ORIG_REF_NAME==wr_data} -quiet] -quiet
-
-# IP: ip/A7_ddr3_mig/A7_ddr3_mig.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==A7_ddr3_mig || ORIG_REF_NAME==A7_ddr3_mig} -quiet] -quiet
 
 # XDC: ip/rd_data/rd_data.xdc
 set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==rd_data || ORIG_REF_NAME==rd_data} -quiet] {/U0 } ]/U0 ] -quiet] -quiet

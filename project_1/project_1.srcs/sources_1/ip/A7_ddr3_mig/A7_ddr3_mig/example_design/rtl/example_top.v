@@ -49,7 +49,7 @@
 //   ____  ____
 //  /   /\/   /
 // /___/  \  /    Vendor             : Xilinx
-// \   \   \/     Version            : 4.0
+// \   \   \/     Version            : 4.1
 //  \   \         Application        : MIG
 //  /   /         Filename           : example_top.v
 // /___/   /\     Date Last Modified : $Date: 2011/06/02 08:35:03 $
@@ -454,7 +454,7 @@ function integer clogb2 (input integer size);
 // on the application interface of the memory controller
 //***************************************************************************
 
-  mig_7series_v4_0_traffic_gen_top #
+  mig_7series_v4_1_traffic_gen_top #
     (
      .TCQ                 (TCQ),
      .SIMULATION          (SIMULATION),

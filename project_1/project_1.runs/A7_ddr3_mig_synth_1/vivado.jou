@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Mon May  7 20:31:27 2018
+# Process ID: 14992
+# Current directory: F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.runs/A7_ddr3_mig_synth_1
+# Command line: vivado.exe -log A7_ddr3_mig.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source A7_ddr3_mig.tcl
+# Log file: F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.runs/A7_ddr3_mig_synth_1/A7_ddr3_mig.vds
+# Journal file: F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.runs/A7_ddr3_mig_synth_1\vivado.jou
+#-----------------------------------------------------------
+source A7_ddr3_mig.tcl -notrace

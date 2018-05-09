@@ -65,33 +65,13 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param tcl.collectionResultDisplayLimit 0
-  set_param xicom.use_bs_reader 1
-  create_project -in_memory -part xc7a35tfgg484-2
-  set_property design_mode GateLvl [current_fileset]
-  set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir F:/DDR3_HDMI/project_1/project_1.cache/wt [current_project]
-  set_property parent.project_path F:/DDR3_HDMI/project_1/project_1.xpr [current_project]
-  set_property ip_output_repo F:/DDR3_HDMI/project_1/project_1.cache/ip [current_project]
+  reset_param project.defaultXPMLibraries 
+  open_checkpoint F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.runs/impl_1/top_ddr3_GEBT_HDMI.dcp
+  set_property webtalk.parent_dir F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.cache/wt [current_project]
+  set_property parent.project_path F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.xpr [current_project]
+  set_property ip_output_repo F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
-  add_files -quiet F:/DDR3_HDMI/project_1/project_1.runs/synth_1/top_ddr3_GEBT_HDMI.dcp
-  read_ip -quiet F:/DDR3_HDMI/project_1/project_1.srcs/sources_1/ip/fifo_ddr3_rd_p6/fifo_ddr3_rd_p6.xci
-  read_ip -quiet F:/DDR3_HDMI/project_1/project_1.srcs/sources_1/ip/mult_gen_0/mult_gen_0.xci
-  read_ip -quiet F:/DDR3_HDMI/project_1/project_1.srcs/sources_1/ip/ram_64x8/ram_64x8.xci
-  read_ip -quiet F:/DDR3_HDMI/project_1/project_1.srcs/sources_1/ip/fifo_in128_o32_2048/fifo_in128_o32_2048.xci
-  read_ip -quiet F:/DDR3_HDMI/project_1/project_1.srcs/sources_1/ip/fifo_in32_o128/fifo_in32_o128.xci
-  read_ip -quiet F:/DDR3_HDMI/project_1/project_1.srcs/sources_1/ip/clk_ddr3/clk_ddr3.xci
-  read_ip -quiet F:/DDR3_HDMI/project_1/project_1.srcs/sources_1/ip/pll3_125m/pll3_125m.xci
-  read_ip -quiet F:/DDR3_HDMI/project_1/project_1.srcs/sources_1/ip/pll2_50M/pll2_50M.xci
-  read_ip -quiet F:/DDR3_HDMI/project_1/project_1.srcs/sources_1/ip/pll1_50M/pll1_50M.xci
-  read_ip -quiet F:/DDR3_HDMI/project_1/project_1.srcs/sources_1/ip/rd_data/rd_data.xci
-  read_ip -quiet F:/DDR3_HDMI/project_1/project_1.srcs/sources_1/ip/cmd_fifo/cmd_fifo.xci
-  read_ip -quiet F:/DDR3_HDMI/project_1/project_1.srcs/sources_1/ip/wr_data/wr_data.xci
-  read_ip -quiet F:/DDR3_HDMI/project_1/project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig.xci
-  read_ip -quiet f:/DDR3_HDMI/project_1/project_1.srcs/sources_1/ip/ram_2048x8/ram_2048x8.xci
-  read_xdc F:/DDR3_HDMI/project_1/project_1.srcs/constrs_1/new/abc.xdc
-  link_design -top top_ddr3_GEBT_HDMI -part xc7a35tfgg484-2
   close_msg_db -file init_design.pb
 } RESULT]
 if {$rc} {
@@ -106,7 +86,7 @@ start_step opt_design
 set ACTIVE_STEP opt_design
 set rc [catch {
   create_msg_db opt_design.pb
-  opt_design 
+  opt_design -directive Explore
   write_checkpoint -force top_ddr3_GEBT_HDMI_opt.dcp
   create_report "impl_1_opt_report_drc_0" "report_drc -file top_ddr3_GEBT_HDMI_drc_opted.rpt -pb top_ddr3_GEBT_HDMI_drc_opted.pb -rpx top_ddr3_GEBT_HDMI_drc_opted.rpx"
   close_msg_db -file opt_design.pb
@@ -123,8 +103,10 @@ start_step place_design
 set ACTIVE_STEP place_design
 set rc [catch {
   create_msg_db place_design.pb
-  implement_debug_core 
-  place_design 
+  if { [llength [get_debug_cores -quiet] ] > 0 }  { 
+    implement_debug_core 
+  } 
+  place_design -directive ExtraNetDelay_low
   write_checkpoint -force top_ddr3_GEBT_HDMI_placed.dcp
   create_report "impl_1_place_report_io_0" "report_io -file top_ddr3_GEBT_HDMI_io_placed.rpt"
   create_report "impl_1_place_report_utilization_0" "report_utilization -file top_ddr3_GEBT_HDMI_utilization_placed.rpt -pb top_ddr3_GEBT_HDMI_utilization_placed.pb"
@@ -139,19 +121,36 @@ if {$rc} {
   unset ACTIVE_STEP 
 }
 
+start_step phys_opt_design
+set ACTIVE_STEP phys_opt_design
+set rc [catch {
+  create_msg_db phys_opt_design.pb
+  phys_opt_design -directive AggressiveExplore
+  write_checkpoint -force top_ddr3_GEBT_HDMI_physopt.dcp
+  close_msg_db -file phys_opt_design.pb
+} RESULT]
+if {$rc} {
+  step_failed phys_opt_design
+  return -code error $RESULT
+} else {
+  end_step phys_opt_design
+  unset ACTIVE_STEP 
+}
+
 start_step route_design
 set ACTIVE_STEP route_design
 set rc [catch {
   create_msg_db route_design.pb
-  route_design 
+  route_design -directive NoTimingRelaxation
   write_checkpoint -force top_ddr3_GEBT_HDMI_routed.dcp
   create_report "impl_1_route_report_drc_0" "report_drc -file top_ddr3_GEBT_HDMI_drc_routed.rpt -pb top_ddr3_GEBT_HDMI_drc_routed.pb -rpx top_ddr3_GEBT_HDMI_drc_routed.rpx"
   create_report "impl_1_route_report_methodology_0" "report_methodology -file top_ddr3_GEBT_HDMI_methodology_drc_routed.rpt -pb top_ddr3_GEBT_HDMI_methodology_drc_routed.pb -rpx top_ddr3_GEBT_HDMI_methodology_drc_routed.rpx"
   create_report "impl_1_route_report_power_0" "report_power -file top_ddr3_GEBT_HDMI_power_routed.rpt -pb top_ddr3_GEBT_HDMI_power_summary_routed.pb -rpx top_ddr3_GEBT_HDMI_power_routed.rpx"
   create_report "impl_1_route_report_route_status_0" "report_route_status -file top_ddr3_GEBT_HDMI_route_status.rpt -pb top_ddr3_GEBT_HDMI_route_status.pb"
-  create_report "impl_1_route_report_timing_summary_0" "report_timing_summary -max_paths 10 -file top_ddr3_GEBT_HDMI_timing_summary_routed.rpt -rpx top_ddr3_GEBT_HDMI_timing_summary_routed.rpx -warn_on_violation "
+  create_report "impl_1_route_report_timing_summary_0" "report_timing_summary -max_paths 10 -file top_ddr3_GEBT_HDMI_timing_summary_routed.rpt -pb top_ddr3_GEBT_HDMI_timing_summary_routed.pb -rpx top_ddr3_GEBT_HDMI_timing_summary_routed.rpx -warn_on_violation "
   create_report "impl_1_route_report_incremental_reuse_0" "report_incremental_reuse -file top_ddr3_GEBT_HDMI_incremental_reuse_routed.rpt"
   create_report "impl_1_route_report_clock_utilization_0" "report_clock_utilization -file top_ddr3_GEBT_HDMI_clock_utilization_routed.rpt"
+  create_report "impl_1_route_report_bus_skew_0" "report_bus_skew -warn_on_violation -file route_report_bus_skew_0.rpt -rpx route_report_bus_skew_0.rpx"
   close_msg_db -file route_design.pb
 } RESULT]
 if {$rc} {
@@ -160,25 +159,6 @@ if {$rc} {
   return -code error $RESULT
 } else {
   end_step route_design
-  unset ACTIVE_STEP 
-}
-
-start_step write_bitstream
-set ACTIVE_STEP write_bitstream
-set rc [catch {
-  create_msg_db write_bitstream.pb
-  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
-  catch { write_mem_info -force top_ddr3_GEBT_HDMI.mmi }
-  write_bitstream -force top_ddr3_GEBT_HDMI.bit 
-  catch {write_debug_probes -quiet -force top_ddr3_GEBT_HDMI}
-  catch {file copy -force top_ddr3_GEBT_HDMI.ltx debug_nets.ltx}
-  close_msg_db -file write_bitstream.pb
-} RESULT]
-if {$rc} {
-  step_failed write_bitstream
-  return -code error $RESULT
-} else {
-  end_step write_bitstream
   unset ACTIVE_STEP 
 }
 

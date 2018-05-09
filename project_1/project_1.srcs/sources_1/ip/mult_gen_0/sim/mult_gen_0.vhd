@@ -47,14 +47,14 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:ip:mult_gen:12.0
--- IP Revision: 13
+-- IP Revision: 14
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
 
-LIBRARY mult_gen_v12_0_13;
-USE mult_gen_v12_0_13.mult_gen_v12_0_13;
+LIBRARY mult_gen_v12_0_14;
+USE mult_gen_v12_0_14.mult_gen_v12_0_14;
 
 ENTITY mult_gen_0 IS
   PORT (
@@ -68,7 +68,7 @@ END mult_gen_0;
 ARCHITECTURE mult_gen_0_arch OF mult_gen_0 IS
   ATTRIBUTE DowngradeIPIdentifiedWarnings : STRING;
   ATTRIBUTE DowngradeIPIdentifiedWarnings OF mult_gen_0_arch: ARCHITECTURE IS "yes";
-  COMPONENT mult_gen_v12_0_13 IS
+  COMPONENT mult_gen_v12_0_14 IS
     GENERIC (
       C_VERBOSITY : INTEGER;
       C_MODEL_TYPE : INTEGER;
@@ -99,7 +99,7 @@ ARCHITECTURE mult_gen_0_arch OF mult_gen_0 IS
       SCLR : IN STD_LOGIC;
       P : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
     );
-  END COMPONENT mult_gen_v12_0_13;
+  END COMPONENT mult_gen_v12_0_14;
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER OF P: SIGNAL IS "XIL_INTERFACENAME p_intf, LAYERED_METADATA undef";
@@ -111,7 +111,7 @@ ARCHITECTURE mult_gen_0_arch OF mult_gen_0 IS
   ATTRIBUTE X_INTERFACE_PARAMETER OF CLK: SIGNAL IS "XIL_INTERFACENAME clk_intf, ASSOCIATED_BUSIF p_intf:b_intf:a_intf, ASSOCIATED_RESET sclr, ASSOCIATED_CLKEN ce, FREQ_HZ 10000000, PHASE 0.000";
   ATTRIBUTE X_INTERFACE_INFO OF CLK: SIGNAL IS "xilinx.com:signal:clock:1.0 clk_intf CLK";
 BEGIN
-  U0 : mult_gen_v12_0_13
+  U0 : mult_gen_v12_0_14
     GENERIC MAP (
       C_VERBOSITY => 0,
       C_MODEL_TYPE => 0,

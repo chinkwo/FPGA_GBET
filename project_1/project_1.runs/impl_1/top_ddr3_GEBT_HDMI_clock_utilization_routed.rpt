@@ -1,12 +1,12 @@
-Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Mon Apr  2 19:47:04 2018
-| Host         : DESKTOP-QCQQL32 running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Tue May  8 15:06:41 2018
+| Host         : DESKTOP-JPATCP2 running 64-bit major release  (build 9200)
 | Command      : report_clock_utilization -file top_ddr3_GEBT_HDMI_clock_utilization_routed.rpt
 | Design       : top_ddr3_GEBT_HDMI
 | Device       : 7a35t-fgg484
-| Speed File   : -2  PRODUCTION 1.20 2017-11-01
+| Speed File   : -2  PRODUCTION 1.21 2018-02-08
 ------------------------------------------------------------------------------------------------
 
 Clock Utilization Report
@@ -60,11 +60,11 @@ Table of Contents
 +-----------+-----------+-----------------+------------+----------------+--------------+-------------------+-------------+-----------------+--------------+--------------------+-------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+
 | Global Id | Source Id | Driver Type/Pin | Constraint | Site           | Clock Region | Load Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock              | Driver Pin                                                                                | Net                                                                              |
 +-----------+-----------+-----------------+------------+----------------+--------------+-------------------+-------------+-----------------+--------------+--------------------+-------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+
-| g0        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y0  | n/a          |                 6 |        5953 |               0 |       10.000 | clk_pll_i          | ddr3_ctrl_inst/a7_ddr3_mig_inst/u_A7_ddr3_mig_mig/u_ddr3_infrastructure/u_bufg_clkdiv0/O  | ddr3_ctrl_inst/a7_ddr3_mig_inst/u_A7_ddr3_mig_mig/u_ddr3_infrastructure/CLK      |
-| g1        | src1      | BUFG/O          | None       | BUFGCTRL_X0Y16 | n/a          |                 5 |        1871 |               0 |        8.000 | clk_out2_clk_ddr3  | contrl_clk_inst/clk_ddr3_inst/inst/clkout2_buf/O                                          | contrl_clk_inst/clk_ddr3_inst/inst/clk_out2                                      |
-| g2        | src2      | BUFG/O          | None       | BUFGCTRL_X0Y17 | n/a          |                 3 |         258 |               0 |       15.385 | clk_out1_pll2_50M  | contrl_clk_inst/pll_hdmi_inst/inst/clkout1_buf/O                                          | contrl_clk_inst/pll_hdmi_inst/inst/clk_out1                                      |
+| g0        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y0  | n/a          |                 6 |        5986 |               0 |       10.000 | clk_pll_i          | ddr3_ctrl_inst/a7_ddr3_mig_inst/u_A7_ddr3_mig_mig/u_ddr3_infrastructure/u_bufg_clkdiv0/O  | ddr3_ctrl_inst/a7_ddr3_mig_inst/u_A7_ddr3_mig_mig/u_ddr3_infrastructure/CLK      |
+| g1        | src1      | BUFG/O          | None       | BUFGCTRL_X0Y16 | n/a          |                 5 |        1890 |               0 |        8.000 | clk_out2_clk_ddr3  | contrl_clk_inst/clk_ddr3_inst/inst/clkout2_buf/O                                          | contrl_clk_inst/clk_ddr3_inst/inst/clk_out2                                      |
+| g2        | src2      | BUFG/O          | None       | BUFGCTRL_X0Y17 | n/a          |                 3 |         275 |               0 |       15.385 | clk_out1_pll2_50M  | contrl_clk_inst/pll_hdmi_inst/inst/clkout1_buf/O                                          | contrl_clk_inst/pll_hdmi_inst/inst/clk_out1                                      |
 | g3        | src1      | BUFG/O          | None       | BUFGCTRL_X0Y18 | n/a          |                 3 |          63 |               0 |        5.000 | clk_out1_clk_ddr3  | contrl_clk_inst/clk_ddr3_inst/inst/clkout1_buf/O                                          | contrl_clk_inst/clk_ddr3_inst/inst/clk_out1                                      |
-| g4        | src3      | BUFG/O          | None       | BUFGCTRL_X0Y19 | n/a          |                 1 |          42 |               0 |        8.000 | clk_out1_pll3_125m | contrl_clk_inst/pll_rx_inst/inst/clkout1_buf/O                                            | contrl_clk_inst/pll_rx_inst/inst/clk_out1                                        |
+| g4        | src3      | BUFG/O          | None       | BUFGCTRL_X0Y19 | n/a          |                 2 |          42 |               0 |        8.000 | clk_out1_pll3_125m | contrl_clk_inst/pll_rx_inst/inst/clkout1_buf/O                                            | contrl_clk_inst/pll_rx_inst/inst/clk_out1                                        |
 | g5        | src2      | BUFG/O          | None       | BUFGCTRL_X0Y20 | n/a          |                 1 |           8 |               0 |        3.077 | clk_out2_pll2_50M  | contrl_clk_inst/pll_hdmi_inst/inst/clkout2_buf/O                                          | contrl_clk_inst/pll_hdmi_inst/inst/clk_out2                                      |
 | g6        | src4      | BUFG/O          | None       | BUFGCTRL_X0Y1  | n/a          |                 2 |           2 |               0 |        8.000 | clk_out3_pll1_50M  | contrl_clk_inst/pll_tx_int/inst/clkout3_buf/O                                             | contrl_clk_inst/pll_tx_int/inst/clk_out3                                         |
 | g7        | src1      | BUFG/O          | None       | BUFGCTRL_X0Y21 | n/a          |                 1 |           1 |               0 |        8.000 | clkfbout_clk_ddr3  | contrl_clk_inst/clk_ddr3_inst/inst/clkf_buf/O                                             | contrl_clk_inst/clk_ddr3_inst/inst/clkfbout_buf_clk_ddr3                         |
@@ -124,12 +124,12 @@ Table of Contents
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 | Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
-| X0Y0              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  241 |  1200 |   75 |   400 |    0 |    20 |    1 |    10 |    0 |    20 |
-| X1Y0              |    4 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    1 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  839 |  1500 |  220 |   450 |    0 |    40 |    3 |    20 |    0 |    20 |
-| X0Y1              |    6 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    5 |    50 |    6 |    50 | 2185 |  1200 |  840 |   400 |    1 |    20 |    8 |    10 |    0 |    20 |
-| X1Y1              |    6 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    4 |    50 | 3762 |  1500 |  954 |   450 |    0 |    40 |   12 |    20 |    0 |    20 |
-| X0Y2              |    6 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    8 |    50 |  751 |  1800 |  221 |   400 |    0 |    20 |    4 |    10 |    0 |    20 |
-| X1Y2              |    1 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     4 |    0 |     1 |    0 |     0 |    0 |     0 |  164 |   950 |   55 |   300 |    0 |    10 |    0 |     5 |    0 |    20 |
+| X0Y0              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  804 |  1200 |  349 |   400 |    0 |    20 |    5 |    10 |    0 |    20 |
+| X1Y0              |    4 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    1 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  698 |  1500 |  207 |   450 |    0 |    40 |    2 |    20 |    0 |    20 |
+| X0Y1              |    6 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    5 |    50 |    6 |    50 | 2512 |  1200 |  796 |   400 |    0 |    20 |    9 |    10 |    0 |    20 |
+| X1Y1              |    7 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    4 |    50 | 3529 |  1500 |  909 |   450 |    0 |    40 |   10 |    20 |    0 |    20 |
+| X0Y2              |    6 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    8 |    50 |  373 |  1800 |   95 |   400 |    0 |    20 |    2 |    10 |    0 |    20 |
+| X1Y2              |    1 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     4 |    0 |     1 |    0 |     0 |    0 |     0 |   97 |   950 |   33 |   300 |    0 |    10 |    0 |     5 |    0 |    20 |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 * Global Clock column represents track count; while other columns represents cell counts
 
@@ -142,7 +142,7 @@ All Modules
 |    | X0 | X1 |
 +----+----+----+
 | Y2 |  6 |  1 |
-| Y1 |  6 |  6 |
+| Y1 |  6 |  7 |
 | Y0 |  3 |  4 |
 +----+----+----+
 
@@ -153,7 +153,7 @@ All Modules
 +-----------+-----------------+-------------------+-----------+-------------+---------------+-------------+----------+----------------+----------+-----------------------------------------------------------------------------+
 | Global Id | Driver Type/Pin | Driver Region (D) | Clock     | Period (ns) | Waveform (ns) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                                                         |
 +-----------+-----------------+-------------------+-----------+-------------+---------------+-------------+----------+----------------+----------+-----------------------------------------------------------------------------+
-| g0        | BUFG/O          | n/a               | clk_pll_i |      10.000 | {0.000 5.000} |        5843 |        0 |              1 |        0 | ddr3_ctrl_inst/a7_ddr3_mig_inst/u_A7_ddr3_mig_mig/u_ddr3_infrastructure/CLK |
+| g0        | BUFG/O          | n/a               | clk_pll_i |      10.000 | {0.000 5.000} |        5876 |        0 |              1 |        0 | ddr3_ctrl_inst/a7_ddr3_mig_inst/u_A7_ddr3_mig_mig/u_ddr3_infrastructure/CLK |
 +-----------+-----------------+-------------------+-----------+-------------+---------------+-------------+----------+----------------+----------+-----------------------------------------------------------------------------+
 * Logic Loads column represents load cell count of all cell types other than IO, GT and clock resources
 ** IO Loads column represents load cell count of IO types
@@ -161,13 +161,13 @@ All Modules
 **** GT Loads column represents load cell count of GT types
 
 
-+----+------+-------+
-|    | X0   | X1    |
-+----+------+-------+
-| Y2 |  572 |   164 |
-| Y1 |  998 |  3137 |
-| Y0 |  182 |   791 |
-+----+------+-------+
++----+-------+-------+
+|    | X0    | X1    |
++----+-------+-------+
+| Y2 |   287 |    97 |
+| Y1 |  1144 |  3272 |
+| Y0 |   525 |   552 |
++----+-------+-------+
 
 
 8. Device Cell Placement Summary for Global Clock g1
@@ -176,7 +176,7 @@ All Modules
 +-----------+-----------------+-------------------+-------------------+-------------+---------------+-------------+----------+----------------+----------+---------------------------------------------+
 | Global Id | Driver Type/Pin | Driver Region (D) | Clock             | Period (ns) | Waveform (ns) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                         |
 +-----------+-----------------+-------------------+-------------------+-------------+---------------+-------------+----------+----------------+----------+---------------------------------------------+
-| g1        | BUFG/O          | n/a               | clk_out2_clk_ddr3 |       8.000 | {0.000 4.000} |        1864 |        0 |              0 |        0 | contrl_clk_inst/clk_ddr3_inst/inst/clk_out2 |
+| g1        | BUFG/O          | n/a               | clk_out2_clk_ddr3 |       8.000 | {0.000 4.000} |        1883 |        0 |              0 |        0 | contrl_clk_inst/clk_ddr3_inst/inst/clk_out2 |
 +-----------+-----------------+-------------------+-------------------+-------------+---------------+-------------+----------+----------------+----------+---------------------------------------------+
 * Logic Loads column represents load cell count of all cell types other than IO, GT and clock resources
 ** IO Loads column represents load cell count of IO types
@@ -184,13 +184,13 @@ All Modules
 **** GT Loads column represents load cell count of GT types
 
 
-+----+------+------+
-|    | X0   | X1   |
-+----+------+------+
-| Y2 |  187 |    0 |
-| Y1 |  882 |  671 |
-| Y0 |   61 |   63 |
-+----+------+------+
++----+-------+------+
+|    | X0    | X1   |
++----+-------+------+
+| Y2 |    90 |    0 |
+| Y1 |  1045 |  301 |
+| Y0 |   289 |  158 |
++----+-------+------+
 
 
 9. Device Cell Placement Summary for Global Clock g2
@@ -199,7 +199,7 @@ All Modules
 +-----------+-----------------+-------------------+-------------------+-------------+---------------+-------------+----------+----------------+----------+---------------------------------------------+
 | Global Id | Driver Type/Pin | Driver Region (D) | Clock             | Period (ns) | Waveform (ns) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net                                         |
 +-----------+-----------------+-------------------+-------------------+-------------+---------------+-------------+----------+----------------+----------+---------------------------------------------+
-| g2        | BUFG/O          | n/a               | clk_out1_pll2_50M |      15.385 | {0.000 7.692} |         250 |        8 |              0 |        0 | contrl_clk_inst/pll_hdmi_inst/inst/clk_out1 |
+| g2        | BUFG/O          | n/a               | clk_out1_pll2_50M |      15.385 | {0.000 7.692} |         267 |        8 |              0 |        0 | contrl_clk_inst/pll_hdmi_inst/inst/clk_out1 |
 +-----------+-----------------+-------------------+-------------------+-------------+---------------+-------------+----------+----------------+----------+---------------------------------------------+
 * Logic Loads column represents load cell count of all cell types other than IO, GT and clock resources
 ** IO Loads column represents load cell count of IO types
@@ -211,7 +211,7 @@ All Modules
 |    | X0   | X1 |
 +----+------+----+
 | Y2 |    8 |  0 |
-| Y1 |  248 |  2 |
+| Y1 |  265 |  2 |
 | Y0 |    0 |  0 |
 +----+------+----+
 
@@ -257,7 +257,7 @@ All Modules
 |    | X0  | X1 |
 +----+-----+----+
 | Y2 |   0 |  0 |
-| Y1 |  42 |  0 |
+| Y1 |  41 |  1 |
 | Y0 |   0 |  0 |
 +----+-----+----+
 
@@ -429,8 +429,8 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+-----------------------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                         |
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+-----------------------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |         182 |               0 | 181 |      0 |    1 |   0 |  0 |    0 |   0 |       0 | ddr3_ctrl_inst/a7_ddr3_mig_inst/u_A7_ddr3_mig_mig/u_ddr3_infrastructure/CLK |
-| g1        | n/a   | BUFG/O          | None       |          61 |               0 |  60 |      0 |    1 |   0 |  0 |    0 |   0 |       0 | contrl_clk_inst/clk_ddr3_inst/inst/clk_out2                                 |
+| g0        | n/a   | BUFG/O          | None       |         525 |               0 | 520 |      0 |    5 |   0 |  0 |    0 |   0 |       0 | ddr3_ctrl_inst/a7_ddr3_mig_inst/u_A7_ddr3_mig_mig/u_ddr3_infrastructure/CLK |
+| g1        | n/a   | BUFG/O          | None       |         289 |               0 | 284 |      0 |    5 |   0 |  0 |    0 |   0 |       0 | contrl_clk_inst/clk_ddr3_inst/inst/clk_out2                                 |
 | g10       | n/a   | BUFG/O          | None       |           1 |               0 |   0 |      0 |    0 |   0 |  0 |    1 |   0 |       0 | contrl_clk_inst/pll_tx_int/inst/clkfbout_buf_pll1_50M                       |
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+-----------------------------------------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
@@ -444,8 +444,8 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+----------------------------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                              |
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+----------------------------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |         791 |               0 | 779 |      1 |    3 |   0 |  0 |    1 |   0 |       0 | ddr3_ctrl_inst/a7_ddr3_mig_inst/u_A7_ddr3_mig_mig/u_ddr3_infrastructure/CLK      |
-| g1        | n/a   | BUFG/O          | None       |          63 |               0 |  60 |      0 |    3 |   0 |  0 |    0 |   0 |       0 | contrl_clk_inst/clk_ddr3_inst/inst/clk_out2                                      |
+| g0        | n/a   | BUFG/O          | None       |         552 |               0 | 542 |      2 |    0 |   0 |  0 |    1 |   0 |       0 | ddr3_ctrl_inst/a7_ddr3_mig_inst/u_A7_ddr3_mig_mig/u_ddr3_infrastructure/CLK      |
+| g1        | n/a   | BUFG/O          | None       |         158 |               0 | 156 |      0 |    2 |   0 |  0 |    0 |   0 |       0 | contrl_clk_inst/clk_ddr3_inst/inst/clk_out2                                      |
 | g3        | n/a   | BUFG/O          | None       |           1 |               0 |   0 |      0 |    0 |   0 |  0 |    0 |   1 |       0 | contrl_clk_inst/clk_ddr3_inst/inst/clk_out1                                      |
 | g11       | n/a   | BUFH/O          | None       |           1 |               0 |   0 |      0 |    0 |   0 |  0 |    1 |   0 |       0 | ddr3_ctrl_inst/a7_ddr3_mig_inst/u_A7_ddr3_mig_mig/u_ddr3_infrastructure/pll_clk3 |
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+----------------------------------------------------------------------------------+
@@ -457,16 +457,16 @@ All Modules
 21. Clock Region Cell Placement per Global Clock: Region X0Y1
 -------------------------------------------------------------
 
-+-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+-----------------------------------------------------------------------------+
-| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                         |
-+-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+-----------------------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |         998 |               0 | 992 |      0 |    6 |   0 |  0 |    0 |   0 |       0 | ddr3_ctrl_inst/a7_ddr3_mig_inst/u_A7_ddr3_mig_mig/u_ddr3_infrastructure/CLK |
-| g1        | n/a   | BUFG/O          | None       |         882 |               0 | 865 |      1 |    9 |   0 |  0 |    0 |   0 |       0 | contrl_clk_inst/clk_ddr3_inst/inst/clk_out2                                 |
-| g2        | n/a   | BUFG/O          | None       |         248 |               0 | 247 |      1 |    0 |   0 |  0 |    0 |   0 |       0 | contrl_clk_inst/pll_hdmi_inst/inst/clk_out1                                 |
-| g3        | n/a   | BUFG/O          | None       |          46 |               0 |  45 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | contrl_clk_inst/clk_ddr3_inst/inst/clk_out1                                 |
-| g4        | n/a   | BUFG/O          | None       |          42 |               0 |  36 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | contrl_clk_inst/pll_rx_inst/inst/clk_out1                                   |
-| g9        | n/a   | BUFG/O          | None       |           1 |               0 |   0 |      0 |    0 |   0 |  0 |    1 |   0 |       0 | contrl_clk_inst/pll_rx_inst/inst/clkfbout_buf_pll3_125m                     |
-+-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+-----------------------------------------------------------------------------+
++-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-----------------------------------------------------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                         |
++-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-----------------------------------------------------------------------------+
+| g0        | n/a   | BUFG/O          | None       |        1144 |               0 | 1137 |      0 |    7 |   0 |  0 |    0 |   0 |       0 | ddr3_ctrl_inst/a7_ddr3_mig_inst/u_A7_ddr3_mig_mig/u_ddr3_infrastructure/CLK |
+| g1        | n/a   | BUFG/O          | None       |        1045 |               0 | 1029 |      0 |    9 |   0 |  0 |    0 |   0 |       0 | contrl_clk_inst/clk_ddr3_inst/inst/clk_out2                                 |
+| g2        | n/a   | BUFG/O          | None       |         265 |               0 |  265 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | contrl_clk_inst/pll_hdmi_inst/inst/clk_out1                                 |
+| g3        | n/a   | BUFG/O          | None       |          46 |               0 |   45 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | contrl_clk_inst/clk_ddr3_inst/inst/clk_out1                                 |
+| g4        | n/a   | BUFG/O          | None       |          41 |               0 |   36 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | contrl_clk_inst/pll_rx_inst/inst/clk_out1                                   |
+| g9        | n/a   | BUFG/O          | None       |           1 |               0 |    0 |      0 |    0 |   0 |  0 |    1 |   0 |       0 | contrl_clk_inst/pll_rx_inst/inst/clkfbout_buf_pll3_125m                     |
++-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-----------------------------------------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
 *** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
@@ -478,10 +478,11 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-----------------------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                         |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-----------------------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |        3137 |               0 | 3088 |     18 |    6 |   0 |  0 |    0 |   0 |       0 | ddr3_ctrl_inst/a7_ddr3_mig_inst/u_A7_ddr3_mig_mig/u_ddr3_infrastructure/CLK |
-| g1        | n/a   | BUFG/O          | None       |         671 |               0 |  659 |      0 |   12 |   0 |  0 |    0 |   0 |       0 | contrl_clk_inst/clk_ddr3_inst/inst/clk_out2                                 |
+| g0        | n/a   | BUFG/O          | None       |        3272 |               0 | 3224 |     17 |    6 |   0 |  0 |    0 |   0 |       0 | ddr3_ctrl_inst/a7_ddr3_mig_inst/u_A7_ddr3_mig_mig/u_ddr3_infrastructure/CLK |
+| g1        | n/a   | BUFG/O          | None       |         301 |               0 |  290 |      0 |   10 |   0 |  0 |    0 |   0 |       0 | contrl_clk_inst/clk_ddr3_inst/inst/clk_out2                                 |
 | g2        | n/a   | BUFG/O          | None       |           2 |               0 |    0 |      0 |    2 |   0 |  0 |    0 |   0 |       0 | contrl_clk_inst/pll_hdmi_inst/inst/clk_out1                                 |
 | g3        | n/a   | BUFG/O          | None       |          16 |               0 |   15 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | contrl_clk_inst/clk_ddr3_inst/inst/clk_out1                                 |
+| g4        | n/a   | BUFG/O          | None       |           1 |               0 |    0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | contrl_clk_inst/pll_rx_inst/inst/clk_out1                                   |
 | g6        | n/a   | BUFG/O          | None       |           1 |               0 |    0 |      0 |    0 |   0 |  0 |    1 |   0 |       0 | contrl_clk_inst/pll_tx_int/inst/clk_out3                                    |
 | g7        | n/a   | BUFG/O          | None       |           1 |               0 |    0 |      0 |    0 |   0 |  0 |    1 |   0 |       0 | contrl_clk_inst/clk_ddr3_inst/inst/clkfbout_buf_clk_ddr3                    |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+-----------------------------------------------------------------------------+
@@ -496,8 +497,8 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+-----------------------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                         |
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+-----------------------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |         572 |               0 | 568 |      0 |    4 |   0 |  0 |    0 |   0 |       0 | ddr3_ctrl_inst/a7_ddr3_mig_inst/u_A7_ddr3_mig_mig/u_ddr3_infrastructure/CLK |
-| g1        | n/a   | BUFG/O          | None       |         187 |               0 | 183 |      0 |    4 |   0 |  0 |    0 |   0 |       0 | contrl_clk_inst/clk_ddr3_inst/inst/clk_out2                                 |
+| g0        | n/a   | BUFG/O          | None       |         287 |               0 | 285 |      0 |    2 |   0 |  0 |    0 |   0 |       0 | ddr3_ctrl_inst/a7_ddr3_mig_inst/u_A7_ddr3_mig_mig/u_ddr3_infrastructure/CLK |
+| g1        | n/a   | BUFG/O          | None       |          90 |               0 |  88 |      0 |    2 |   0 |  0 |    0 |   0 |       0 | contrl_clk_inst/clk_ddr3_inst/inst/clk_out2                                 |
 | g2        | n/a   | BUFG/O          | None       |           8 |               0 |   0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | contrl_clk_inst/pll_hdmi_inst/inst/clk_out1                                 |
 | g5        | n/a   | BUFG/O          | None       |           8 |               0 |   0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | contrl_clk_inst/pll_hdmi_inst/inst/clk_out2                                 |
 | g6        | n/a   | BUFG/O          | None       |           1 |               0 |   0 |      0 |    0 |   0 |  0 |    1 |   0 |       0 | contrl_clk_inst/pll_tx_int/inst/clk_out3                                    |
@@ -511,11 +512,11 @@ All Modules
 24. Clock Region Cell Placement per Global Clock: Region X1Y2
 -------------------------------------------------------------
 
-+-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+-----------------------------------------------------------------------------+
-| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                         |
-+-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+-----------------------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |         164 |               0 | 164 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | ddr3_ctrl_inst/a7_ddr3_mig_inst/u_A7_ddr3_mig_mig/u_ddr3_infrastructure/CLK |
-+-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+-----------------------------------------------------------------------------+
++-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+-----------------------------------------------------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                         |
++-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+-----------------------------------------------------------------------------+
+| g0        | n/a   | BUFG/O          | None       |          97 |               0 | 97 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | ddr3_ctrl_inst/a7_ddr3_mig_inst/u_A7_ddr3_mig_mig/u_ddr3_infrastructure/CLK |
++-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+-----------------------------------------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
 *** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
@@ -555,7 +556,7 @@ resize_pblock [get_pblocks {CLKAG_ddr3_ctrl_inst/a7_ddr3_mig_inst/u_A7_ddr3_mig_
 #startgroup
 create_pblock {CLKAG_contrl_clk_inst/pll_rx_inst/inst/clk_out1}
 add_cells_to_pblock [get_pblocks  {CLKAG_contrl_clk_inst/pll_rx_inst/inst/clk_out1}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="contrl_clk_inst/pll_rx_inst/inst/clk_out1"}]]]
-resize_pblock [get_pblocks {CLKAG_contrl_clk_inst/pll_rx_inst/inst/clk_out1}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+resize_pblock [get_pblocks {CLKAG_contrl_clk_inst/pll_rx_inst/inst/clk_out1}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
 #endgroup
 
 # Clock net "contrl_clk_inst/pll_hdmi_inst/inst/clk_out2" driven by instance "contrl_clk_inst/pll_hdmi_inst/inst/clkout2_buf" located at site "BUFGCTRL_X0Y20"

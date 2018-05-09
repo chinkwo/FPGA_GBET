@@ -9,7 +9,7 @@
     <LowPower_En>ON</LowPower_En>
     <XADC_En>Enabled</XADC_En>
     <TargetFPGA>xc7a35t-fgg484/-2</TargetFPGA>
-    <Version>4.0</Version>
+    <Version>4.1</Version>
     <SystemClock>No Buffer</SystemClock>
     <ReferenceClock>Use System Clock</ReferenceClock>
     <SysResetPolarity>ACTIVE LOW</SysResetPolarity>

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Mon May  7 20:31:27 2018
+# Process ID: 15328
+# Current directory: F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.runs/fifo_in128_o32_2048_synth_1
+# Command line: vivado.exe -log fifo_in128_o32_2048.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fifo_in128_o32_2048.tcl
+# Log file: F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.runs/fifo_in128_o32_2048_synth_1/fifo_in128_o32_2048.vds
+# Journal file: F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.runs/fifo_in128_o32_2048_synth_1\vivado.jou
+#-----------------------------------------------------------
+source fifo_in128_o32_2048.tcl -notrace

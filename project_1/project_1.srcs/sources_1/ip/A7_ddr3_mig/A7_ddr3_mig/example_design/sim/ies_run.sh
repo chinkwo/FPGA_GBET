@@ -49,7 +49,7 @@
 ##   ____  ____
 ##  /   /\/   /
 ## /___/  \  /    Vendor             : Xilinx
-## \   \   \/     Version            : 4.0
+## \   \   \/     Version            : 4.1
 ##  \   \         Application        : MIG
 ##  /   /         Filename           : ies_run.sh
 ## /___/   /\     Date Last Modified : $Date: 2011/06/02 08:31:17 $

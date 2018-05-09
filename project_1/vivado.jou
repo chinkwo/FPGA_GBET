@@ -1,0 +1,84 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Mon May  7 20:28:48 2018
+# Process ID: 9688
+# Current directory: F:/FPGA_VIVADO/FPGA_GBET/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7972 F:\FPGA_VIVADO\FPGA_GBET\project_1\project_1.xpr
+# Log file: F:/FPGA_VIVADO/FPGA_GBET/project_1/vivado.log
+# Journal file: F:/FPGA_VIVADO/FPGA_GBET/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {A7_ddr3_mig cmd_fifo fifo_ddr3_rd_p6 fifo_in128_o32_2048 fifo_in32_o128 mult_gen_0 rd_data wr_data}] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips {A7_ddr3_mig cmd_fifo fifo_ddr3_rd_p6 fifo_in128_o32_2048 fifo_in32_o128 mult_gen_0 rd_data wr_data}] -no_script -sync -force -quiet
+generate_target all [get_files  {F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig.xci F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.srcs/sources_1/ip/cmd_fifo/cmd_fifo.xci F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.srcs/sources_1/ip/fifo_ddr3_rd_p6/fifo_ddr3_rd_p6.xci F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.srcs/sources_1/ip/fifo_in128_o32_2048/fifo_in128_o32_2048.xci F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.srcs/sources_1/ip/fifo_in32_o128/fifo_in32_o128.xci F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.srcs/sources_1/ip/mult_gen_0/mult_gen_0.xci F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.srcs/sources_1/ip/rd_data/rd_data.xci F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.srcs/sources_1/ip/wr_data/wr_data.xci}]
+catch { config_ip_cache -export [get_ips -all A7_ddr3_mig] }
+catch { config_ip_cache -export [get_ips -all cmd_fifo] }
+catch { config_ip_cache -export [get_ips -all fifo_ddr3_rd_p6] }
+catch { config_ip_cache -export [get_ips -all fifo_in128_o32_2048] }
+catch { config_ip_cache -export [get_ips -all fifo_in32_o128] }
+catch { config_ip_cache -export [get_ips -all mult_gen_0] }
+catch { config_ip_cache -export [get_ips -all wr_data] }
+export_ip_user_files -of_objects [get_files F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.srcs/sources_1/ip/cmd_fifo/cmd_fifo.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.srcs/sources_1/ip/fifo_ddr3_rd_p6/fifo_ddr3_rd_p6.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.srcs/sources_1/ip/fifo_in128_o32_2048/fifo_in128_o32_2048.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.srcs/sources_1/ip/fifo_in32_o128/fifo_in32_o128.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.srcs/sources_1/ip/mult_gen_0/mult_gen_0.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.srcs/sources_1/ip/rd_data/rd_data.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.srcs/sources_1/ip/wr_data/wr_data.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.srcs/sources_1/ip/cmd_fifo/cmd_fifo.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.srcs/sources_1/ip/fifo_ddr3_rd_p6/fifo_ddr3_rd_p6.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.srcs/sources_1/ip/fifo_in128_o32_2048/fifo_in128_o32_2048.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.srcs/sources_1/ip/fifo_in32_o128/fifo_in32_o128.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.srcs/sources_1/ip/mult_gen_0/mult_gen_0.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.srcs/sources_1/ip/wr_data/wr_data.xci]
+launch_runs -jobs 6 {A7_ddr3_mig_synth_1 cmd_fifo_synth_1 fifo_ddr3_rd_p6_synth_1 fifo_in128_o32_2048_synth_1 fifo_in32_o128_synth_1 mult_gen_0_synth_1 wr_data_synth_1}
+export_simulation -of_objects [get_files F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.srcs/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig.xci] -directory F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.ip_user_files -ipstatic_source_dir F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/modeltech64_10.5/vivado201704} {questa=F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.cache/compile_simlib/questa} {riviera=F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.cache/compile_simlib/riviera} {activehdl=F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.srcs/sources_1/ip/cmd_fifo/cmd_fifo.xci] -directory F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.ip_user_files -ipstatic_source_dir F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/modeltech64_10.5/vivado201704} {questa=F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.cache/compile_simlib/questa} {riviera=F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.cache/compile_simlib/riviera} {activehdl=F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.srcs/sources_1/ip/fifo_ddr3_rd_p6/fifo_ddr3_rd_p6.xci] -directory F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.ip_user_files -ipstatic_source_dir F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/modeltech64_10.5/vivado201704} {questa=F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.cache/compile_simlib/questa} {riviera=F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.cache/compile_simlib/riviera} {activehdl=F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.srcs/sources_1/ip/fifo_in128_o32_2048/fifo_in128_o32_2048.xci] -directory F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.ip_user_files -ipstatic_source_dir F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/modeltech64_10.5/vivado201704} {questa=F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.cache/compile_simlib/questa} {riviera=F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.cache/compile_simlib/riviera} {activehdl=F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.srcs/sources_1/ip/fifo_in32_o128/fifo_in32_o128.xci] -directory F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.ip_user_files -ipstatic_source_dir F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/modeltech64_10.5/vivado201704} {questa=F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.cache/compile_simlib/questa} {riviera=F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.cache/compile_simlib/riviera} {activehdl=F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.srcs/sources_1/ip/mult_gen_0/mult_gen_0.xci] -directory F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.ip_user_files -ipstatic_source_dir F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/modeltech64_10.5/vivado201704} {questa=F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.cache/compile_simlib/questa} {riviera=F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.cache/compile_simlib/riviera} {activehdl=F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.srcs/sources_1/ip/rd_data/rd_data.xci] -directory F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.ip_user_files -ipstatic_source_dir F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/modeltech64_10.5/vivado201704} {questa=F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.cache/compile_simlib/questa} {riviera=F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.cache/compile_simlib/riviera} {activehdl=F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.srcs/sources_1/ip/wr_data/wr_data.xci] -directory F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.ip_user_files/sim_scripts -ip_user_files_dir F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.ip_user_files -ipstatic_source_dir F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/modeltech64_10.5/vivado201704} {questa=F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.cache/compile_simlib/questa} {riviera=F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.cache/compile_simlib/riviera} {activehdl=F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+open_run synth_1 -name synth_1
+report_ip_status -name ip_status 
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+set_property flow {Vivado Synthesis 2018} [get_runs synth_1]
+set_property strategy Flow_PerfOptimized_high [get_runs synth_1]
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+set_property flow {Vivado Implementation 2018} [get_runs impl_1]
+set_property strategy Performance_NetDelay_low [get_runs impl_1]
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+open_run impl_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+set_property strategy Performance_Explore [get_runs impl_1]
+reset_run impl_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+refresh_design
+set_property is_global_include true [get_files  F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.srcs/sources_1/new/top_ddr3_GEBT_HDMI.v]
+update_compile_order -fileset sources_1
+undo
+report_bus_skew -delay_type min_max -max_paths 10 -name bus_skew_1
+report_cdc -name cdc_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+check_timing -verbose -name timing_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+current_design synth_1
+refresh_design
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1

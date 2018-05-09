@@ -1,31 +1,44 @@
 vlib questa_lib/work
 vlib questa_lib/msim
 
+vlib questa_lib/msim/xilinx_vip
 vlib questa_lib/msim/xil_defaultlib
 vlib questa_lib/msim/xpm
-vlib questa_lib/msim/fifo_generator_v13_2_1
+vlib questa_lib/msim/fifo_generator_v13_2_2
 
+vmap xilinx_vip questa_lib/msim/xilinx_vip
 vmap xil_defaultlib questa_lib/msim/xil_defaultlib
 vmap xpm questa_lib/msim/xpm
-vmap fifo_generator_v13_2_1 questa_lib/msim/fifo_generator_v13_2_1
+vmap fifo_generator_v13_2_2 questa_lib/msim/fifo_generator_v13_2_2
 
-vlog -work xil_defaultlib -64 -sv -L xil_defaultlib "+incdir+D:/Xilinx/vivado1704/Vivado/2017.4/data/xilinx_vip/include" "+incdir+D:/Xilinx/vivado1704/Vivado/2017.4/data/xilinx_vip/include" \
-"D:/Xilinx/vivado1704/Vivado/2017.4/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
-"D:/Xilinx/vivado1704/Vivado/2017.4/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
+vlog -work xilinx_vip -64 -sv -L xil_defaultlib "+incdir+D:/Xilinx/Vivado/2018.1/data/xilinx_vip/include" "+incdir+D:/Xilinx/Vivado/2018.1/data/xilinx_vip/include" \
+"D:/Xilinx/Vivado/2018.1/data/xilinx_vip/hdl/axi4stream_vip_axi4streampc.sv" \
+"D:/Xilinx/Vivado/2018.1/data/xilinx_vip/hdl/axi_vip_axi4pc.sv" \
+"D:/Xilinx/Vivado/2018.1/data/xilinx_vip/hdl/xil_common_vip_pkg.sv" \
+"D:/Xilinx/Vivado/2018.1/data/xilinx_vip/hdl/axi4stream_vip_pkg.sv" \
+"D:/Xilinx/Vivado/2018.1/data/xilinx_vip/hdl/axi_vip_pkg.sv" \
+"D:/Xilinx/Vivado/2018.1/data/xilinx_vip/hdl/axi4stream_vip_if.sv" \
+"D:/Xilinx/Vivado/2018.1/data/xilinx_vip/hdl/axi_vip_if.sv" \
+"D:/Xilinx/Vivado/2018.1/data/xilinx_vip/hdl/clk_vip_if.sv" \
+"D:/Xilinx/Vivado/2018.1/data/xilinx_vip/hdl/rst_vip_if.sv" \
+
+vlog -work xil_defaultlib -64 -sv -L xil_defaultlib "+incdir+D:/Xilinx/Vivado/2018.1/data/xilinx_vip/include" "+incdir+D:/Xilinx/Vivado/2018.1/data/xilinx_vip/include" \
+"D:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+"D:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
 
 vcom -work xpm -64 -93 \
-"D:/Xilinx/vivado1704/Vivado/2017.4/data/ip/xpm/xpm_VCOMP.vhd" \
+"D:/Xilinx/Vivado/2018.1/data/ip/xpm/xpm_VCOMP.vhd" \
 
-vlog -work fifo_generator_v13_2_1 -64 "+incdir+D:/Xilinx/vivado1704/Vivado/2017.4/data/xilinx_vip/include" "+incdir+D:/Xilinx/vivado1704/Vivado/2017.4/data/xilinx_vip/include" \
+vlog -work fifo_generator_v13_2_2 -64 "+incdir+D:/Xilinx/Vivado/2018.1/data/xilinx_vip/include" "+incdir+D:/Xilinx/Vivado/2018.1/data/xilinx_vip/include" \
 "../../../ipstatic/simulation/fifo_generator_vlog_beh.v" \
 
-vcom -work fifo_generator_v13_2_1 -64 -93 \
+vcom -work fifo_generator_v13_2_2 -64 -93 \
 "../../../ipstatic/hdl/fifo_generator_v13_2_rfs.vhd" \
 
-vlog -work fifo_generator_v13_2_1 -64 "+incdir+D:/Xilinx/vivado1704/Vivado/2017.4/data/xilinx_vip/include" "+incdir+D:/Xilinx/vivado1704/Vivado/2017.4/data/xilinx_vip/include" \
+vlog -work fifo_generator_v13_2_2 -64 "+incdir+D:/Xilinx/Vivado/2018.1/data/xilinx_vip/include" "+incdir+D:/Xilinx/Vivado/2018.1/data/xilinx_vip/include" \
 "../../../ipstatic/hdl/fifo_generator_v13_2_rfs.v" \
 
-vlog -work xil_defaultlib -64 "+incdir+D:/Xilinx/vivado1704/Vivado/2017.4/data/xilinx_vip/include" "+incdir+D:/Xilinx/vivado1704/Vivado/2017.4/data/xilinx_vip/include" \
+vlog -work xil_defaultlib -64 "+incdir+D:/Xilinx/Vivado/2018.1/data/xilinx_vip/include" "+incdir+D:/Xilinx/Vivado/2018.1/data/xilinx_vip/include" \
 "../../../../project_1.srcs/sources_1/ip/fifo_ddr3_rd_p6/sim/fifo_ddr3_rd_p6.v" \
 
 vlog -work xil_defaultlib \

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tfgg484-2" LaunchTime="1522669088">
-  <File Type="PWROPT-DCP" Name="top_ddr3_GEBT_HDMI_pwropt.dcp"/>
+<GenRun Id="impl_1" LaunchPart="xc7a35tfgg484-2" LaunchTime="1525762575">
+  <File Type="OPT-HWDEF" Name="top_ddr3_GEBT_HDMI.hwdef"/>
+  <File Type="PA-DCP" Name="top_ddr3_GEBT_HDMI.dcp"/>
+  <File Type="OPT-DCP" Name="top_ddr3_GEBT_HDMI_opt.dcp"/>
   <File Type="ROUTE-PWR" Name="top_ddr3_GEBT_HDMI_power_routed.rpt"/>
   <File Type="PA-TCL" Name="top_ddr3_GEBT_HDMI.tcl"/>
   <File Type="ROUTE-PWR-SUM" Name="top_ddr3_GEBT_HDMI_power_summary_routed.pb"/>
@@ -8,10 +10,9 @@
   <File Type="BG-DRC" Name="top_ddr3_GEBT_HDMI.drc"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="top_ddr3_GEBT_HDMI_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="top_ddr3_GEBT_HDMI_timing_summary_init.rpt"/>
-  <File Type="OPT-HWDEF" Name="top_ddr3_GEBT_HDMI.hwdef"/>
-  <File Type="OPT-DCP" Name="top_ddr3_GEBT_HDMI_opt.dcp"/>
   <File Type="OPT-DRC" Name="top_ddr3_GEBT_HDMI_drc_opted.rpt"/>
   <File Type="OPT-TIMING" Name="top_ddr3_GEBT_HDMI_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="top_ddr3_GEBT_HDMI_pwropt.dcp"/>
   <File Type="PWROPT-DRC" Name="top_ddr3_GEBT_HDMI_drc_pwropted.rpt"/>
   <File Type="PWROPT-TIMING" Name="top_ddr3_GEBT_HDMI_timing_summary_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="top_ddr3_GEBT_HDMI_placed.dcp"/>
@@ -65,35 +66,7 @@
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/ip/fifo_ddr3_rd_p6/fifo_ddr3_rd_p6.xci">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/ip/mult_gen_0/mult_gen_0.xci">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/ip/ram_64x8/ram_64x8.xci">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/ip/fifo_in128_o32_2048/fifo_in128_o32_2048.xci">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/ip/fifo_in32_o128/fifo_in32_o128.xci">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -129,27 +102,6 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/ip/rd_data/rd_data.xci">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/ip/cmd_fifo/cmd_fifo.xci">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/ip/wr_data/wr_data.xci">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/ip/A7_ddr3_mig/A7_ddr3_mig.xci">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -363,16 +315,33 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+    <StratHandle Name="Performance_NetDelay_low" Flow="Vivado Implementation 2018">
+      <Desc>To compensate for optimistic delay estimation, add extra delay cost to long distance and high fanout connections. low setting, least pessimistic)</Desc>
+    </StratHandle>
     <Step Id="init_design"/>
-    <Step Id="opt_design"/>
+    <Step Id="opt_design">
+      <Option Id="Directive">0</Option>
+    </Step>
     <Step Id="power_opt_design"/>
-    <Step Id="place_design"/>
+    <Step Id="place_design">
+      <Option Id="Directive">3</Option>
+    </Step>
     <Step Id="post_place_power_opt_design"/>
-    <Step Id="phys_opt_design"/>
-    <Step Id="route_design"/>
+    <Step Id="phys_opt_design" EnableStepBool="1">
+      <Option Id="Directive">2</Option>
+    </Step>
+    <Step Id="route_design">
+      <Option Id="Directive">1</Option>
+    </Step>
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="fifo_in128_o32_2048"/>
   <BlockFileSet Type="BlockSrcs" Name="ram_2048x8"/>
+  <BlockFileSet Type="BlockSrcs" Name="wr_data"/>
+  <BlockFileSet Type="BlockSrcs" Name="A7_ddr3_mig"/>
+  <BlockFileSet Type="BlockSrcs" Name="cmd_fifo"/>
+  <BlockFileSet Type="BlockSrcs" Name="fifo_in32_o128"/>
+  <BlockFileSet Type="BlockSrcs" Name="fifo_ddr3_rd_p6"/>
+  <BlockFileSet Type="BlockSrcs" Name="mult_gen_0"/>
 </GenRun>

@@ -1,10 +1,10 @@
--- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
--- Date        : Tue Mar 20 16:19:16 2018
--- Host        : DESKTOP-QCQQL32 running 64-bit major release  (build 9200)
+-- Tool Version: Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+-- Date        : Mon May  7 20:38:04 2018
+-- Host        : DESKTOP-JPATCP2 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
---               C:/Users/wym/Desktop/DDR3_HDMI/project_1/project_1.srcs/sources_1/ip/wr_data/wr_data_sim_netlist.vhdl
+--               F:/FPGA_VIVADO/FPGA_GBET/project_1/project_1.srcs/sources_1/ip/wr_data/wr_data_sim_netlist.vhdl
 -- Design      : wr_data
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -59,28 +59,41 @@ architecture STRUCTURE of wr_data_xpm_cdc_gray is
   signal gray_enc : STD_LOGIC_VECTOR ( 4 downto 0 );
   attribute ASYNC_REG_boolean : boolean;
   attribute ASYNC_REG_boolean of \dest_graysync_ff_reg[0][0]\ : label is std.standard.true;
+  attribute KEEP : string;
+  attribute KEEP of \dest_graysync_ff_reg[0][0]\ : label is "true";
   attribute XPM_CDC of \dest_graysync_ff_reg[0][0]\ : label is "GRAY";
   attribute ASYNC_REG_boolean of \dest_graysync_ff_reg[0][1]\ : label is std.standard.true;
+  attribute KEEP of \dest_graysync_ff_reg[0][1]\ : label is "true";
   attribute XPM_CDC of \dest_graysync_ff_reg[0][1]\ : label is "GRAY";
   attribute ASYNC_REG_boolean of \dest_graysync_ff_reg[0][2]\ : label is std.standard.true;
+  attribute KEEP of \dest_graysync_ff_reg[0][2]\ : label is "true";
   attribute XPM_CDC of \dest_graysync_ff_reg[0][2]\ : label is "GRAY";
   attribute ASYNC_REG_boolean of \dest_graysync_ff_reg[0][3]\ : label is std.standard.true;
+  attribute KEEP of \dest_graysync_ff_reg[0][3]\ : label is "true";
   attribute XPM_CDC of \dest_graysync_ff_reg[0][3]\ : label is "GRAY";
   attribute ASYNC_REG_boolean of \dest_graysync_ff_reg[0][4]\ : label is std.standard.true;
+  attribute KEEP of \dest_graysync_ff_reg[0][4]\ : label is "true";
   attribute XPM_CDC of \dest_graysync_ff_reg[0][4]\ : label is "GRAY";
   attribute ASYNC_REG_boolean of \dest_graysync_ff_reg[0][5]\ : label is std.standard.true;
+  attribute KEEP of \dest_graysync_ff_reg[0][5]\ : label is "true";
   attribute XPM_CDC of \dest_graysync_ff_reg[0][5]\ : label is "GRAY";
   attribute ASYNC_REG_boolean of \dest_graysync_ff_reg[1][0]\ : label is std.standard.true;
+  attribute KEEP of \dest_graysync_ff_reg[1][0]\ : label is "true";
   attribute XPM_CDC of \dest_graysync_ff_reg[1][0]\ : label is "GRAY";
   attribute ASYNC_REG_boolean of \dest_graysync_ff_reg[1][1]\ : label is std.standard.true;
+  attribute KEEP of \dest_graysync_ff_reg[1][1]\ : label is "true";
   attribute XPM_CDC of \dest_graysync_ff_reg[1][1]\ : label is "GRAY";
   attribute ASYNC_REG_boolean of \dest_graysync_ff_reg[1][2]\ : label is std.standard.true;
+  attribute KEEP of \dest_graysync_ff_reg[1][2]\ : label is "true";
   attribute XPM_CDC of \dest_graysync_ff_reg[1][2]\ : label is "GRAY";
   attribute ASYNC_REG_boolean of \dest_graysync_ff_reg[1][3]\ : label is std.standard.true;
+  attribute KEEP of \dest_graysync_ff_reg[1][3]\ : label is "true";
   attribute XPM_CDC of \dest_graysync_ff_reg[1][3]\ : label is "GRAY";
   attribute ASYNC_REG_boolean of \dest_graysync_ff_reg[1][4]\ : label is std.standard.true;
+  attribute KEEP of \dest_graysync_ff_reg[1][4]\ : label is "true";
   attribute XPM_CDC of \dest_graysync_ff_reg[1][4]\ : label is "GRAY";
   attribute ASYNC_REG_boolean of \dest_graysync_ff_reg[1][5]\ : label is std.standard.true;
+  attribute KEEP of \dest_graysync_ff_reg[1][5]\ : label is "true";
   attribute XPM_CDC of \dest_graysync_ff_reg[1][5]\ : label is "GRAY";
   attribute SOFT_HLUTNM : string;
   attribute SOFT_HLUTNM of \src_gray_ff[0]_i_1\ : label is "soft_lutpair2";
@@ -189,12 +202,12 @@ begin
       INIT => X"6996966996696996"
     )
         port map (
-      I0 => \dest_graysync_ff[1]\(4),
-      I1 => \dest_graysync_ff[1]\(5),
-      I2 => \dest_graysync_ff[1]\(1),
-      I3 => \dest_graysync_ff[1]\(0),
+      I0 => \dest_graysync_ff[1]\(0),
+      I1 => \dest_graysync_ff[1]\(2),
+      I2 => \dest_graysync_ff[1]\(4),
+      I3 => \dest_graysync_ff[1]\(5),
       I4 => \dest_graysync_ff[1]\(3),
-      I5 => \dest_graysync_ff[1]\(2),
+      I5 => \dest_graysync_ff[1]\(1),
       O => binval(0)
     );
 \dest_out_bin_ff[1]_i_1\: unisim.vcomponents.LUT5
@@ -202,11 +215,11 @@ begin
       INIT => X"96696996"
     )
         port map (
-      I0 => \dest_graysync_ff[1]\(5),
-      I1 => \dest_graysync_ff[1]\(2),
-      I2 => \dest_graysync_ff[1]\(1),
+      I0 => \dest_graysync_ff[1]\(1),
+      I1 => \dest_graysync_ff[1]\(3),
+      I2 => \dest_graysync_ff[1]\(5),
       I3 => \dest_graysync_ff[1]\(4),
-      I4 => \dest_graysync_ff[1]\(3),
+      I4 => \dest_graysync_ff[1]\(2),
       O => binval(1)
     );
 \dest_out_bin_ff[2]_i_1\: unisim.vcomponents.LUT4
@@ -214,9 +227,9 @@ begin
       INIT => X"6996"
     )
         port map (
-      I0 => \dest_graysync_ff[1]\(4),
-      I1 => \dest_graysync_ff[1]\(5),
-      I2 => \dest_graysync_ff[1]\(2),
+      I0 => \dest_graysync_ff[1]\(2),
+      I1 => \dest_graysync_ff[1]\(4),
+      I2 => \dest_graysync_ff[1]\(5),
       I3 => \dest_graysync_ff[1]\(3),
       O => binval(2)
     );
@@ -225,8 +238,8 @@ begin
       INIT => X"96"
     )
         port map (
-      I0 => \dest_graysync_ff[1]\(5),
-      I1 => \dest_graysync_ff[1]\(3),
+      I0 => \dest_graysync_ff[1]\(3),
+      I1 => \dest_graysync_ff[1]\(5),
       I2 => \dest_graysync_ff[1]\(4),
       O => binval(3)
     );
@@ -235,8 +248,8 @@ begin
       INIT => X"6"
     )
         port map (
-      I0 => \dest_graysync_ff[1]\(5),
-      I1 => \dest_graysync_ff[1]\(4),
+      I0 => \dest_graysync_ff[1]\(4),
+      I1 => \dest_graysync_ff[1]\(5),
       O => binval(4)
     );
 \dest_out_bin_ff_reg[0]\: unisim.vcomponents.FDRE
@@ -292,8 +305,8 @@ begin
       INIT => X"6"
     )
         port map (
-      I0 => src_in_bin(0),
-      I1 => src_in_bin(1),
+      I0 => src_in_bin(1),
+      I1 => src_in_bin(0),
       O => gray_enc(0)
     );
 \src_gray_ff[1]_i_1\: unisim.vcomponents.LUT2
@@ -301,8 +314,8 @@ begin
       INIT => X"6"
     )
         port map (
-      I0 => src_in_bin(1),
-      I1 => src_in_bin(2),
+      I0 => src_in_bin(2),
+      I1 => src_in_bin(1),
       O => gray_enc(1)
     );
 \src_gray_ff[2]_i_1\: unisim.vcomponents.LUT2
@@ -310,8 +323,8 @@ begin
       INIT => X"6"
     )
         port map (
-      I0 => src_in_bin(2),
-      I1 => src_in_bin(3),
+      I0 => src_in_bin(3),
+      I1 => src_in_bin(2),
       O => gray_enc(2)
     );
 \src_gray_ff[3]_i_1\: unisim.vcomponents.LUT2
@@ -319,8 +332,8 @@ begin
       INIT => X"6"
     )
         port map (
-      I0 => src_in_bin(3),
-      I1 => src_in_bin(4),
+      I0 => src_in_bin(4),
+      I1 => src_in_bin(3),
       O => gray_enc(3)
     );
 \src_gray_ff[4]_i_1\: unisim.vcomponents.LUT2
@@ -328,8 +341,8 @@ begin
       INIT => X"6"
     )
         port map (
-      I0 => src_in_bin(4),
-      I1 => src_in_bin(5),
+      I0 => src_in_bin(5),
+      I1 => src_in_bin(4),
       O => gray_enc(4)
     );
 \src_gray_ff_reg[0]\: unisim.vcomponents.FDRE
@@ -430,28 +443,41 @@ architecture STRUCTURE of \wr_data_xpm_cdc_gray__1\ is
   signal gray_enc : STD_LOGIC_VECTOR ( 4 downto 0 );
   attribute ASYNC_REG_boolean : boolean;
   attribute ASYNC_REG_boolean of \dest_graysync_ff_reg[0][0]\ : label is std.standard.true;
+  attribute KEEP : string;
+  attribute KEEP of \dest_graysync_ff_reg[0][0]\ : label is "true";
   attribute XPM_CDC of \dest_graysync_ff_reg[0][0]\ : label is "GRAY";
   attribute ASYNC_REG_boolean of \dest_graysync_ff_reg[0][1]\ : label is std.standard.true;
+  attribute KEEP of \dest_graysync_ff_reg[0][1]\ : label is "true";
   attribute XPM_CDC of \dest_graysync_ff_reg[0][1]\ : label is "GRAY";
   attribute ASYNC_REG_boolean of \dest_graysync_ff_reg[0][2]\ : label is std.standard.true;
+  attribute KEEP of \dest_graysync_ff_reg[0][2]\ : label is "true";
   attribute XPM_CDC of \dest_graysync_ff_reg[0][2]\ : label is "GRAY";
   attribute ASYNC_REG_boolean of \dest_graysync_ff_reg[0][3]\ : label is std.standard.true;
+  attribute KEEP of \dest_graysync_ff_reg[0][3]\ : label is "true";
   attribute XPM_CDC of \dest_graysync_ff_reg[0][3]\ : label is "GRAY";
   attribute ASYNC_REG_boolean of \dest_graysync_ff_reg[0][4]\ : label is std.standard.true;
+  attribute KEEP of \dest_graysync_ff_reg[0][4]\ : label is "true";
   attribute XPM_CDC of \dest_graysync_ff_reg[0][4]\ : label is "GRAY";
   attribute ASYNC_REG_boolean of \dest_graysync_ff_reg[0][5]\ : label is std.standard.true;
+  attribute KEEP of \dest_graysync_ff_reg[0][5]\ : label is "true";
   attribute XPM_CDC of \dest_graysync_ff_reg[0][5]\ : label is "GRAY";
   attribute ASYNC_REG_boolean of \dest_graysync_ff_reg[1][0]\ : label is std.standard.true;
+  attribute KEEP of \dest_graysync_ff_reg[1][0]\ : label is "true";
   attribute XPM_CDC of \dest_graysync_ff_reg[1][0]\ : label is "GRAY";
   attribute ASYNC_REG_boolean of \dest_graysync_ff_reg[1][1]\ : label is std.standard.true;
+  attribute KEEP of \dest_graysync_ff_reg[1][1]\ : label is "true";
   attribute XPM_CDC of \dest_graysync_ff_reg[1][1]\ : label is "GRAY";
   attribute ASYNC_REG_boolean of \dest_graysync_ff_reg[1][2]\ : label is std.standard.true;
+  attribute KEEP of \dest_graysync_ff_reg[1][2]\ : label is "true";
   attribute XPM_CDC of \dest_graysync_ff_reg[1][2]\ : label is "GRAY";
   attribute ASYNC_REG_boolean of \dest_graysync_ff_reg[1][3]\ : label is std.standard.true;
+  attribute KEEP of \dest_graysync_ff_reg[1][3]\ : label is "true";
   attribute XPM_CDC of \dest_graysync_ff_reg[1][3]\ : label is "GRAY";
   attribute ASYNC_REG_boolean of \dest_graysync_ff_reg[1][4]\ : label is std.standard.true;
+  attribute KEEP of \dest_graysync_ff_reg[1][4]\ : label is "true";
   attribute XPM_CDC of \dest_graysync_ff_reg[1][4]\ : label is "GRAY";
   attribute ASYNC_REG_boolean of \dest_graysync_ff_reg[1][5]\ : label is std.standard.true;
+  attribute KEEP of \dest_graysync_ff_reg[1][5]\ : label is "true";
   attribute XPM_CDC of \dest_graysync_ff_reg[1][5]\ : label is "GRAY";
   attribute SOFT_HLUTNM : string;
   attribute SOFT_HLUTNM of \src_gray_ff[0]_i_1\ : label is "soft_lutpair0";
@@ -560,12 +586,12 @@ begin
       INIT => X"6996966996696996"
     )
         port map (
-      I0 => \dest_graysync_ff[1]\(4),
-      I1 => \dest_graysync_ff[1]\(5),
-      I2 => \dest_graysync_ff[1]\(1),
-      I3 => \dest_graysync_ff[1]\(0),
+      I0 => \dest_graysync_ff[1]\(0),
+      I1 => \dest_graysync_ff[1]\(2),
+      I2 => \dest_graysync_ff[1]\(4),
+      I3 => \dest_graysync_ff[1]\(5),
       I4 => \dest_graysync_ff[1]\(3),
-      I5 => \dest_graysync_ff[1]\(2),
+      I5 => \dest_graysync_ff[1]\(1),
       O => binval(0)
     );
 \dest_out_bin_ff[1]_i_1\: unisim.vcomponents.LUT5
@@ -573,11 +599,11 @@ begin
       INIT => X"96696996"
     )
         port map (
-      I0 => \dest_graysync_ff[1]\(5),
-      I1 => \dest_graysync_ff[1]\(2),
-      I2 => \dest_graysync_ff[1]\(1),
+      I0 => \dest_graysync_ff[1]\(1),
+      I1 => \dest_graysync_ff[1]\(3),
+      I2 => \dest_graysync_ff[1]\(5),
       I3 => \dest_graysync_ff[1]\(4),
-      I4 => \dest_graysync_ff[1]\(3),
+      I4 => \dest_graysync_ff[1]\(2),
       O => binval(1)
     );
 \dest_out_bin_ff[2]_i_1\: unisim.vcomponents.LUT4
@@ -585,9 +611,9 @@ begin
       INIT => X"6996"
     )
         port map (
-      I0 => \dest_graysync_ff[1]\(4),
-      I1 => \dest_graysync_ff[1]\(5),
-      I2 => \dest_graysync_ff[1]\(2),
+      I0 => \dest_graysync_ff[1]\(2),
+      I1 => \dest_graysync_ff[1]\(4),
+      I2 => \dest_graysync_ff[1]\(5),
       I3 => \dest_graysync_ff[1]\(3),
       O => binval(2)
     );
@@ -596,8 +622,8 @@ begin
       INIT => X"96"
     )
         port map (
-      I0 => \dest_graysync_ff[1]\(5),
-      I1 => \dest_graysync_ff[1]\(3),
+      I0 => \dest_graysync_ff[1]\(3),
+      I1 => \dest_graysync_ff[1]\(5),
       I2 => \dest_graysync_ff[1]\(4),
       O => binval(3)
     );
@@ -606,8 +632,8 @@ begin
       INIT => X"6"
     )
         port map (
-      I0 => \dest_graysync_ff[1]\(5),
-      I1 => \dest_graysync_ff[1]\(4),
+      I0 => \dest_graysync_ff[1]\(4),
+      I1 => \dest_graysync_ff[1]\(5),
       O => binval(4)
     );
 \dest_out_bin_ff_reg[0]\: unisim.vcomponents.FDRE
@@ -663,8 +689,8 @@ begin
       INIT => X"6"
     )
         port map (
-      I0 => src_in_bin(0),
-      I1 => src_in_bin(1),
+      I0 => src_in_bin(1),
+      I1 => src_in_bin(0),
       O => gray_enc(0)
     );
 \src_gray_ff[1]_i_1\: unisim.vcomponents.LUT2
@@ -672,8 +698,8 @@ begin
       INIT => X"6"
     )
         port map (
-      I0 => src_in_bin(1),
-      I1 => src_in_bin(2),
+      I0 => src_in_bin(2),
+      I1 => src_in_bin(1),
       O => gray_enc(1)
     );
 \src_gray_ff[2]_i_1\: unisim.vcomponents.LUT2
@@ -681,8 +707,8 @@ begin
       INIT => X"6"
     )
         port map (
-      I0 => src_in_bin(2),
-      I1 => src_in_bin(3),
+      I0 => src_in_bin(3),
+      I1 => src_in_bin(2),
       O => gray_enc(2)
     );
 \src_gray_ff[3]_i_1\: unisim.vcomponents.LUT2
@@ -690,8 +716,8 @@ begin
       INIT => X"6"
     )
         port map (
-      I0 => src_in_bin(3),
-      I1 => src_in_bin(4),
+      I0 => src_in_bin(4),
+      I1 => src_in_bin(3),
       O => gray_enc(3)
     );
 \src_gray_ff[4]_i_1\: unisim.vcomponents.LUT2
@@ -699,8 +725,8 @@ begin
       INIT => X"6"
     )
         port map (
-      I0 => src_in_bin(4),
-      I1 => src_in_bin(5),
+      I0 => src_in_bin(5),
+      I1 => src_in_bin(4),
       O => gray_enc(4)
     );
 \src_gray_ff_reg[0]\: unisim.vcomponents.FDRE
@@ -761,10 +787,10 @@ entity wr_data_blk_mem_gen_prim_wrapper is
     D : out STD_LOGIC_VECTOR ( 71 downto 0 );
     rd_clk : in STD_LOGIC;
     wr_clk : in STD_LOGIC;
-    \gpregsm1.curr_fwft_state_reg[0]\ : in STD_LOGIC;
+    ram_rd_en_i : in STD_LOGIC;
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
-    \gc0.count_d1_reg[5]\ : in STD_LOGIC_VECTOR ( 5 downto 0 );
     Q : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    \gic0.gc0.count_d2_reg[5]\ : in STD_LOGIC_VECTOR ( 5 downto 0 );
     din : in STD_LOGIC_VECTOR ( 71 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
@@ -961,10 +987,10 @@ begin
     )
         port map (
       ADDRARDADDR(15 downto 12) => B"1000",
-      ADDRARDADDR(11 downto 6) => \gc0.count_d1_reg[5]\(5 downto 0),
+      ADDRARDADDR(11 downto 6) => Q(5 downto 0),
       ADDRARDADDR(5 downto 0) => B"111111",
       ADDRBWRADDR(15 downto 12) => B"1000",
-      ADDRBWRADDR(11 downto 6) => Q(5 downto 0),
+      ADDRBWRADDR(11 downto 6) => \gic0.gc0.count_d2_reg[5]\(5 downto 0),
       ADDRBWRADDR(5 downto 0) => B"111111",
       CASCADEINA => '0',
       CASCADEINB => '0',
@@ -1006,7 +1032,7 @@ begin
       DOPBDOP(1) => D(53),
       DOPBDOP(0) => D(44),
       ECCPARITY(7 downto 0) => \NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_ECCPARITY_UNCONNECTED\(7 downto 0),
-      ENARDEN => \gpregsm1.curr_fwft_state_reg[0]\,
+      ENARDEN => ram_rd_en_i,
       ENBWREN => E(0),
       INJECTDBITERR => '0',
       INJECTSBITERR => '0',
@@ -1038,10 +1064,10 @@ entity \wr_data_blk_mem_gen_prim_wrapper__parameterized0\ is
     D : out STD_LOGIC_VECTOR ( 71 downto 0 );
     rd_clk : in STD_LOGIC;
     wr_clk : in STD_LOGIC;
-    \gpregsm1.curr_fwft_state_reg[0]\ : in STD_LOGIC;
+    ram_rd_en_i : in STD_LOGIC;
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
-    \gc0.count_d1_reg[5]\ : in STD_LOGIC_VECTOR ( 5 downto 0 );
     Q : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    \gic0.gc0.count_d2_reg[5]\ : in STD_LOGIC_VECTOR ( 5 downto 0 );
     din : in STD_LOGIC_VECTOR ( 71 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
@@ -1238,10 +1264,10 @@ begin
     )
         port map (
       ADDRARDADDR(15 downto 12) => B"1000",
-      ADDRARDADDR(11 downto 6) => \gc0.count_d1_reg[5]\(5 downto 0),
+      ADDRARDADDR(11 downto 6) => Q(5 downto 0),
       ADDRARDADDR(5 downto 0) => B"111111",
       ADDRBWRADDR(15 downto 12) => B"1000",
-      ADDRBWRADDR(11 downto 6) => Q(5 downto 0),
+      ADDRBWRADDR(11 downto 6) => \gic0.gc0.count_d2_reg[5]\(5 downto 0),
       ADDRBWRADDR(5 downto 0) => B"111111",
       CASCADEINA => '0',
       CASCADEINB => '0',
@@ -1283,7 +1309,7 @@ begin
       DOPBDOP(1) => D(53),
       DOPBDOP(0) => D(44),
       ECCPARITY(7 downto 0) => \NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_ECCPARITY_UNCONNECTED\(7 downto 0),
-      ENARDEN => \gpregsm1.curr_fwft_state_reg[0]\,
+      ENARDEN => ram_rd_en_i,
       ENBWREN => E(0),
       INJECTDBITERR => '0',
       INJECTSBITERR => '0',
@@ -1312,8 +1338,9 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity wr_data_rd_bin_cntr is
   port (
+    comp1 : out STD_LOGIC;
     Q : out STD_LOGIC_VECTOR ( 5 downto 0 );
-    \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram\ : out STD_LOGIC_VECTOR ( 5 downto 0 );
+    WR_PNTR_RD : in STD_LOGIC_VECTOR ( 5 downto 0 );
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
     rd_clk : in STD_LOGIC
   );
@@ -1322,21 +1349,22 @@ entity wr_data_rd_bin_cntr is
 end wr_data_rd_bin_cntr;
 
 architecture STRUCTURE of wr_data_rd_bin_cntr is
-  signal \^q\ : STD_LOGIC_VECTOR ( 5 downto 0 );
   signal plusOp : STD_LOGIC_VECTOR ( 5 downto 0 );
+  signal ram_empty_i_i_6_n_0 : STD_LOGIC;
+  signal ram_empty_i_i_7_n_0 : STD_LOGIC;
+  signal rd_pntr_plus1 : STD_LOGIC_VECTOR ( 5 downto 0 );
   attribute SOFT_HLUTNM : string;
   attribute SOFT_HLUTNM of \gc0.count[1]_i_1\ : label is "soft_lutpair5";
   attribute SOFT_HLUTNM of \gc0.count[2]_i_1\ : label is "soft_lutpair5";
   attribute SOFT_HLUTNM of \gc0.count[3]_i_1\ : label is "soft_lutpair4";
   attribute SOFT_HLUTNM of \gc0.count[4]_i_1\ : label is "soft_lutpair4";
 begin
-  Q(5 downto 0) <= \^q\(5 downto 0);
 \gc0.count[0]_i_1\: unisim.vcomponents.LUT1
     generic map(
       INIT => X"1"
     )
         port map (
-      I0 => \^q\(0),
+      I0 => rd_pntr_plus1(0),
       O => plusOp(0)
     );
 \gc0.count[1]_i_1\: unisim.vcomponents.LUT2
@@ -1344,8 +1372,8 @@ begin
       INIT => X"6"
     )
         port map (
-      I0 => \^q\(0),
-      I1 => \^q\(1),
+      I0 => rd_pntr_plus1(0),
+      I1 => rd_pntr_plus1(1),
       O => plusOp(1)
     );
 \gc0.count[2]_i_1\: unisim.vcomponents.LUT3
@@ -1353,9 +1381,9 @@ begin
       INIT => X"78"
     )
         port map (
-      I0 => \^q\(0),
-      I1 => \^q\(1),
-      I2 => \^q\(2),
+      I0 => rd_pntr_plus1(0),
+      I1 => rd_pntr_plus1(1),
+      I2 => rd_pntr_plus1(2),
       O => plusOp(2)
     );
 \gc0.count[3]_i_1\: unisim.vcomponents.LUT4
@@ -1363,10 +1391,10 @@ begin
       INIT => X"7F80"
     )
         port map (
-      I0 => \^q\(1),
-      I1 => \^q\(0),
-      I2 => \^q\(2),
-      I3 => \^q\(3),
+      I0 => rd_pntr_plus1(1),
+      I1 => rd_pntr_plus1(0),
+      I2 => rd_pntr_plus1(2),
+      I3 => rd_pntr_plus1(3),
       O => plusOp(3)
     );
 \gc0.count[4]_i_1\: unisim.vcomponents.LUT5
@@ -1374,11 +1402,11 @@ begin
       INIT => X"7FFF8000"
     )
         port map (
-      I0 => \^q\(2),
-      I1 => \^q\(0),
-      I2 => \^q\(1),
-      I3 => \^q\(3),
-      I4 => \^q\(4),
+      I0 => rd_pntr_plus1(2),
+      I1 => rd_pntr_plus1(0),
+      I2 => rd_pntr_plus1(1),
+      I3 => rd_pntr_plus1(3),
+      I4 => rd_pntr_plus1(4),
       O => plusOp(4)
     );
 \gc0.count[5]_i_1\: unisim.vcomponents.LUT6
@@ -1386,12 +1414,12 @@ begin
       INIT => X"7FFFFFFF80000000"
     )
         port map (
-      I0 => \^q\(3),
-      I1 => \^q\(1),
-      I2 => \^q\(0),
-      I3 => \^q\(2),
-      I4 => \^q\(4),
-      I5 => \^q\(5),
+      I0 => rd_pntr_plus1(3),
+      I1 => rd_pntr_plus1(1),
+      I2 => rd_pntr_plus1(0),
+      I3 => rd_pntr_plus1(2),
+      I4 => rd_pntr_plus1(4),
+      I5 => rd_pntr_plus1(5),
       O => plusOp(5)
     );
 \gc0.count_d1_reg[0]\: unisim.vcomponents.FDRE
@@ -1401,8 +1429,8 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      D => \^q\(0),
-      Q => \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram\(0),
+      D => rd_pntr_plus1(0),
+      Q => Q(0),
       R => '0'
     );
 \gc0.count_d1_reg[1]\: unisim.vcomponents.FDRE
@@ -1412,8 +1440,8 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      D => \^q\(1),
-      Q => \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram\(1),
+      D => rd_pntr_plus1(1),
+      Q => Q(1),
       R => '0'
     );
 \gc0.count_d1_reg[2]\: unisim.vcomponents.FDRE
@@ -1423,8 +1451,8 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      D => \^q\(2),
-      Q => \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram\(2),
+      D => rd_pntr_plus1(2),
+      Q => Q(2),
       R => '0'
     );
 \gc0.count_d1_reg[3]\: unisim.vcomponents.FDRE
@@ -1434,8 +1462,8 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      D => \^q\(3),
-      Q => \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram\(3),
+      D => rd_pntr_plus1(3),
+      Q => Q(3),
       R => '0'
     );
 \gc0.count_d1_reg[4]\: unisim.vcomponents.FDRE
@@ -1445,8 +1473,8 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      D => \^q\(4),
-      Q => \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram\(4),
+      D => rd_pntr_plus1(4),
+      Q => Q(4),
       R => '0'
     );
 \gc0.count_d1_reg[5]\: unisim.vcomponents.FDRE
@@ -1456,8 +1484,8 @@ begin
         port map (
       C => rd_clk,
       CE => E(0),
-      D => \^q\(5),
-      Q => \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram\(5),
+      D => rd_pntr_plus1(5),
+      Q => Q(5),
       R => '0'
     );
 \gc0.count_reg[0]\: unisim.vcomponents.FDRE
@@ -1468,7 +1496,7 @@ begin
       C => rd_clk,
       CE => E(0),
       D => plusOp(0),
-      Q => \^q\(0),
+      Q => rd_pntr_plus1(0),
       R => '0'
     );
 \gc0.count_reg[1]\: unisim.vcomponents.FDRE
@@ -1479,7 +1507,7 @@ begin
       C => rd_clk,
       CE => E(0),
       D => plusOp(1),
-      Q => \^q\(1),
+      Q => rd_pntr_plus1(1),
       R => '0'
     );
 \gc0.count_reg[2]\: unisim.vcomponents.FDRE
@@ -1490,7 +1518,7 @@ begin
       C => rd_clk,
       CE => E(0),
       D => plusOp(2),
-      Q => \^q\(2),
+      Q => rd_pntr_plus1(2),
       R => '0'
     );
 \gc0.count_reg[3]\: unisim.vcomponents.FDRE
@@ -1501,7 +1529,7 @@ begin
       C => rd_clk,
       CE => E(0),
       D => plusOp(3),
-      Q => \^q\(3),
+      Q => rd_pntr_plus1(3),
       R => '0'
     );
 \gc0.count_reg[4]\: unisim.vcomponents.FDRE
@@ -1512,7 +1540,7 @@ begin
       C => rd_clk,
       CE => E(0),
       D => plusOp(4),
-      Q => \^q\(4),
+      Q => rd_pntr_plus1(4),
       R => '0'
     );
 \gc0.count_reg[5]\: unisim.vcomponents.FDRE
@@ -1523,8 +1551,43 @@ begin
       C => rd_clk,
       CE => E(0),
       D => plusOp(5),
-      Q => \^q\(5),
+      Q => rd_pntr_plus1(5),
       R => '0'
+    );
+ram_empty_i_i_4: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"9009000000000000"
+    )
+        port map (
+      I0 => WR_PNTR_RD(1),
+      I1 => rd_pntr_plus1(1),
+      I2 => WR_PNTR_RD(0),
+      I3 => rd_pntr_plus1(0),
+      I4 => ram_empty_i_i_6_n_0,
+      I5 => ram_empty_i_i_7_n_0,
+      O => comp1
+    );
+ram_empty_i_i_6: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"9009"
+    )
+        port map (
+      I0 => rd_pntr_plus1(4),
+      I1 => WR_PNTR_RD(4),
+      I2 => rd_pntr_plus1(5),
+      I3 => WR_PNTR_RD(5),
+      O => ram_empty_i_i_6_n_0
+    );
+ram_empty_i_i_7: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"9009"
+    )
+        port map (
+      I0 => rd_pntr_plus1(2),
+      I1 => WR_PNTR_RD(2),
+      I2 => rd_pntr_plus1(3),
+      I3 => WR_PNTR_RD(3),
+      O => ram_empty_i_i_7_n_0
     );
 end STRUCTURE;
 library IEEE;
@@ -1652,7 +1715,7 @@ use UNISIM.VCOMPONENTS.ALL;
 entity wr_data_rd_fwft is
   port (
     empty : out STD_LOGIC;
-    \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram\ : out STD_LOGIC;
+    ram_rd_en_i : out STD_LOGIC;
     E : out STD_LOGIC_VECTOR ( 0 to 0 );
     \gc0.count_reg[5]\ : out STD_LOGIC_VECTOR ( 0 to 0 );
     rd_clk : in STD_LOGIC;
@@ -1720,7 +1783,7 @@ begin
       I1 => curr_fwft_state(1),
       I2 => rd_en,
       I3 => \out\,
-      O => \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram\
+      O => ram_rd_en_i
     );
 aempty_fwft_fb_i_i_1: unisim.vcomponents.LUT5
     generic map(
@@ -1894,7 +1957,7 @@ use UNISIM.VCOMPONENTS.ALL;
 entity wr_data_rd_status_flags_as is
   port (
     \out\ : out STD_LOGIC;
-    \dest_out_bin_ff_reg[4]\ : in STD_LOGIC;
+    \dest_out_bin_ff_reg[0]\ : in STD_LOGIC;
     rd_clk : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
@@ -1924,7 +1987,7 @@ ram_empty_fb_i_reg: unisim.vcomponents.FDRE
         port map (
       C => rd_clk,
       CE => '1',
-      D => \dest_out_bin_ff_reg[4]\,
+      D => \dest_out_bin_ff_reg[0]\,
       Q => ram_empty_fb_i,
       R => '0'
     );
@@ -1935,7 +1998,7 @@ ram_empty_i_reg: unisim.vcomponents.FDRE
         port map (
       C => rd_clk,
       CE => '1',
-      D => \dest_out_bin_ff_reg[4]\,
+      D => \dest_out_bin_ff_reg[0]\,
       Q => ram_empty_i,
       R => '0'
     );
@@ -1950,7 +2013,7 @@ entity wr_data_wr_bin_cntr is
     Q : out STD_LOGIC_VECTOR ( 5 downto 0 );
     S : out STD_LOGIC_VECTOR ( 3 downto 0 );
     \gic0.gc0.count_d1_reg[5]_0\ : out STD_LOGIC_VECTOR ( 5 downto 0 );
-    ram_full_fb_i_reg : out STD_LOGIC;
+    \gic0.gc0.count_d2_reg[5]_0\ : out STD_LOGIC_VECTOR ( 5 downto 0 );
     RD_PNTR_WR : in STD_LOGIC_VECTOR ( 5 downto 0 );
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
     wr_clk : in STD_LOGIC
@@ -1962,10 +2025,8 @@ end wr_data_wr_bin_cntr;
 architecture STRUCTURE of wr_data_wr_bin_cntr is
   signal \^q\ : STD_LOGIC_VECTOR ( 5 downto 0 );
   signal \^gic0.gc0.count_d1_reg[5]_0\ : STD_LOGIC_VECTOR ( 5 downto 0 );
-  signal p_13_out : STD_LOGIC_VECTOR ( 5 downto 0 );
+  signal \^gic0.gc0.count_d2_reg[5]_0\ : STD_LOGIC_VECTOR ( 5 downto 0 );
   signal \plusOp__0\ : STD_LOGIC_VECTOR ( 5 downto 0 );
-  signal ram_full_i_i_5_n_0 : STD_LOGIC;
-  signal ram_full_i_i_6_n_0 : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
   attribute SOFT_HLUTNM of \gic0.gc0.count[1]_i_1\ : label is "soft_lutpair7";
   attribute SOFT_HLUTNM of \gic0.gc0.count[2]_i_1\ : label is "soft_lutpair7";
@@ -1974,6 +2035,7 @@ architecture STRUCTURE of wr_data_wr_bin_cntr is
 begin
   Q(5 downto 0) <= \^q\(5 downto 0);
   \gic0.gc0.count_d1_reg[5]_0\(5 downto 0) <= \^gic0.gc0.count_d1_reg[5]_0\(5 downto 0);
+  \gic0.gc0.count_d2_reg[5]_0\(5 downto 0) <= \^gic0.gc0.count_d2_reg[5]_0\(5 downto 0);
 \gic0.gc0.count[0]_i_1\: unisim.vcomponents.LUT1
     generic map(
       INIT => X"1"
@@ -2045,7 +2107,7 @@ begin
       C => wr_clk,
       CE => E(0),
       D => \^gic0.gc0.count_d1_reg[5]_0\(0),
-      Q => p_13_out(0),
+      Q => \^gic0.gc0.count_d2_reg[5]_0\(0),
       R => '0'
     );
 \gic0.gc0.count_d1_reg[1]\: unisim.vcomponents.FDRE
@@ -2056,7 +2118,7 @@ begin
       C => wr_clk,
       CE => E(0),
       D => \^gic0.gc0.count_d1_reg[5]_0\(1),
-      Q => p_13_out(1),
+      Q => \^gic0.gc0.count_d2_reg[5]_0\(1),
       R => '0'
     );
 \gic0.gc0.count_d1_reg[2]\: unisim.vcomponents.FDRE
@@ -2067,7 +2129,7 @@ begin
       C => wr_clk,
       CE => E(0),
       D => \^gic0.gc0.count_d1_reg[5]_0\(2),
-      Q => p_13_out(2),
+      Q => \^gic0.gc0.count_d2_reg[5]_0\(2),
       R => '0'
     );
 \gic0.gc0.count_d1_reg[3]\: unisim.vcomponents.FDRE
@@ -2078,7 +2140,7 @@ begin
       C => wr_clk,
       CE => E(0),
       D => \^gic0.gc0.count_d1_reg[5]_0\(3),
-      Q => p_13_out(3),
+      Q => \^gic0.gc0.count_d2_reg[5]_0\(3),
       R => '0'
     );
 \gic0.gc0.count_d1_reg[4]\: unisim.vcomponents.FDRE
@@ -2089,7 +2151,7 @@ begin
       C => wr_clk,
       CE => E(0),
       D => \^gic0.gc0.count_d1_reg[5]_0\(4),
-      Q => p_13_out(4),
+      Q => \^gic0.gc0.count_d2_reg[5]_0\(4),
       R => '0'
     );
 \gic0.gc0.count_d1_reg[5]\: unisim.vcomponents.FDRE
@@ -2100,7 +2162,7 @@ begin
       C => wr_clk,
       CE => E(0),
       D => \^gic0.gc0.count_d1_reg[5]_0\(5),
-      Q => p_13_out(5),
+      Q => \^gic0.gc0.count_d2_reg[5]_0\(5),
       R => '0'
     );
 \gic0.gc0.count_d2_reg[0]\: unisim.vcomponents.FDRE
@@ -2110,7 +2172,7 @@ begin
         port map (
       C => wr_clk,
       CE => E(0),
-      D => p_13_out(0),
+      D => \^gic0.gc0.count_d2_reg[5]_0\(0),
       Q => \^q\(0),
       R => '0'
     );
@@ -2121,7 +2183,7 @@ begin
         port map (
       C => wr_clk,
       CE => E(0),
-      D => p_13_out(1),
+      D => \^gic0.gc0.count_d2_reg[5]_0\(1),
       Q => \^q\(1),
       R => '0'
     );
@@ -2132,7 +2194,7 @@ begin
         port map (
       C => wr_clk,
       CE => E(0),
-      D => p_13_out(2),
+      D => \^gic0.gc0.count_d2_reg[5]_0\(2),
       Q => \^q\(2),
       R => '0'
     );
@@ -2143,7 +2205,7 @@ begin
         port map (
       C => wr_clk,
       CE => E(0),
-      D => p_13_out(3),
+      D => \^gic0.gc0.count_d2_reg[5]_0\(3),
       Q => \^q\(3),
       R => '0'
     );
@@ -2154,7 +2216,7 @@ begin
         port map (
       C => wr_clk,
       CE => E(0),
-      D => p_13_out(4),
+      D => \^gic0.gc0.count_d2_reg[5]_0\(4),
       Q => \^q\(4),
       R => '0'
     );
@@ -2165,7 +2227,7 @@ begin
         port map (
       C => wr_clk,
       CE => E(0),
-      D => p_13_out(5),
+      D => \^gic0.gc0.count_d2_reg[5]_0\(5),
       Q => \^q\(5),
       R => '0'
     );
@@ -2235,7 +2297,7 @@ begin
       Q => \^gic0.gc0.count_d1_reg[5]_0\(5),
       R => '0'
     );
-\minusOp_carry__0_i_1\: unisim.vcomponents.LUT2
+\minusOp_carry__0_i_1__0\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"9"
     )
@@ -2271,7 +2333,7 @@ begin
       I1 => RD_PNTR_WR(2),
       O => S(2)
     );
-\minusOp_carry_i_3__0\: unisim.vcomponents.LUT2
+minusOp_carry_i_3: unisim.vcomponents.LUT2
     generic map(
       INIT => X"9"
     )
@@ -2288,41 +2350,6 @@ begin
       I0 => \^q\(0),
       I1 => RD_PNTR_WR(0),
       O => S(0)
-    );
-ram_full_i_i_3: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"8200008200000000"
-    )
-        port map (
-      I0 => ram_full_i_i_5_n_0,
-      I1 => p_13_out(0),
-      I2 => RD_PNTR_WR(0),
-      I3 => p_13_out(1),
-      I4 => RD_PNTR_WR(1),
-      I5 => ram_full_i_i_6_n_0,
-      O => ram_full_fb_i_reg
-    );
-ram_full_i_i_5: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"9009"
-    )
-        port map (
-      I0 => p_13_out(2),
-      I1 => RD_PNTR_WR(2),
-      I2 => p_13_out(3),
-      I3 => RD_PNTR_WR(3),
-      O => ram_full_i_i_5_n_0
-    );
-ram_full_i_i_6: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"9009"
-    )
-        port map (
-      I0 => p_13_out(4),
-      I1 => RD_PNTR_WR(4),
-      I2 => p_13_out(5),
-      I3 => RD_PNTR_WR(5),
-      O => ram_full_i_i_6_n_0
     );
 end STRUCTURE;
 library IEEE;
@@ -2527,10 +2554,10 @@ entity wr_data_blk_mem_gen_prim_width is
     D : out STD_LOGIC_VECTOR ( 71 downto 0 );
     rd_clk : in STD_LOGIC;
     wr_clk : in STD_LOGIC;
-    \gpregsm1.curr_fwft_state_reg[0]\ : in STD_LOGIC;
+    ram_rd_en_i : in STD_LOGIC;
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
-    \gc0.count_d1_reg[5]\ : in STD_LOGIC_VECTOR ( 5 downto 0 );
     Q : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    \gic0.gc0.count_d2_reg[5]\ : in STD_LOGIC_VECTOR ( 5 downto 0 );
     din : in STD_LOGIC_VECTOR ( 71 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
@@ -2545,8 +2572,8 @@ begin
       E(0) => E(0),
       Q(5 downto 0) => Q(5 downto 0),
       din(71 downto 0) => din(71 downto 0),
-      \gc0.count_d1_reg[5]\(5 downto 0) => \gc0.count_d1_reg[5]\(5 downto 0),
-      \gpregsm1.curr_fwft_state_reg[0]\ => \gpregsm1.curr_fwft_state_reg[0]\,
+      \gic0.gc0.count_d2_reg[5]\(5 downto 0) => \gic0.gc0.count_d2_reg[5]\(5 downto 0),
+      ram_rd_en_i => ram_rd_en_i,
       rd_clk => rd_clk,
       wr_clk => wr_clk
     );
@@ -2560,10 +2587,10 @@ entity \wr_data_blk_mem_gen_prim_width__parameterized0\ is
     D : out STD_LOGIC_VECTOR ( 71 downto 0 );
     rd_clk : in STD_LOGIC;
     wr_clk : in STD_LOGIC;
-    \gpregsm1.curr_fwft_state_reg[0]\ : in STD_LOGIC;
+    ram_rd_en_i : in STD_LOGIC;
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
-    \gc0.count_d1_reg[5]\ : in STD_LOGIC_VECTOR ( 5 downto 0 );
     Q : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    \gic0.gc0.count_d2_reg[5]\ : in STD_LOGIC_VECTOR ( 5 downto 0 );
     din : in STD_LOGIC_VECTOR ( 71 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
@@ -2578,8 +2605,8 @@ begin
       E(0) => E(0),
       Q(5 downto 0) => Q(5 downto 0),
       din(71 downto 0) => din(71 downto 0),
-      \gc0.count_d1_reg[5]\(5 downto 0) => \gc0.count_d1_reg[5]\(5 downto 0),
-      \gpregsm1.curr_fwft_state_reg[0]\ => \gpregsm1.curr_fwft_state_reg[0]\,
+      \gic0.gc0.count_d2_reg[5]\(5 downto 0) => \gic0.gc0.count_d2_reg[5]\(5 downto 0),
+      ram_rd_en_i => ram_rd_en_i,
       rd_clk => rd_clk,
       wr_clk => wr_clk
     );
@@ -2591,18 +2618,18 @@ use UNISIM.VCOMPONENTS.ALL;
 entity wr_data_clk_x_pntrs is
   port (
     S : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    WR_PNTR_RD : out STD_LOGIC_VECTOR ( 4 downto 0 );
+    WR_PNTR_RD : out STD_LOGIC_VECTOR ( 5 downto 0 );
     \rd_dc_i_reg[5]\ : out STD_LOGIC_VECTOR ( 1 downto 0 );
     ram_empty_fb_i_reg : out STD_LOGIC;
     ram_full_fb_i_reg : out STD_LOGIC;
     RD_PNTR_WR : out STD_LOGIC_VECTOR ( 5 downto 0 );
     Q : in STD_LOGIC_VECTOR ( 5 downto 0 );
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
-    \gc0.count_reg[5]\ : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    comp1 : in STD_LOGIC;
     \gic0.gc0.count_reg[5]\ : in STD_LOGIC_VECTOR ( 5 downto 0 );
-    \gic0.gc0.count_d1_reg[0]\ : in STD_LOGIC;
     wr_en : in STD_LOGIC;
     \out\ : in STD_LOGIC;
+    \gic0.gc0.count_d1_reg[5]\ : in STD_LOGIC_VECTOR ( 5 downto 0 );
     wr_clk : in STD_LOGIC;
     \gic0.gc0.count_d2_reg[5]\ : in STD_LOGIC_VECTOR ( 5 downto 0 );
     rd_clk : in STD_LOGIC
@@ -2613,16 +2640,15 @@ end wr_data_clk_x_pntrs;
 
 architecture STRUCTURE of wr_data_clk_x_pntrs is
   signal \^rd_pntr_wr\ : STD_LOGIC_VECTOR ( 5 downto 0 );
-  signal \^wr_pntr_rd\ : STD_LOGIC_VECTOR ( 4 downto 0 );
-  signal \gntv_or_sync_fifo.gl0.rd/gras.rsts/comp1\ : STD_LOGIC;
-  signal p_22_out : STD_LOGIC_VECTOR ( 5 to 5 );
+  signal \^wr_pntr_rd\ : STD_LOGIC_VECTOR ( 5 downto 0 );
   signal ram_empty_i_i_2_n_0 : STD_LOGIC;
   signal ram_empty_i_i_3_n_0 : STD_LOGIC;
   signal ram_empty_i_i_5_n_0 : STD_LOGIC;
-  signal ram_empty_i_i_6_n_0 : STD_LOGIC;
-  signal ram_empty_i_i_7_n_0 : STD_LOGIC;
   signal ram_full_i_i_2_n_0 : STD_LOGIC;
+  signal ram_full_i_i_3_n_0 : STD_LOGIC;
   signal ram_full_i_i_4_n_0 : STD_LOGIC;
+  signal ram_full_i_i_5_n_0 : STD_LOGIC;
+  signal ram_full_i_i_6_n_0 : STD_LOGIC;
   attribute DEST_SYNC_FF : integer;
   attribute DEST_SYNC_FF of rd_pntr_cdc_inst : label is 2;
   attribute INIT_SYNC_FF : integer;
@@ -2652,13 +2678,13 @@ architecture STRUCTURE of wr_data_clk_x_pntrs is
   attribute XPM_MODULE of wr_pntr_cdc_inst : label is "TRUE";
 begin
   RD_PNTR_WR(5 downto 0) <= \^rd_pntr_wr\(5 downto 0);
-  WR_PNTR_RD(4 downto 0) <= \^wr_pntr_rd\(4 downto 0);
-\minusOp_carry__0_i_1__0\: unisim.vcomponents.LUT2
+  WR_PNTR_RD(5 downto 0) <= \^wr_pntr_rd\(5 downto 0);
+\minusOp_carry__0_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"9"
     )
         port map (
-      I0 => p_22_out(5),
+      I0 => \^wr_pntr_rd\(5),
       I1 => Q(5),
       O => \rd_dc_i_reg[5]\(1)
     );
@@ -2689,7 +2715,7 @@ minusOp_carry_i_2: unisim.vcomponents.LUT2
       I1 => Q(2),
       O => S(2)
     );
-minusOp_carry_i_3: unisim.vcomponents.LUT2
+\minusOp_carry_i_3__0\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"9"
     )
@@ -2709,26 +2735,26 @@ minusOp_carry_i_4: unisim.vcomponents.LUT2
     );
 ram_empty_i_i_1: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"FFFF410041004100"
+      INIT => X"FFFF820082008200"
     )
         port map (
       I0 => ram_empty_i_i_2_n_0,
-      I1 => \^wr_pntr_rd\(4),
-      I2 => Q(4),
+      I1 => \^wr_pntr_rd\(0),
+      I2 => Q(0),
       I3 => ram_empty_i_i_3_n_0,
       I4 => E(0),
-      I5 => \gntv_or_sync_fifo.gl0.rd/gras.rsts/comp1\,
+      I5 => comp1,
       O => ram_empty_fb_i_reg
     );
 ram_empty_i_i_2: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"FFFF6FF6"
+      INIT => X"90090000"
     )
         port map (
-      I0 => Q(2),
-      I1 => \^wr_pntr_rd\(2),
-      I2 => Q(3),
-      I3 => \^wr_pntr_rd\(3),
+      I0 => Q(3),
+      I1 => \^wr_pntr_rd\(3),
+      I2 => Q(2),
+      I3 => \^wr_pntr_rd\(2),
       I4 => ram_empty_i_i_5_n_0,
       O => ram_empty_i_i_2_n_0
     );
@@ -2737,55 +2763,20 @@ ram_empty_i_i_3: unisim.vcomponents.LUT2
       INIT => X"9"
     )
         port map (
-      I0 => p_22_out(5),
-      I1 => Q(5),
+      I0 => \^wr_pntr_rd\(1),
+      I1 => Q(1),
       O => ram_empty_i_i_3_n_0
-    );
-ram_empty_i_i_4: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"0000000000009009"
-    )
-        port map (
-      I0 => \gc0.count_reg[5]\(5),
-      I1 => p_22_out(5),
-      I2 => \gc0.count_reg[5]\(4),
-      I3 => \^wr_pntr_rd\(4),
-      I4 => ram_empty_i_i_6_n_0,
-      I5 => ram_empty_i_i_7_n_0,
-      O => \gntv_or_sync_fifo.gl0.rd/gras.rsts/comp1\
     );
 ram_empty_i_i_5: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"6FF6"
+      INIT => X"9009"
     )
         port map (
-      I0 => \^wr_pntr_rd\(1),
-      I1 => Q(1),
-      I2 => \^wr_pntr_rd\(0),
-      I3 => Q(0),
+      I0 => \^wr_pntr_rd\(4),
+      I1 => Q(4),
+      I2 => \^wr_pntr_rd\(5),
+      I3 => Q(5),
       O => ram_empty_i_i_5_n_0
-    );
-ram_empty_i_i_6: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"6FF6"
-    )
-        port map (
-      I0 => \^wr_pntr_rd\(1),
-      I1 => \gc0.count_reg[5]\(1),
-      I2 => \^wr_pntr_rd\(0),
-      I3 => \gc0.count_reg[5]\(0),
-      O => ram_empty_i_i_6_n_0
-    );
-ram_empty_i_i_7: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"6FF6"
-    )
-        port map (
-      I0 => \^wr_pntr_rd\(3),
-      I1 => \gc0.count_reg[5]\(3),
-      I2 => \^wr_pntr_rd\(2),
-      I3 => \gc0.count_reg[5]\(2),
-      O => ram_empty_i_i_7_n_0
     );
 ram_full_i_i_1: unisim.vcomponents.LUT6
     generic map(
@@ -2797,7 +2788,7 @@ ram_full_i_i_1: unisim.vcomponents.LUT6
       I2 => \^rd_pntr_wr\(0),
       I3 => \gic0.gc0.count_reg[5]\(1),
       I4 => \^rd_pntr_wr\(1),
-      I5 => \gic0.gc0.count_d1_reg[0]\,
+      I5 => ram_full_i_i_3_n_0,
       O => ram_full_fb_i_reg
     );
 ram_full_i_i_2: unisim.vcomponents.LUT5
@@ -2812,6 +2803,19 @@ ram_full_i_i_2: unisim.vcomponents.LUT5
       I4 => \out\,
       O => ram_full_i_i_2_n_0
     );
+ram_full_i_i_3: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"8200008200000000"
+    )
+        port map (
+      I0 => ram_full_i_i_5_n_0,
+      I1 => \^rd_pntr_wr\(0),
+      I2 => \gic0.gc0.count_d1_reg[5]\(0),
+      I3 => \^rd_pntr_wr\(1),
+      I4 => \gic0.gc0.count_d1_reg[5]\(1),
+      I5 => ram_full_i_i_6_n_0,
+      O => ram_full_i_i_3_n_0
+    );
 ram_full_i_i_4: unisim.vcomponents.LUT6
     generic map(
       INIT => X"9009000000009009"
@@ -2825,6 +2829,28 @@ ram_full_i_i_4: unisim.vcomponents.LUT6
       I5 => \^rd_pntr_wr\(2),
       O => ram_full_i_i_4_n_0
     );
+ram_full_i_i_5: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"9009"
+    )
+        port map (
+      I0 => \^rd_pntr_wr\(2),
+      I1 => \gic0.gc0.count_d1_reg[5]\(2),
+      I2 => \^rd_pntr_wr\(3),
+      I3 => \gic0.gc0.count_d1_reg[5]\(3),
+      O => ram_full_i_i_5_n_0
+    );
+ram_full_i_i_6: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"9009"
+    )
+        port map (
+      I0 => \^rd_pntr_wr\(4),
+      I1 => \gic0.gc0.count_d1_reg[5]\(4),
+      I2 => \^rd_pntr_wr\(5),
+      I3 => \gic0.gc0.count_d1_reg[5]\(5),
+      O => ram_full_i_i_6_n_0
+    );
 rd_pntr_cdc_inst: entity work.wr_data_xpm_cdc_gray
      port map (
       dest_clk => wr_clk,
@@ -2835,8 +2861,7 @@ rd_pntr_cdc_inst: entity work.wr_data_xpm_cdc_gray
 wr_pntr_cdc_inst: entity work.\wr_data_xpm_cdc_gray__1\
      port map (
       dest_clk => rd_clk,
-      dest_out_bin(5) => p_22_out(5),
-      dest_out_bin(4 downto 0) => \^wr_pntr_rd\(4 downto 0),
+      dest_out_bin(5 downto 0) => \^wr_pntr_rd\(5 downto 0),
       src_clk => wr_clk,
       src_in_bin(5 downto 0) => \gic0.gc0.count_d2_reg[5]\(5 downto 0)
     );
@@ -2848,15 +2873,15 @@ use UNISIM.VCOMPONENTS.ALL;
 entity wr_data_rd_logic is
   port (
     empty : out STD_LOGIC;
-    \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram\ : out STD_LOGIC;
-    Q : out STD_LOGIC_VECTOR ( 5 downto 0 );
+    ram_rd_en_i : out STD_LOGIC;
+    comp1 : out STD_LOGIC;
     E : out STD_LOGIC_VECTOR ( 0 to 0 );
     \gc0.count_reg[5]\ : out STD_LOGIC_VECTOR ( 0 to 0 );
-    \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_0\ : out STD_LOGIC_VECTOR ( 5 downto 0 );
+    Q : out STD_LOGIC_VECTOR ( 5 downto 0 );
     rd_data_count : out STD_LOGIC_VECTOR ( 5 downto 0 );
-    \dest_out_bin_ff_reg[4]\ : in STD_LOGIC;
+    \dest_out_bin_ff_reg[0]\ : in STD_LOGIC;
     rd_clk : in STD_LOGIC;
-    WR_PNTR_RD : in STD_LOGIC_VECTOR ( 4 downto 0 );
+    WR_PNTR_RD : in STD_LOGIC_VECTOR ( 5 downto 0 );
     S : in STD_LOGIC_VECTOR ( 3 downto 0 );
     \dest_out_bin_ff_reg[5]\ : in STD_LOGIC_VECTOR ( 1 downto 0 );
     rd_en : in STD_LOGIC
@@ -2872,11 +2897,11 @@ begin
   \gc0.count_reg[5]\(0) <= \^gc0.count_reg[5]\(0);
 \gr1.gr1_int.rfwft\: entity work.wr_data_rd_fwft
      port map (
-      \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram\ => \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram\,
       E(0) => E(0),
       empty => empty,
       \gc0.count_reg[5]\(0) => \^gc0.count_reg[5]\(0),
       \out\ => p_2_out,
+      ram_rd_en_i => ram_rd_en_i,
       rd_clk => rd_clk,
       rd_en => rd_en
     );
@@ -2890,15 +2915,16 @@ begin
     );
 \gras.rsts\: entity work.wr_data_rd_status_flags_as
      port map (
-      \dest_out_bin_ff_reg[4]\ => \dest_out_bin_ff_reg[4]\,
+      \dest_out_bin_ff_reg[0]\ => \dest_out_bin_ff_reg[0]\,
       \out\ => p_2_out,
       rd_clk => rd_clk
     );
 rpntr: entity work.wr_data_rd_bin_cntr
      port map (
-      \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram\(5 downto 0) => \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_0\(5 downto 0),
       E(0) => \^gc0.count_reg[5]\(0),
       Q(5 downto 0) => Q(5 downto 0),
+      WR_PNTR_RD(5 downto 0) => WR_PNTR_RD(5 downto 0),
+      comp1 => comp1,
       rd_clk => rd_clk
     );
 end STRUCTURE;
@@ -2911,9 +2937,9 @@ entity wr_data_wr_logic is
     full : out STD_LOGIC;
     \out\ : out STD_LOGIC;
     Q : out STD_LOGIC_VECTOR ( 5 downto 0 );
-    \gic0.gc0.count_d1_reg[5]\ : out STD_LOGIC_VECTOR ( 5 downto 0 );
     E : out STD_LOGIC_VECTOR ( 0 to 0 );
-    ram_full_fb_i_reg : out STD_LOGIC;
+    \gic0.gc0.count_d1_reg[5]\ : out STD_LOGIC_VECTOR ( 5 downto 0 );
+    \gic0.gc0.count_d2_reg[5]\ : out STD_LOGIC_VECTOR ( 5 downto 0 );
     wr_data_count : out STD_LOGIC_VECTOR ( 5 downto 0 );
     \gic0.gc0.count_reg[0]\ : in STD_LOGIC;
     wr_clk : in STD_LOGIC;
@@ -2967,7 +2993,7 @@ wpntr: entity work.wr_data_wr_bin_cntr
       S(1) => wpntr_n_10,
       S(0) => wpntr_n_11,
       \gic0.gc0.count_d1_reg[5]_0\(5 downto 0) => \gic0.gc0.count_d1_reg[5]\(5 downto 0),
-      ram_full_fb_i_reg => ram_full_fb_i_reg,
+      \gic0.gc0.count_d2_reg[5]_0\(5 downto 0) => \gic0.gc0.count_d2_reg[5]\(5 downto 0),
       wr_clk => wr_clk,
       \wr_data_count_i_reg[5]\(1) => wpntr_n_0,
       \wr_data_count_i_reg[5]\(0) => wpntr_n_1
@@ -2982,10 +3008,10 @@ entity wr_data_blk_mem_gen_generic_cstr is
     D : out STD_LOGIC_VECTOR ( 143 downto 0 );
     rd_clk : in STD_LOGIC;
     wr_clk : in STD_LOGIC;
-    \gpregsm1.curr_fwft_state_reg[0]\ : in STD_LOGIC;
+    ram_rd_en_i : in STD_LOGIC;
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
-    \gc0.count_d1_reg[5]\ : in STD_LOGIC_VECTOR ( 5 downto 0 );
     Q : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    \gic0.gc0.count_d2_reg[5]\ : in STD_LOGIC_VECTOR ( 5 downto 0 );
     din : in STD_LOGIC_VECTOR ( 143 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
@@ -3000,8 +3026,8 @@ begin
       E(0) => E(0),
       Q(5 downto 0) => Q(5 downto 0),
       din(71 downto 0) => din(71 downto 0),
-      \gc0.count_d1_reg[5]\(5 downto 0) => \gc0.count_d1_reg[5]\(5 downto 0),
-      \gpregsm1.curr_fwft_state_reg[0]\ => \gpregsm1.curr_fwft_state_reg[0]\,
+      \gic0.gc0.count_d2_reg[5]\(5 downto 0) => \gic0.gc0.count_d2_reg[5]\(5 downto 0),
+      ram_rd_en_i => ram_rd_en_i,
       rd_clk => rd_clk,
       wr_clk => wr_clk
     );
@@ -3011,8 +3037,8 @@ begin
       E(0) => E(0),
       Q(5 downto 0) => Q(5 downto 0),
       din(71 downto 0) => din(143 downto 72),
-      \gc0.count_d1_reg[5]\(5 downto 0) => \gc0.count_d1_reg[5]\(5 downto 0),
-      \gpregsm1.curr_fwft_state_reg[0]\ => \gpregsm1.curr_fwft_state_reg[0]\,
+      \gic0.gc0.count_d2_reg[5]\(5 downto 0) => \gic0.gc0.count_d2_reg[5]\(5 downto 0),
+      ram_rd_en_i => ram_rd_en_i,
       rd_clk => rd_clk,
       wr_clk => wr_clk
     );
@@ -3026,10 +3052,10 @@ entity wr_data_blk_mem_gen_top is
     D : out STD_LOGIC_VECTOR ( 143 downto 0 );
     rd_clk : in STD_LOGIC;
     wr_clk : in STD_LOGIC;
-    \gpregsm1.curr_fwft_state_reg[0]\ : in STD_LOGIC;
+    ram_rd_en_i : in STD_LOGIC;
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
-    \gc0.count_d1_reg[5]\ : in STD_LOGIC_VECTOR ( 5 downto 0 );
     Q : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    \gic0.gc0.count_d2_reg[5]\ : in STD_LOGIC_VECTOR ( 5 downto 0 );
     din : in STD_LOGIC_VECTOR ( 143 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
@@ -3044,8 +3070,8 @@ begin
       E(0) => E(0),
       Q(5 downto 0) => Q(5 downto 0),
       din(143 downto 0) => din(143 downto 0),
-      \gc0.count_d1_reg[5]\(5 downto 0) => \gc0.count_d1_reg[5]\(5 downto 0),
-      \gpregsm1.curr_fwft_state_reg[0]\ => \gpregsm1.curr_fwft_state_reg[0]\,
+      \gic0.gc0.count_d2_reg[5]\(5 downto 0) => \gic0.gc0.count_d2_reg[5]\(5 downto 0),
+      ram_rd_en_i => ram_rd_en_i,
       rd_clk => rd_clk,
       wr_clk => wr_clk
     );
@@ -3059,10 +3085,10 @@ entity wr_data_blk_mem_gen_v8_4_1_synth is
     D : out STD_LOGIC_VECTOR ( 143 downto 0 );
     rd_clk : in STD_LOGIC;
     wr_clk : in STD_LOGIC;
-    \gpregsm1.curr_fwft_state_reg[0]\ : in STD_LOGIC;
+    ram_rd_en_i : in STD_LOGIC;
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
-    \gc0.count_d1_reg[5]\ : in STD_LOGIC_VECTOR ( 5 downto 0 );
     Q : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    \gic0.gc0.count_d2_reg[5]\ : in STD_LOGIC_VECTOR ( 5 downto 0 );
     din : in STD_LOGIC_VECTOR ( 143 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
@@ -3077,8 +3103,8 @@ begin
       E(0) => E(0),
       Q(5 downto 0) => Q(5 downto 0),
       din(143 downto 0) => din(143 downto 0),
-      \gc0.count_d1_reg[5]\(5 downto 0) => \gc0.count_d1_reg[5]\(5 downto 0),
-      \gpregsm1.curr_fwft_state_reg[0]\ => \gpregsm1.curr_fwft_state_reg[0]\,
+      \gic0.gc0.count_d2_reg[5]\(5 downto 0) => \gic0.gc0.count_d2_reg[5]\(5 downto 0),
+      ram_rd_en_i => ram_rd_en_i,
       rd_clk => rd_clk,
       wr_clk => wr_clk
     );
@@ -3092,10 +3118,10 @@ entity wr_data_blk_mem_gen_v8_4_1 is
     D : out STD_LOGIC_VECTOR ( 143 downto 0 );
     rd_clk : in STD_LOGIC;
     wr_clk : in STD_LOGIC;
-    \gpregsm1.curr_fwft_state_reg[0]\ : in STD_LOGIC;
+    ram_rd_en_i : in STD_LOGIC;
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
-    \gc0.count_d1_reg[5]\ : in STD_LOGIC_VECTOR ( 5 downto 0 );
     Q : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    \gic0.gc0.count_d2_reg[5]\ : in STD_LOGIC_VECTOR ( 5 downto 0 );
     din : in STD_LOGIC_VECTOR ( 143 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
@@ -3110,8 +3136,8 @@ inst_blk_mem_gen: entity work.wr_data_blk_mem_gen_v8_4_1_synth
       E(0) => E(0),
       Q(5 downto 0) => Q(5 downto 0),
       din(143 downto 0) => din(143 downto 0),
-      \gc0.count_d1_reg[5]\(5 downto 0) => \gc0.count_d1_reg[5]\(5 downto 0),
-      \gpregsm1.curr_fwft_state_reg[0]\ => \gpregsm1.curr_fwft_state_reg[0]\,
+      \gic0.gc0.count_d2_reg[5]\(5 downto 0) => \gic0.gc0.count_d2_reg[5]\(5 downto 0),
+      ram_rd_en_i => ram_rd_en_i,
       rd_clk => rd_clk,
       wr_clk => wr_clk
     );
@@ -3125,10 +3151,10 @@ entity wr_data_memory is
     dout : out STD_LOGIC_VECTOR ( 143 downto 0 );
     rd_clk : in STD_LOGIC;
     wr_clk : in STD_LOGIC;
-    \gpregsm1.curr_fwft_state_reg[0]\ : in STD_LOGIC;
+    ram_rd_en_i : in STD_LOGIC;
     E : in STD_LOGIC_VECTOR ( 0 to 0 );
-    \gc0.count_d1_reg[5]\ : in STD_LOGIC_VECTOR ( 5 downto 0 );
     Q : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    \gic0.gc0.count_d2_reg[5]\ : in STD_LOGIC_VECTOR ( 5 downto 0 );
     din : in STD_LOGIC_VECTOR ( 143 downto 0 );
     \gpregsm1.curr_fwft_state_reg[1]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
@@ -3145,8 +3171,8 @@ begin
       E(0) => E(0),
       Q(5 downto 0) => Q(5 downto 0),
       din(143 downto 0) => din(143 downto 0),
-      \gc0.count_d1_reg[5]\(5 downto 0) => \gc0.count_d1_reg[5]\(5 downto 0),
-      \gpregsm1.curr_fwft_state_reg[0]\ => \gpregsm1.curr_fwft_state_reg[0]\,
+      \gic0.gc0.count_d2_reg[5]\(5 downto 0) => \gic0.gc0.count_d2_reg[5]\(5 downto 0),
+      ram_rd_en_i => ram_rd_en_i,
       rd_clk => rd_clk,
       wr_clk => wr_clk
     );
@@ -4746,10 +4772,10 @@ entity wr_data_fifo_generator_ramfifo is
     dout : out STD_LOGIC_VECTOR ( 143 downto 0 );
     rd_data_count : out STD_LOGIC_VECTOR ( 5 downto 0 );
     wr_data_count : out STD_LOGIC_VECTOR ( 5 downto 0 );
-    rd_en : in STD_LOGIC;
     rd_clk : in STD_LOGIC;
     wr_clk : in STD_LOGIC;
     din : in STD_LOGIC_VECTOR ( 143 downto 0 );
+    rd_en : in STD_LOGIC;
     wr_en : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
@@ -4762,20 +4788,20 @@ architecture STRUCTURE of wr_data_fifo_generator_ramfifo is
   signal \gntv_or_sync_fifo.gcx.clkx_n_10\ : STD_LOGIC;
   signal \gntv_or_sync_fifo.gcx.clkx_n_11\ : STD_LOGIC;
   signal \gntv_or_sync_fifo.gcx.clkx_n_12\ : STD_LOGIC;
+  signal \gntv_or_sync_fifo.gcx.clkx_n_13\ : STD_LOGIC;
   signal \gntv_or_sync_fifo.gcx.clkx_n_2\ : STD_LOGIC;
   signal \gntv_or_sync_fifo.gcx.clkx_n_3\ : STD_LOGIC;
-  signal \gntv_or_sync_fifo.gcx.clkx_n_9\ : STD_LOGIC;
-  signal \gntv_or_sync_fifo.gl0.rd_n_1\ : STD_LOGIC;
   signal \gntv_or_sync_fifo.gl0.wr_n_1\ : STD_LOGIC;
-  signal \gntv_or_sync_fifo.gl0.wr_n_15\ : STD_LOGIC;
+  signal \gras.rsts/comp1\ : STD_LOGIC;
   signal p_0_out : STD_LOGIC_VECTOR ( 5 downto 0 );
   signal p_12_out : STD_LOGIC_VECTOR ( 5 downto 0 );
+  signal p_13_out : STD_LOGIC_VECTOR ( 5 downto 0 );
   signal p_18_out : STD_LOGIC;
-  signal p_22_out : STD_LOGIC_VECTOR ( 4 downto 0 );
+  signal p_22_out : STD_LOGIC_VECTOR ( 5 downto 0 );
   signal p_23_out : STD_LOGIC_VECTOR ( 5 downto 0 );
   signal p_5_out : STD_LOGIC;
   signal p_7_out : STD_LOGIC;
-  signal rd_pntr_plus1 : STD_LOGIC_VECTOR ( 5 downto 0 );
+  signal ram_rd_en_i : STD_LOGIC;
   signal wr_pntr_plus2 : STD_LOGIC_VECTOR ( 5 downto 0 );
 begin
 \gntv_or_sync_fifo.gcx.clkx\: entity work.wr_data_clk_x_pntrs
@@ -4787,36 +4813,36 @@ begin
       S(2) => \gntv_or_sync_fifo.gcx.clkx_n_1\,
       S(1) => \gntv_or_sync_fifo.gcx.clkx_n_2\,
       S(0) => \gntv_or_sync_fifo.gcx.clkx_n_3\,
-      WR_PNTR_RD(4 downto 0) => p_22_out(4 downto 0),
-      \gc0.count_reg[5]\(5 downto 0) => rd_pntr_plus1(5 downto 0),
-      \gic0.gc0.count_d1_reg[0]\ => \gntv_or_sync_fifo.gl0.wr_n_15\,
+      WR_PNTR_RD(5 downto 0) => p_22_out(5 downto 0),
+      comp1 => \gras.rsts/comp1\,
+      \gic0.gc0.count_d1_reg[5]\(5 downto 0) => p_13_out(5 downto 0),
       \gic0.gc0.count_d2_reg[5]\(5 downto 0) => p_12_out(5 downto 0),
       \gic0.gc0.count_reg[5]\(5 downto 0) => wr_pntr_plus2(5 downto 0),
       \out\ => \gntv_or_sync_fifo.gl0.wr_n_1\,
-      ram_empty_fb_i_reg => \gntv_or_sync_fifo.gcx.clkx_n_11\,
-      ram_full_fb_i_reg => \gntv_or_sync_fifo.gcx.clkx_n_12\,
+      ram_empty_fb_i_reg => \gntv_or_sync_fifo.gcx.clkx_n_12\,
+      ram_full_fb_i_reg => \gntv_or_sync_fifo.gcx.clkx_n_13\,
       rd_clk => rd_clk,
-      \rd_dc_i_reg[5]\(1) => \gntv_or_sync_fifo.gcx.clkx_n_9\,
-      \rd_dc_i_reg[5]\(0) => \gntv_or_sync_fifo.gcx.clkx_n_10\,
+      \rd_dc_i_reg[5]\(1) => \gntv_or_sync_fifo.gcx.clkx_n_10\,
+      \rd_dc_i_reg[5]\(0) => \gntv_or_sync_fifo.gcx.clkx_n_11\,
       wr_clk => wr_clk,
       wr_en => wr_en
     );
 \gntv_or_sync_fifo.gl0.rd\: entity work.wr_data_rd_logic
      port map (
-      \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram\ => \gntv_or_sync_fifo.gl0.rd_n_1\,
-      \DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram_0\(5 downto 0) => p_0_out(5 downto 0),
       E(0) => p_5_out,
-      Q(5 downto 0) => rd_pntr_plus1(5 downto 0),
+      Q(5 downto 0) => p_0_out(5 downto 0),
       S(3) => \gntv_or_sync_fifo.gcx.clkx_n_0\,
       S(2) => \gntv_or_sync_fifo.gcx.clkx_n_1\,
       S(1) => \gntv_or_sync_fifo.gcx.clkx_n_2\,
       S(0) => \gntv_or_sync_fifo.gcx.clkx_n_3\,
-      WR_PNTR_RD(4 downto 0) => p_22_out(4 downto 0),
-      \dest_out_bin_ff_reg[4]\ => \gntv_or_sync_fifo.gcx.clkx_n_11\,
-      \dest_out_bin_ff_reg[5]\(1) => \gntv_or_sync_fifo.gcx.clkx_n_9\,
-      \dest_out_bin_ff_reg[5]\(0) => \gntv_or_sync_fifo.gcx.clkx_n_10\,
+      WR_PNTR_RD(5 downto 0) => p_22_out(5 downto 0),
+      comp1 => \gras.rsts/comp1\,
+      \dest_out_bin_ff_reg[0]\ => \gntv_or_sync_fifo.gcx.clkx_n_12\,
+      \dest_out_bin_ff_reg[5]\(1) => \gntv_or_sync_fifo.gcx.clkx_n_10\,
+      \dest_out_bin_ff_reg[5]\(0) => \gntv_or_sync_fifo.gcx.clkx_n_11\,
       empty => empty,
       \gc0.count_reg[5]\(0) => p_7_out,
+      ram_rd_en_i => ram_rd_en_i,
       rd_clk => rd_clk,
       rd_data_count(5 downto 0) => rd_data_count(5 downto 0),
       rd_en => rd_en
@@ -4828,9 +4854,9 @@ begin
       RD_PNTR_WR(5 downto 0) => p_23_out(5 downto 0),
       full => full,
       \gic0.gc0.count_d1_reg[5]\(5 downto 0) => wr_pntr_plus2(5 downto 0),
-      \gic0.gc0.count_reg[0]\ => \gntv_or_sync_fifo.gcx.clkx_n_12\,
+      \gic0.gc0.count_d2_reg[5]\(5 downto 0) => p_13_out(5 downto 0),
+      \gic0.gc0.count_reg[0]\ => \gntv_or_sync_fifo.gcx.clkx_n_13\,
       \out\ => \gntv_or_sync_fifo.gl0.wr_n_1\,
-      ram_full_fb_i_reg => \gntv_or_sync_fifo.gl0.wr_n_15\,
       wr_clk => wr_clk,
       wr_data_count(5 downto 0) => wr_data_count(5 downto 0),
       wr_en => wr_en
@@ -4838,12 +4864,12 @@ begin
 \gntv_or_sync_fifo.mem\: entity work.wr_data_memory
      port map (
       E(0) => p_18_out,
-      Q(5 downto 0) => p_12_out(5 downto 0),
+      Q(5 downto 0) => p_0_out(5 downto 0),
       din(143 downto 0) => din(143 downto 0),
       dout(143 downto 0) => dout(143 downto 0),
-      \gc0.count_d1_reg[5]\(5 downto 0) => p_0_out(5 downto 0),
-      \gpregsm1.curr_fwft_state_reg[0]\ => \gntv_or_sync_fifo.gl0.rd_n_1\,
+      \gic0.gc0.count_d2_reg[5]\(5 downto 0) => p_12_out(5 downto 0),
       \gpregsm1.curr_fwft_state_reg[1]\(0) => p_5_out,
+      ram_rd_en_i => ram_rd_en_i,
       rd_clk => rd_clk,
       wr_clk => wr_clk
     );
@@ -4859,10 +4885,10 @@ entity wr_data_fifo_generator_top is
     dout : out STD_LOGIC_VECTOR ( 143 downto 0 );
     rd_data_count : out STD_LOGIC_VECTOR ( 5 downto 0 );
     wr_data_count : out STD_LOGIC_VECTOR ( 5 downto 0 );
-    rd_en : in STD_LOGIC;
     rd_clk : in STD_LOGIC;
     wr_clk : in STD_LOGIC;
     din : in STD_LOGIC_VECTOR ( 143 downto 0 );
+    rd_en : in STD_LOGIC;
     wr_en : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
@@ -4889,24 +4915,24 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity wr_data_fifo_generator_v13_2_1_synth is
+entity wr_data_fifo_generator_v13_2_2_synth is
   port (
     empty : out STD_LOGIC;
     full : out STD_LOGIC;
     dout : out STD_LOGIC_VECTOR ( 143 downto 0 );
     rd_data_count : out STD_LOGIC_VECTOR ( 5 downto 0 );
     wr_data_count : out STD_LOGIC_VECTOR ( 5 downto 0 );
-    rd_en : in STD_LOGIC;
     rd_clk : in STD_LOGIC;
     wr_clk : in STD_LOGIC;
     din : in STD_LOGIC_VECTOR ( 143 downto 0 );
+    rd_en : in STD_LOGIC;
     wr_en : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of wr_data_fifo_generator_v13_2_1_synth : entity is "fifo_generator_v13_2_1_synth";
-end wr_data_fifo_generator_v13_2_1_synth;
+  attribute ORIG_REF_NAME of wr_data_fifo_generator_v13_2_2_synth : entity is "fifo_generator_v13_2_2_synth";
+end wr_data_fifo_generator_v13_2_2_synth;
 
-architecture STRUCTURE of wr_data_fifo_generator_v13_2_1_synth is
+architecture STRUCTURE of wr_data_fifo_generator_v13_2_2_synth is
 begin
 \gconvfifo.rf\: entity work.wr_data_fifo_generator_top
      port map (
@@ -4926,7 +4952,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity wr_data_fifo_generator_v13_2_1 is
+entity wr_data_fifo_generator_v13_2_2 is
   port (
     backup : in STD_LOGIC;
     backup_marker : in STD_LOGIC;
@@ -5161,414 +5187,414 @@ entity wr_data_fifo_generator_v13_2_1 is
     axis_prog_empty : out STD_LOGIC
   );
   attribute C_ADD_NGC_CONSTRAINT : integer;
-  attribute C_ADD_NGC_CONSTRAINT of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_ADD_NGC_CONSTRAINT of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_APPLICATION_TYPE_AXIS : integer;
-  attribute C_APPLICATION_TYPE_AXIS of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_APPLICATION_TYPE_AXIS of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_APPLICATION_TYPE_RACH : integer;
-  attribute C_APPLICATION_TYPE_RACH of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_APPLICATION_TYPE_RACH of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_APPLICATION_TYPE_RDCH : integer;
-  attribute C_APPLICATION_TYPE_RDCH of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_APPLICATION_TYPE_RDCH of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_APPLICATION_TYPE_WACH : integer;
-  attribute C_APPLICATION_TYPE_WACH of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_APPLICATION_TYPE_WACH of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_APPLICATION_TYPE_WDCH : integer;
-  attribute C_APPLICATION_TYPE_WDCH of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_APPLICATION_TYPE_WDCH of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_APPLICATION_TYPE_WRCH : integer;
-  attribute C_APPLICATION_TYPE_WRCH of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_APPLICATION_TYPE_WRCH of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_AXIS_TDATA_WIDTH : integer;
-  attribute C_AXIS_TDATA_WIDTH of wr_data_fifo_generator_v13_2_1 : entity is 8;
+  attribute C_AXIS_TDATA_WIDTH of wr_data_fifo_generator_v13_2_2 : entity is 8;
   attribute C_AXIS_TDEST_WIDTH : integer;
-  attribute C_AXIS_TDEST_WIDTH of wr_data_fifo_generator_v13_2_1 : entity is 1;
+  attribute C_AXIS_TDEST_WIDTH of wr_data_fifo_generator_v13_2_2 : entity is 1;
   attribute C_AXIS_TID_WIDTH : integer;
-  attribute C_AXIS_TID_WIDTH of wr_data_fifo_generator_v13_2_1 : entity is 1;
+  attribute C_AXIS_TID_WIDTH of wr_data_fifo_generator_v13_2_2 : entity is 1;
   attribute C_AXIS_TKEEP_WIDTH : integer;
-  attribute C_AXIS_TKEEP_WIDTH of wr_data_fifo_generator_v13_2_1 : entity is 1;
+  attribute C_AXIS_TKEEP_WIDTH of wr_data_fifo_generator_v13_2_2 : entity is 1;
   attribute C_AXIS_TSTRB_WIDTH : integer;
-  attribute C_AXIS_TSTRB_WIDTH of wr_data_fifo_generator_v13_2_1 : entity is 1;
+  attribute C_AXIS_TSTRB_WIDTH of wr_data_fifo_generator_v13_2_2 : entity is 1;
   attribute C_AXIS_TUSER_WIDTH : integer;
-  attribute C_AXIS_TUSER_WIDTH of wr_data_fifo_generator_v13_2_1 : entity is 4;
+  attribute C_AXIS_TUSER_WIDTH of wr_data_fifo_generator_v13_2_2 : entity is 4;
   attribute C_AXIS_TYPE : integer;
-  attribute C_AXIS_TYPE of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_AXIS_TYPE of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_AXI_ADDR_WIDTH : integer;
-  attribute C_AXI_ADDR_WIDTH of wr_data_fifo_generator_v13_2_1 : entity is 32;
+  attribute C_AXI_ADDR_WIDTH of wr_data_fifo_generator_v13_2_2 : entity is 32;
   attribute C_AXI_ARUSER_WIDTH : integer;
-  attribute C_AXI_ARUSER_WIDTH of wr_data_fifo_generator_v13_2_1 : entity is 1;
+  attribute C_AXI_ARUSER_WIDTH of wr_data_fifo_generator_v13_2_2 : entity is 1;
   attribute C_AXI_AWUSER_WIDTH : integer;
-  attribute C_AXI_AWUSER_WIDTH of wr_data_fifo_generator_v13_2_1 : entity is 1;
+  attribute C_AXI_AWUSER_WIDTH of wr_data_fifo_generator_v13_2_2 : entity is 1;
   attribute C_AXI_BUSER_WIDTH : integer;
-  attribute C_AXI_BUSER_WIDTH of wr_data_fifo_generator_v13_2_1 : entity is 1;
+  attribute C_AXI_BUSER_WIDTH of wr_data_fifo_generator_v13_2_2 : entity is 1;
   attribute C_AXI_DATA_WIDTH : integer;
-  attribute C_AXI_DATA_WIDTH of wr_data_fifo_generator_v13_2_1 : entity is 64;
+  attribute C_AXI_DATA_WIDTH of wr_data_fifo_generator_v13_2_2 : entity is 64;
   attribute C_AXI_ID_WIDTH : integer;
-  attribute C_AXI_ID_WIDTH of wr_data_fifo_generator_v13_2_1 : entity is 1;
+  attribute C_AXI_ID_WIDTH of wr_data_fifo_generator_v13_2_2 : entity is 1;
   attribute C_AXI_LEN_WIDTH : integer;
-  attribute C_AXI_LEN_WIDTH of wr_data_fifo_generator_v13_2_1 : entity is 8;
+  attribute C_AXI_LEN_WIDTH of wr_data_fifo_generator_v13_2_2 : entity is 8;
   attribute C_AXI_LOCK_WIDTH : integer;
-  attribute C_AXI_LOCK_WIDTH of wr_data_fifo_generator_v13_2_1 : entity is 1;
+  attribute C_AXI_LOCK_WIDTH of wr_data_fifo_generator_v13_2_2 : entity is 1;
   attribute C_AXI_RUSER_WIDTH : integer;
-  attribute C_AXI_RUSER_WIDTH of wr_data_fifo_generator_v13_2_1 : entity is 1;
+  attribute C_AXI_RUSER_WIDTH of wr_data_fifo_generator_v13_2_2 : entity is 1;
   attribute C_AXI_TYPE : integer;
-  attribute C_AXI_TYPE of wr_data_fifo_generator_v13_2_1 : entity is 1;
+  attribute C_AXI_TYPE of wr_data_fifo_generator_v13_2_2 : entity is 1;
   attribute C_AXI_WUSER_WIDTH : integer;
-  attribute C_AXI_WUSER_WIDTH of wr_data_fifo_generator_v13_2_1 : entity is 1;
+  attribute C_AXI_WUSER_WIDTH of wr_data_fifo_generator_v13_2_2 : entity is 1;
   attribute C_COMMON_CLOCK : integer;
-  attribute C_COMMON_CLOCK of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_COMMON_CLOCK of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_COUNT_TYPE : integer;
-  attribute C_COUNT_TYPE of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_COUNT_TYPE of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_DATA_COUNT_WIDTH : integer;
-  attribute C_DATA_COUNT_WIDTH of wr_data_fifo_generator_v13_2_1 : entity is 6;
+  attribute C_DATA_COUNT_WIDTH of wr_data_fifo_generator_v13_2_2 : entity is 6;
   attribute C_DEFAULT_VALUE : string;
-  attribute C_DEFAULT_VALUE of wr_data_fifo_generator_v13_2_1 : entity is "BlankString";
+  attribute C_DEFAULT_VALUE of wr_data_fifo_generator_v13_2_2 : entity is "BlankString";
   attribute C_DIN_WIDTH : integer;
-  attribute C_DIN_WIDTH of wr_data_fifo_generator_v13_2_1 : entity is 144;
+  attribute C_DIN_WIDTH of wr_data_fifo_generator_v13_2_2 : entity is 144;
   attribute C_DIN_WIDTH_AXIS : integer;
-  attribute C_DIN_WIDTH_AXIS of wr_data_fifo_generator_v13_2_1 : entity is 1;
+  attribute C_DIN_WIDTH_AXIS of wr_data_fifo_generator_v13_2_2 : entity is 1;
   attribute C_DIN_WIDTH_RACH : integer;
-  attribute C_DIN_WIDTH_RACH of wr_data_fifo_generator_v13_2_1 : entity is 32;
+  attribute C_DIN_WIDTH_RACH of wr_data_fifo_generator_v13_2_2 : entity is 32;
   attribute C_DIN_WIDTH_RDCH : integer;
-  attribute C_DIN_WIDTH_RDCH of wr_data_fifo_generator_v13_2_1 : entity is 64;
+  attribute C_DIN_WIDTH_RDCH of wr_data_fifo_generator_v13_2_2 : entity is 64;
   attribute C_DIN_WIDTH_WACH : integer;
-  attribute C_DIN_WIDTH_WACH of wr_data_fifo_generator_v13_2_1 : entity is 1;
+  attribute C_DIN_WIDTH_WACH of wr_data_fifo_generator_v13_2_2 : entity is 1;
   attribute C_DIN_WIDTH_WDCH : integer;
-  attribute C_DIN_WIDTH_WDCH of wr_data_fifo_generator_v13_2_1 : entity is 64;
+  attribute C_DIN_WIDTH_WDCH of wr_data_fifo_generator_v13_2_2 : entity is 64;
   attribute C_DIN_WIDTH_WRCH : integer;
-  attribute C_DIN_WIDTH_WRCH of wr_data_fifo_generator_v13_2_1 : entity is 2;
+  attribute C_DIN_WIDTH_WRCH of wr_data_fifo_generator_v13_2_2 : entity is 2;
   attribute C_DOUT_RST_VAL : string;
-  attribute C_DOUT_RST_VAL of wr_data_fifo_generator_v13_2_1 : entity is "0";
+  attribute C_DOUT_RST_VAL of wr_data_fifo_generator_v13_2_2 : entity is "0";
   attribute C_DOUT_WIDTH : integer;
-  attribute C_DOUT_WIDTH of wr_data_fifo_generator_v13_2_1 : entity is 144;
+  attribute C_DOUT_WIDTH of wr_data_fifo_generator_v13_2_2 : entity is 144;
   attribute C_ENABLE_RLOCS : integer;
-  attribute C_ENABLE_RLOCS of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_ENABLE_RLOCS of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_ENABLE_RST_SYNC : integer;
-  attribute C_ENABLE_RST_SYNC of wr_data_fifo_generator_v13_2_1 : entity is 1;
+  attribute C_ENABLE_RST_SYNC of wr_data_fifo_generator_v13_2_2 : entity is 1;
   attribute C_EN_SAFETY_CKT : integer;
-  attribute C_EN_SAFETY_CKT of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_EN_SAFETY_CKT of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_ERROR_INJECTION_TYPE : integer;
-  attribute C_ERROR_INJECTION_TYPE of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_ERROR_INJECTION_TYPE of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_ERROR_INJECTION_TYPE_AXIS : integer;
-  attribute C_ERROR_INJECTION_TYPE_AXIS of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_ERROR_INJECTION_TYPE_AXIS of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_ERROR_INJECTION_TYPE_RACH : integer;
-  attribute C_ERROR_INJECTION_TYPE_RACH of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_ERROR_INJECTION_TYPE_RACH of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_ERROR_INJECTION_TYPE_RDCH : integer;
-  attribute C_ERROR_INJECTION_TYPE_RDCH of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_ERROR_INJECTION_TYPE_RDCH of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_ERROR_INJECTION_TYPE_WACH : integer;
-  attribute C_ERROR_INJECTION_TYPE_WACH of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_ERROR_INJECTION_TYPE_WACH of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_ERROR_INJECTION_TYPE_WDCH : integer;
-  attribute C_ERROR_INJECTION_TYPE_WDCH of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_ERROR_INJECTION_TYPE_WDCH of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_ERROR_INJECTION_TYPE_WRCH : integer;
-  attribute C_ERROR_INJECTION_TYPE_WRCH of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_ERROR_INJECTION_TYPE_WRCH of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_FAMILY : string;
-  attribute C_FAMILY of wr_data_fifo_generator_v13_2_1 : entity is "artix7";
+  attribute C_FAMILY of wr_data_fifo_generator_v13_2_2 : entity is "artix7";
   attribute C_FULL_FLAGS_RST_VAL : integer;
-  attribute C_FULL_FLAGS_RST_VAL of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_FULL_FLAGS_RST_VAL of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_HAS_ALMOST_EMPTY : integer;
-  attribute C_HAS_ALMOST_EMPTY of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_HAS_ALMOST_EMPTY of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_HAS_ALMOST_FULL : integer;
-  attribute C_HAS_ALMOST_FULL of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_HAS_ALMOST_FULL of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_HAS_AXIS_TDATA : integer;
-  attribute C_HAS_AXIS_TDATA of wr_data_fifo_generator_v13_2_1 : entity is 1;
+  attribute C_HAS_AXIS_TDATA of wr_data_fifo_generator_v13_2_2 : entity is 1;
   attribute C_HAS_AXIS_TDEST : integer;
-  attribute C_HAS_AXIS_TDEST of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_HAS_AXIS_TDEST of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_HAS_AXIS_TID : integer;
-  attribute C_HAS_AXIS_TID of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_HAS_AXIS_TID of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_HAS_AXIS_TKEEP : integer;
-  attribute C_HAS_AXIS_TKEEP of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_HAS_AXIS_TKEEP of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_HAS_AXIS_TLAST : integer;
-  attribute C_HAS_AXIS_TLAST of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_HAS_AXIS_TLAST of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_HAS_AXIS_TREADY : integer;
-  attribute C_HAS_AXIS_TREADY of wr_data_fifo_generator_v13_2_1 : entity is 1;
+  attribute C_HAS_AXIS_TREADY of wr_data_fifo_generator_v13_2_2 : entity is 1;
   attribute C_HAS_AXIS_TSTRB : integer;
-  attribute C_HAS_AXIS_TSTRB of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_HAS_AXIS_TSTRB of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_HAS_AXIS_TUSER : integer;
-  attribute C_HAS_AXIS_TUSER of wr_data_fifo_generator_v13_2_1 : entity is 1;
+  attribute C_HAS_AXIS_TUSER of wr_data_fifo_generator_v13_2_2 : entity is 1;
   attribute C_HAS_AXI_ARUSER : integer;
-  attribute C_HAS_AXI_ARUSER of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_HAS_AXI_ARUSER of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_HAS_AXI_AWUSER : integer;
-  attribute C_HAS_AXI_AWUSER of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_HAS_AXI_AWUSER of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_HAS_AXI_BUSER : integer;
-  attribute C_HAS_AXI_BUSER of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_HAS_AXI_BUSER of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_HAS_AXI_ID : integer;
-  attribute C_HAS_AXI_ID of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_HAS_AXI_ID of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_HAS_AXI_RD_CHANNEL : integer;
-  attribute C_HAS_AXI_RD_CHANNEL of wr_data_fifo_generator_v13_2_1 : entity is 1;
+  attribute C_HAS_AXI_RD_CHANNEL of wr_data_fifo_generator_v13_2_2 : entity is 1;
   attribute C_HAS_AXI_RUSER : integer;
-  attribute C_HAS_AXI_RUSER of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_HAS_AXI_RUSER of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_HAS_AXI_WR_CHANNEL : integer;
-  attribute C_HAS_AXI_WR_CHANNEL of wr_data_fifo_generator_v13_2_1 : entity is 1;
+  attribute C_HAS_AXI_WR_CHANNEL of wr_data_fifo_generator_v13_2_2 : entity is 1;
   attribute C_HAS_AXI_WUSER : integer;
-  attribute C_HAS_AXI_WUSER of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_HAS_AXI_WUSER of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_HAS_BACKUP : integer;
-  attribute C_HAS_BACKUP of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_HAS_BACKUP of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_HAS_DATA_COUNT : integer;
-  attribute C_HAS_DATA_COUNT of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_HAS_DATA_COUNT of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_HAS_DATA_COUNTS_AXIS : integer;
-  attribute C_HAS_DATA_COUNTS_AXIS of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_HAS_DATA_COUNTS_AXIS of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_HAS_DATA_COUNTS_RACH : integer;
-  attribute C_HAS_DATA_COUNTS_RACH of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_HAS_DATA_COUNTS_RACH of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_HAS_DATA_COUNTS_RDCH : integer;
-  attribute C_HAS_DATA_COUNTS_RDCH of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_HAS_DATA_COUNTS_RDCH of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_HAS_DATA_COUNTS_WACH : integer;
-  attribute C_HAS_DATA_COUNTS_WACH of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_HAS_DATA_COUNTS_WACH of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_HAS_DATA_COUNTS_WDCH : integer;
-  attribute C_HAS_DATA_COUNTS_WDCH of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_HAS_DATA_COUNTS_WDCH of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_HAS_DATA_COUNTS_WRCH : integer;
-  attribute C_HAS_DATA_COUNTS_WRCH of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_HAS_DATA_COUNTS_WRCH of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_HAS_INT_CLK : integer;
-  attribute C_HAS_INT_CLK of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_HAS_INT_CLK of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_HAS_MASTER_CE : integer;
-  attribute C_HAS_MASTER_CE of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_HAS_MASTER_CE of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_HAS_MEMINIT_FILE : integer;
-  attribute C_HAS_MEMINIT_FILE of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_HAS_MEMINIT_FILE of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_HAS_OVERFLOW : integer;
-  attribute C_HAS_OVERFLOW of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_HAS_OVERFLOW of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_HAS_PROG_FLAGS_AXIS : integer;
-  attribute C_HAS_PROG_FLAGS_AXIS of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_HAS_PROG_FLAGS_AXIS of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_HAS_PROG_FLAGS_RACH : integer;
-  attribute C_HAS_PROG_FLAGS_RACH of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_HAS_PROG_FLAGS_RACH of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_HAS_PROG_FLAGS_RDCH : integer;
-  attribute C_HAS_PROG_FLAGS_RDCH of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_HAS_PROG_FLAGS_RDCH of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_HAS_PROG_FLAGS_WACH : integer;
-  attribute C_HAS_PROG_FLAGS_WACH of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_HAS_PROG_FLAGS_WACH of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_HAS_PROG_FLAGS_WDCH : integer;
-  attribute C_HAS_PROG_FLAGS_WDCH of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_HAS_PROG_FLAGS_WDCH of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_HAS_PROG_FLAGS_WRCH : integer;
-  attribute C_HAS_PROG_FLAGS_WRCH of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_HAS_PROG_FLAGS_WRCH of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_HAS_RD_DATA_COUNT : integer;
-  attribute C_HAS_RD_DATA_COUNT of wr_data_fifo_generator_v13_2_1 : entity is 1;
+  attribute C_HAS_RD_DATA_COUNT of wr_data_fifo_generator_v13_2_2 : entity is 1;
   attribute C_HAS_RD_RST : integer;
-  attribute C_HAS_RD_RST of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_HAS_RD_RST of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_HAS_RST : integer;
-  attribute C_HAS_RST of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_HAS_RST of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_HAS_SLAVE_CE : integer;
-  attribute C_HAS_SLAVE_CE of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_HAS_SLAVE_CE of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_HAS_SRST : integer;
-  attribute C_HAS_SRST of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_HAS_SRST of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_HAS_UNDERFLOW : integer;
-  attribute C_HAS_UNDERFLOW of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_HAS_UNDERFLOW of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_HAS_VALID : integer;
-  attribute C_HAS_VALID of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_HAS_VALID of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_HAS_WR_ACK : integer;
-  attribute C_HAS_WR_ACK of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_HAS_WR_ACK of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_HAS_WR_DATA_COUNT : integer;
-  attribute C_HAS_WR_DATA_COUNT of wr_data_fifo_generator_v13_2_1 : entity is 1;
+  attribute C_HAS_WR_DATA_COUNT of wr_data_fifo_generator_v13_2_2 : entity is 1;
   attribute C_HAS_WR_RST : integer;
-  attribute C_HAS_WR_RST of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_HAS_WR_RST of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_IMPLEMENTATION_TYPE : integer;
-  attribute C_IMPLEMENTATION_TYPE of wr_data_fifo_generator_v13_2_1 : entity is 2;
+  attribute C_IMPLEMENTATION_TYPE of wr_data_fifo_generator_v13_2_2 : entity is 2;
   attribute C_IMPLEMENTATION_TYPE_AXIS : integer;
-  attribute C_IMPLEMENTATION_TYPE_AXIS of wr_data_fifo_generator_v13_2_1 : entity is 1;
+  attribute C_IMPLEMENTATION_TYPE_AXIS of wr_data_fifo_generator_v13_2_2 : entity is 1;
   attribute C_IMPLEMENTATION_TYPE_RACH : integer;
-  attribute C_IMPLEMENTATION_TYPE_RACH of wr_data_fifo_generator_v13_2_1 : entity is 1;
+  attribute C_IMPLEMENTATION_TYPE_RACH of wr_data_fifo_generator_v13_2_2 : entity is 1;
   attribute C_IMPLEMENTATION_TYPE_RDCH : integer;
-  attribute C_IMPLEMENTATION_TYPE_RDCH of wr_data_fifo_generator_v13_2_1 : entity is 1;
+  attribute C_IMPLEMENTATION_TYPE_RDCH of wr_data_fifo_generator_v13_2_2 : entity is 1;
   attribute C_IMPLEMENTATION_TYPE_WACH : integer;
-  attribute C_IMPLEMENTATION_TYPE_WACH of wr_data_fifo_generator_v13_2_1 : entity is 1;
+  attribute C_IMPLEMENTATION_TYPE_WACH of wr_data_fifo_generator_v13_2_2 : entity is 1;
   attribute C_IMPLEMENTATION_TYPE_WDCH : integer;
-  attribute C_IMPLEMENTATION_TYPE_WDCH of wr_data_fifo_generator_v13_2_1 : entity is 1;
+  attribute C_IMPLEMENTATION_TYPE_WDCH of wr_data_fifo_generator_v13_2_2 : entity is 1;
   attribute C_IMPLEMENTATION_TYPE_WRCH : integer;
-  attribute C_IMPLEMENTATION_TYPE_WRCH of wr_data_fifo_generator_v13_2_1 : entity is 1;
+  attribute C_IMPLEMENTATION_TYPE_WRCH of wr_data_fifo_generator_v13_2_2 : entity is 1;
   attribute C_INIT_WR_PNTR_VAL : integer;
-  attribute C_INIT_WR_PNTR_VAL of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_INIT_WR_PNTR_VAL of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_INTERFACE_TYPE : integer;
-  attribute C_INTERFACE_TYPE of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_INTERFACE_TYPE of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_MEMORY_TYPE : integer;
-  attribute C_MEMORY_TYPE of wr_data_fifo_generator_v13_2_1 : entity is 1;
+  attribute C_MEMORY_TYPE of wr_data_fifo_generator_v13_2_2 : entity is 1;
   attribute C_MIF_FILE_NAME : string;
-  attribute C_MIF_FILE_NAME of wr_data_fifo_generator_v13_2_1 : entity is "BlankString";
+  attribute C_MIF_FILE_NAME of wr_data_fifo_generator_v13_2_2 : entity is "BlankString";
   attribute C_MSGON_VAL : integer;
-  attribute C_MSGON_VAL of wr_data_fifo_generator_v13_2_1 : entity is 1;
+  attribute C_MSGON_VAL of wr_data_fifo_generator_v13_2_2 : entity is 1;
   attribute C_OPTIMIZATION_MODE : integer;
-  attribute C_OPTIMIZATION_MODE of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_OPTIMIZATION_MODE of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_OVERFLOW_LOW : integer;
-  attribute C_OVERFLOW_LOW of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_OVERFLOW_LOW of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_POWER_SAVING_MODE : integer;
-  attribute C_POWER_SAVING_MODE of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_POWER_SAVING_MODE of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_PRELOAD_LATENCY : integer;
-  attribute C_PRELOAD_LATENCY of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_PRELOAD_LATENCY of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_PRELOAD_REGS : integer;
-  attribute C_PRELOAD_REGS of wr_data_fifo_generator_v13_2_1 : entity is 1;
+  attribute C_PRELOAD_REGS of wr_data_fifo_generator_v13_2_2 : entity is 1;
   attribute C_PRIM_FIFO_TYPE : string;
-  attribute C_PRIM_FIFO_TYPE of wr_data_fifo_generator_v13_2_1 : entity is "512x72";
+  attribute C_PRIM_FIFO_TYPE of wr_data_fifo_generator_v13_2_2 : entity is "512x72";
   attribute C_PRIM_FIFO_TYPE_AXIS : string;
-  attribute C_PRIM_FIFO_TYPE_AXIS of wr_data_fifo_generator_v13_2_1 : entity is "1kx18";
+  attribute C_PRIM_FIFO_TYPE_AXIS of wr_data_fifo_generator_v13_2_2 : entity is "1kx18";
   attribute C_PRIM_FIFO_TYPE_RACH : string;
-  attribute C_PRIM_FIFO_TYPE_RACH of wr_data_fifo_generator_v13_2_1 : entity is "512x36";
+  attribute C_PRIM_FIFO_TYPE_RACH of wr_data_fifo_generator_v13_2_2 : entity is "512x36";
   attribute C_PRIM_FIFO_TYPE_RDCH : string;
-  attribute C_PRIM_FIFO_TYPE_RDCH of wr_data_fifo_generator_v13_2_1 : entity is "1kx36";
+  attribute C_PRIM_FIFO_TYPE_RDCH of wr_data_fifo_generator_v13_2_2 : entity is "1kx36";
   attribute C_PRIM_FIFO_TYPE_WACH : string;
-  attribute C_PRIM_FIFO_TYPE_WACH of wr_data_fifo_generator_v13_2_1 : entity is "512x36";
+  attribute C_PRIM_FIFO_TYPE_WACH of wr_data_fifo_generator_v13_2_2 : entity is "512x36";
   attribute C_PRIM_FIFO_TYPE_WDCH : string;
-  attribute C_PRIM_FIFO_TYPE_WDCH of wr_data_fifo_generator_v13_2_1 : entity is "1kx36";
+  attribute C_PRIM_FIFO_TYPE_WDCH of wr_data_fifo_generator_v13_2_2 : entity is "1kx36";
   attribute C_PRIM_FIFO_TYPE_WRCH : string;
-  attribute C_PRIM_FIFO_TYPE_WRCH of wr_data_fifo_generator_v13_2_1 : entity is "512x36";
+  attribute C_PRIM_FIFO_TYPE_WRCH of wr_data_fifo_generator_v13_2_2 : entity is "512x36";
   attribute C_PROG_EMPTY_THRESH_ASSERT_VAL : integer;
-  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL of wr_data_fifo_generator_v13_2_1 : entity is 4;
+  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL of wr_data_fifo_generator_v13_2_2 : entity is 4;
   attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS : integer;
-  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS of wr_data_fifo_generator_v13_2_1 : entity is 1022;
+  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS of wr_data_fifo_generator_v13_2_2 : entity is 1022;
   attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH : integer;
-  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH of wr_data_fifo_generator_v13_2_1 : entity is 1022;
+  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH of wr_data_fifo_generator_v13_2_2 : entity is 1022;
   attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH : integer;
-  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH of wr_data_fifo_generator_v13_2_1 : entity is 1022;
+  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH of wr_data_fifo_generator_v13_2_2 : entity is 1022;
   attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH : integer;
-  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH of wr_data_fifo_generator_v13_2_1 : entity is 1022;
+  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH of wr_data_fifo_generator_v13_2_2 : entity is 1022;
   attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH : integer;
-  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH of wr_data_fifo_generator_v13_2_1 : entity is 1022;
+  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH of wr_data_fifo_generator_v13_2_2 : entity is 1022;
   attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH : integer;
-  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH of wr_data_fifo_generator_v13_2_1 : entity is 1022;
+  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH of wr_data_fifo_generator_v13_2_2 : entity is 1022;
   attribute C_PROG_EMPTY_THRESH_NEGATE_VAL : integer;
-  attribute C_PROG_EMPTY_THRESH_NEGATE_VAL of wr_data_fifo_generator_v13_2_1 : entity is 5;
+  attribute C_PROG_EMPTY_THRESH_NEGATE_VAL of wr_data_fifo_generator_v13_2_2 : entity is 5;
   attribute C_PROG_EMPTY_TYPE : integer;
-  attribute C_PROG_EMPTY_TYPE of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_PROG_EMPTY_TYPE of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_PROG_EMPTY_TYPE_AXIS : integer;
-  attribute C_PROG_EMPTY_TYPE_AXIS of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_PROG_EMPTY_TYPE_AXIS of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_PROG_EMPTY_TYPE_RACH : integer;
-  attribute C_PROG_EMPTY_TYPE_RACH of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_PROG_EMPTY_TYPE_RACH of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_PROG_EMPTY_TYPE_RDCH : integer;
-  attribute C_PROG_EMPTY_TYPE_RDCH of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_PROG_EMPTY_TYPE_RDCH of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_PROG_EMPTY_TYPE_WACH : integer;
-  attribute C_PROG_EMPTY_TYPE_WACH of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_PROG_EMPTY_TYPE_WACH of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_PROG_EMPTY_TYPE_WDCH : integer;
-  attribute C_PROG_EMPTY_TYPE_WDCH of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_PROG_EMPTY_TYPE_WDCH of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_PROG_EMPTY_TYPE_WRCH : integer;
-  attribute C_PROG_EMPTY_TYPE_WRCH of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_PROG_EMPTY_TYPE_WRCH of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_PROG_FULL_THRESH_ASSERT_VAL : integer;
-  attribute C_PROG_FULL_THRESH_ASSERT_VAL of wr_data_fifo_generator_v13_2_1 : entity is 63;
+  attribute C_PROG_FULL_THRESH_ASSERT_VAL of wr_data_fifo_generator_v13_2_2 : entity is 63;
   attribute C_PROG_FULL_THRESH_ASSERT_VAL_AXIS : integer;
-  attribute C_PROG_FULL_THRESH_ASSERT_VAL_AXIS of wr_data_fifo_generator_v13_2_1 : entity is 1023;
+  attribute C_PROG_FULL_THRESH_ASSERT_VAL_AXIS of wr_data_fifo_generator_v13_2_2 : entity is 1023;
   attribute C_PROG_FULL_THRESH_ASSERT_VAL_RACH : integer;
-  attribute C_PROG_FULL_THRESH_ASSERT_VAL_RACH of wr_data_fifo_generator_v13_2_1 : entity is 1023;
+  attribute C_PROG_FULL_THRESH_ASSERT_VAL_RACH of wr_data_fifo_generator_v13_2_2 : entity is 1023;
   attribute C_PROG_FULL_THRESH_ASSERT_VAL_RDCH : integer;
-  attribute C_PROG_FULL_THRESH_ASSERT_VAL_RDCH of wr_data_fifo_generator_v13_2_1 : entity is 1023;
+  attribute C_PROG_FULL_THRESH_ASSERT_VAL_RDCH of wr_data_fifo_generator_v13_2_2 : entity is 1023;
   attribute C_PROG_FULL_THRESH_ASSERT_VAL_WACH : integer;
-  attribute C_PROG_FULL_THRESH_ASSERT_VAL_WACH of wr_data_fifo_generator_v13_2_1 : entity is 1023;
+  attribute C_PROG_FULL_THRESH_ASSERT_VAL_WACH of wr_data_fifo_generator_v13_2_2 : entity is 1023;
   attribute C_PROG_FULL_THRESH_ASSERT_VAL_WDCH : integer;
-  attribute C_PROG_FULL_THRESH_ASSERT_VAL_WDCH of wr_data_fifo_generator_v13_2_1 : entity is 1023;
+  attribute C_PROG_FULL_THRESH_ASSERT_VAL_WDCH of wr_data_fifo_generator_v13_2_2 : entity is 1023;
   attribute C_PROG_FULL_THRESH_ASSERT_VAL_WRCH : integer;
-  attribute C_PROG_FULL_THRESH_ASSERT_VAL_WRCH of wr_data_fifo_generator_v13_2_1 : entity is 1023;
+  attribute C_PROG_FULL_THRESH_ASSERT_VAL_WRCH of wr_data_fifo_generator_v13_2_2 : entity is 1023;
   attribute C_PROG_FULL_THRESH_NEGATE_VAL : integer;
-  attribute C_PROG_FULL_THRESH_NEGATE_VAL of wr_data_fifo_generator_v13_2_1 : entity is 62;
+  attribute C_PROG_FULL_THRESH_NEGATE_VAL of wr_data_fifo_generator_v13_2_2 : entity is 62;
   attribute C_PROG_FULL_TYPE : integer;
-  attribute C_PROG_FULL_TYPE of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_PROG_FULL_TYPE of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_PROG_FULL_TYPE_AXIS : integer;
-  attribute C_PROG_FULL_TYPE_AXIS of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_PROG_FULL_TYPE_AXIS of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_PROG_FULL_TYPE_RACH : integer;
-  attribute C_PROG_FULL_TYPE_RACH of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_PROG_FULL_TYPE_RACH of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_PROG_FULL_TYPE_RDCH : integer;
-  attribute C_PROG_FULL_TYPE_RDCH of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_PROG_FULL_TYPE_RDCH of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_PROG_FULL_TYPE_WACH : integer;
-  attribute C_PROG_FULL_TYPE_WACH of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_PROG_FULL_TYPE_WACH of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_PROG_FULL_TYPE_WDCH : integer;
-  attribute C_PROG_FULL_TYPE_WDCH of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_PROG_FULL_TYPE_WDCH of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_PROG_FULL_TYPE_WRCH : integer;
-  attribute C_PROG_FULL_TYPE_WRCH of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_PROG_FULL_TYPE_WRCH of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_RACH_TYPE : integer;
-  attribute C_RACH_TYPE of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_RACH_TYPE of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_RDCH_TYPE : integer;
-  attribute C_RDCH_TYPE of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_RDCH_TYPE of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_RD_DATA_COUNT_WIDTH : integer;
-  attribute C_RD_DATA_COUNT_WIDTH of wr_data_fifo_generator_v13_2_1 : entity is 6;
+  attribute C_RD_DATA_COUNT_WIDTH of wr_data_fifo_generator_v13_2_2 : entity is 6;
   attribute C_RD_DEPTH : integer;
-  attribute C_RD_DEPTH of wr_data_fifo_generator_v13_2_1 : entity is 64;
+  attribute C_RD_DEPTH of wr_data_fifo_generator_v13_2_2 : entity is 64;
   attribute C_RD_FREQ : integer;
-  attribute C_RD_FREQ of wr_data_fifo_generator_v13_2_1 : entity is 1;
+  attribute C_RD_FREQ of wr_data_fifo_generator_v13_2_2 : entity is 1;
   attribute C_RD_PNTR_WIDTH : integer;
-  attribute C_RD_PNTR_WIDTH of wr_data_fifo_generator_v13_2_1 : entity is 6;
+  attribute C_RD_PNTR_WIDTH of wr_data_fifo_generator_v13_2_2 : entity is 6;
   attribute C_REG_SLICE_MODE_AXIS : integer;
-  attribute C_REG_SLICE_MODE_AXIS of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_REG_SLICE_MODE_AXIS of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_REG_SLICE_MODE_RACH : integer;
-  attribute C_REG_SLICE_MODE_RACH of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_REG_SLICE_MODE_RACH of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_REG_SLICE_MODE_RDCH : integer;
-  attribute C_REG_SLICE_MODE_RDCH of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_REG_SLICE_MODE_RDCH of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_REG_SLICE_MODE_WACH : integer;
-  attribute C_REG_SLICE_MODE_WACH of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_REG_SLICE_MODE_WACH of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_REG_SLICE_MODE_WDCH : integer;
-  attribute C_REG_SLICE_MODE_WDCH of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_REG_SLICE_MODE_WDCH of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_REG_SLICE_MODE_WRCH : integer;
-  attribute C_REG_SLICE_MODE_WRCH of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_REG_SLICE_MODE_WRCH of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_SELECT_XPM : integer;
-  attribute C_SELECT_XPM of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_SELECT_XPM of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_SYNCHRONIZER_STAGE : integer;
-  attribute C_SYNCHRONIZER_STAGE of wr_data_fifo_generator_v13_2_1 : entity is 2;
+  attribute C_SYNCHRONIZER_STAGE of wr_data_fifo_generator_v13_2_2 : entity is 2;
   attribute C_UNDERFLOW_LOW : integer;
-  attribute C_UNDERFLOW_LOW of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_UNDERFLOW_LOW of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_USE_COMMON_OVERFLOW : integer;
-  attribute C_USE_COMMON_OVERFLOW of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_USE_COMMON_OVERFLOW of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_USE_COMMON_UNDERFLOW : integer;
-  attribute C_USE_COMMON_UNDERFLOW of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_USE_COMMON_UNDERFLOW of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_USE_DEFAULT_SETTINGS : integer;
-  attribute C_USE_DEFAULT_SETTINGS of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_USE_DEFAULT_SETTINGS of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_USE_DOUT_RST : integer;
-  attribute C_USE_DOUT_RST of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_USE_DOUT_RST of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_USE_ECC : integer;
-  attribute C_USE_ECC of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_USE_ECC of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_USE_ECC_AXIS : integer;
-  attribute C_USE_ECC_AXIS of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_USE_ECC_AXIS of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_USE_ECC_RACH : integer;
-  attribute C_USE_ECC_RACH of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_USE_ECC_RACH of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_USE_ECC_RDCH : integer;
-  attribute C_USE_ECC_RDCH of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_USE_ECC_RDCH of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_USE_ECC_WACH : integer;
-  attribute C_USE_ECC_WACH of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_USE_ECC_WACH of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_USE_ECC_WDCH : integer;
-  attribute C_USE_ECC_WDCH of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_USE_ECC_WDCH of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_USE_ECC_WRCH : integer;
-  attribute C_USE_ECC_WRCH of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_USE_ECC_WRCH of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_USE_EMBEDDED_REG : integer;
-  attribute C_USE_EMBEDDED_REG of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_USE_EMBEDDED_REG of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_USE_FIFO16_FLAGS : integer;
-  attribute C_USE_FIFO16_FLAGS of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_USE_FIFO16_FLAGS of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_USE_FWFT_DATA_COUNT : integer;
-  attribute C_USE_FWFT_DATA_COUNT of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_USE_FWFT_DATA_COUNT of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_USE_PIPELINE_REG : integer;
-  attribute C_USE_PIPELINE_REG of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_USE_PIPELINE_REG of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_VALID_LOW : integer;
-  attribute C_VALID_LOW of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_VALID_LOW of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_WACH_TYPE : integer;
-  attribute C_WACH_TYPE of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_WACH_TYPE of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_WDCH_TYPE : integer;
-  attribute C_WDCH_TYPE of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_WDCH_TYPE of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_WRCH_TYPE : integer;
-  attribute C_WRCH_TYPE of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_WRCH_TYPE of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_WR_ACK_LOW : integer;
-  attribute C_WR_ACK_LOW of wr_data_fifo_generator_v13_2_1 : entity is 0;
+  attribute C_WR_ACK_LOW of wr_data_fifo_generator_v13_2_2 : entity is 0;
   attribute C_WR_DATA_COUNT_WIDTH : integer;
-  attribute C_WR_DATA_COUNT_WIDTH of wr_data_fifo_generator_v13_2_1 : entity is 6;
+  attribute C_WR_DATA_COUNT_WIDTH of wr_data_fifo_generator_v13_2_2 : entity is 6;
   attribute C_WR_DEPTH : integer;
-  attribute C_WR_DEPTH of wr_data_fifo_generator_v13_2_1 : entity is 64;
+  attribute C_WR_DEPTH of wr_data_fifo_generator_v13_2_2 : entity is 64;
   attribute C_WR_DEPTH_AXIS : integer;
-  attribute C_WR_DEPTH_AXIS of wr_data_fifo_generator_v13_2_1 : entity is 1024;
+  attribute C_WR_DEPTH_AXIS of wr_data_fifo_generator_v13_2_2 : entity is 1024;
   attribute C_WR_DEPTH_RACH : integer;
-  attribute C_WR_DEPTH_RACH of wr_data_fifo_generator_v13_2_1 : entity is 16;
+  attribute C_WR_DEPTH_RACH of wr_data_fifo_generator_v13_2_2 : entity is 16;
   attribute C_WR_DEPTH_RDCH : integer;
-  attribute C_WR_DEPTH_RDCH of wr_data_fifo_generator_v13_2_1 : entity is 1024;
+  attribute C_WR_DEPTH_RDCH of wr_data_fifo_generator_v13_2_2 : entity is 1024;
   attribute C_WR_DEPTH_WACH : integer;
-  attribute C_WR_DEPTH_WACH of wr_data_fifo_generator_v13_2_1 : entity is 16;
+  attribute C_WR_DEPTH_WACH of wr_data_fifo_generator_v13_2_2 : entity is 16;
   attribute C_WR_DEPTH_WDCH : integer;
-  attribute C_WR_DEPTH_WDCH of wr_data_fifo_generator_v13_2_1 : entity is 1024;
+  attribute C_WR_DEPTH_WDCH of wr_data_fifo_generator_v13_2_2 : entity is 1024;
   attribute C_WR_DEPTH_WRCH : integer;
-  attribute C_WR_DEPTH_WRCH of wr_data_fifo_generator_v13_2_1 : entity is 16;
+  attribute C_WR_DEPTH_WRCH of wr_data_fifo_generator_v13_2_2 : entity is 16;
   attribute C_WR_FREQ : integer;
-  attribute C_WR_FREQ of wr_data_fifo_generator_v13_2_1 : entity is 1;
+  attribute C_WR_FREQ of wr_data_fifo_generator_v13_2_2 : entity is 1;
   attribute C_WR_PNTR_WIDTH : integer;
-  attribute C_WR_PNTR_WIDTH of wr_data_fifo_generator_v13_2_1 : entity is 6;
+  attribute C_WR_PNTR_WIDTH of wr_data_fifo_generator_v13_2_2 : entity is 6;
   attribute C_WR_PNTR_WIDTH_AXIS : integer;
-  attribute C_WR_PNTR_WIDTH_AXIS of wr_data_fifo_generator_v13_2_1 : entity is 10;
+  attribute C_WR_PNTR_WIDTH_AXIS of wr_data_fifo_generator_v13_2_2 : entity is 10;
   attribute C_WR_PNTR_WIDTH_RACH : integer;
-  attribute C_WR_PNTR_WIDTH_RACH of wr_data_fifo_generator_v13_2_1 : entity is 4;
+  attribute C_WR_PNTR_WIDTH_RACH of wr_data_fifo_generator_v13_2_2 : entity is 4;
   attribute C_WR_PNTR_WIDTH_RDCH : integer;
-  attribute C_WR_PNTR_WIDTH_RDCH of wr_data_fifo_generator_v13_2_1 : entity is 10;
+  attribute C_WR_PNTR_WIDTH_RDCH of wr_data_fifo_generator_v13_2_2 : entity is 10;
   attribute C_WR_PNTR_WIDTH_WACH : integer;
-  attribute C_WR_PNTR_WIDTH_WACH of wr_data_fifo_generator_v13_2_1 : entity is 4;
+  attribute C_WR_PNTR_WIDTH_WACH of wr_data_fifo_generator_v13_2_2 : entity is 4;
   attribute C_WR_PNTR_WIDTH_WDCH : integer;
-  attribute C_WR_PNTR_WIDTH_WDCH of wr_data_fifo_generator_v13_2_1 : entity is 10;
+  attribute C_WR_PNTR_WIDTH_WDCH of wr_data_fifo_generator_v13_2_2 : entity is 10;
   attribute C_WR_PNTR_WIDTH_WRCH : integer;
-  attribute C_WR_PNTR_WIDTH_WRCH of wr_data_fifo_generator_v13_2_1 : entity is 4;
+  attribute C_WR_PNTR_WIDTH_WRCH of wr_data_fifo_generator_v13_2_2 : entity is 4;
   attribute C_WR_RESPONSE_LATENCY : integer;
-  attribute C_WR_RESPONSE_LATENCY of wr_data_fifo_generator_v13_2_1 : entity is 1;
+  attribute C_WR_RESPONSE_LATENCY of wr_data_fifo_generator_v13_2_2 : entity is 1;
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of wr_data_fifo_generator_v13_2_1 : entity is "fifo_generator_v13_2_1";
-end wr_data_fifo_generator_v13_2_1;
+  attribute ORIG_REF_NAME of wr_data_fifo_generator_v13_2_2 : entity is "fifo_generator_v13_2_2";
+end wr_data_fifo_generator_v13_2_2;
 
-architecture STRUCTURE of wr_data_fifo_generator_v13_2_1 is
+architecture STRUCTURE of wr_data_fifo_generator_v13_2_2 is
   signal \<const0>\ : STD_LOGIC;
   signal \<const1>\ : STD_LOGIC;
 begin
@@ -6081,7 +6107,7 @@ VCC: unisim.vcomponents.VCC
      port map (
       P => \<const1>\
     );
-inst_fifo_gen: entity work.wr_data_fifo_generator_v13_2_1_synth
+inst_fifo_gen: entity work.wr_data_fifo_generator_v13_2_2_synth
      port map (
       din(143 downto 0) => din(143 downto 0),
       dout(143 downto 0) => dout(143 downto 0),
@@ -6115,11 +6141,11 @@ entity wr_data is
   attribute NotValidForBitStream : boolean;
   attribute NotValidForBitStream of wr_data : entity is true;
   attribute CHECK_LICENSE_TYPE : string;
-  attribute CHECK_LICENSE_TYPE of wr_data : entity is "wr_data,fifo_generator_v13_2_1,{}";
+  attribute CHECK_LICENSE_TYPE of wr_data : entity is "wr_data,fifo_generator_v13_2_2,{}";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of wr_data : entity is "yes";
   attribute x_core_info : string;
-  attribute x_core_info of wr_data : entity is "fifo_generator_v13_2_1,Vivado 2017.4";
+  attribute x_core_info of wr_data : entity is "fifo_generator_v13_2_2,Vivado 2018.1";
 end wr_data;
 
 architecture STRUCTURE of wr_data is
@@ -6661,7 +6687,7 @@ architecture STRUCTURE of wr_data is
   attribute x_interface_info of din : signal is "xilinx.com:interface:fifo_write:1.0 FIFO_WRITE WR_DATA";
   attribute x_interface_info of dout : signal is "xilinx.com:interface:fifo_read:1.0 FIFO_READ RD_DATA";
 begin
-U0: entity work.wr_data_fifo_generator_v13_2_1
+U0: entity work.wr_data_fifo_generator_v13_2_2
      port map (
       almost_empty => NLW_U0_almost_empty_UNCONNECTED,
       almost_full => NLW_U0_almost_full_UNCONNECTED,

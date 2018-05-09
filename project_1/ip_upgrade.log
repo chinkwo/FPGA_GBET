@@ -1,0 +1,163 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Mon May  7 20:30:20 2018
+| Host         : DESKTOP-JPATCP2 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'wr_data'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of wr_data (xilinx.com:ip:fifo_generator:13.2) from (Rev. 1) to (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Mon May  7 20:30:19 2018
+| Host         : DESKTOP-JPATCP2 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'rd_data'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of rd_data (xilinx.com:ip:fifo_generator:13.2) from (Rev. 1) to (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Mon May  7 20:30:18 2018
+| Host         : DESKTOP-JPATCP2 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mult_gen_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of mult_gen_0 (xilinx.com:ip:mult_gen:12.0) from (Rev. 13) to (Rev. 14)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Mon May  7 20:30:17 2018
+| Host         : DESKTOP-JPATCP2 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fifo_in32_o128'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of fifo_in32_o128 (xilinx.com:ip:fifo_generator:13.2) from (Rev. 1) to (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Mon May  7 20:30:16 2018
+| Host         : DESKTOP-JPATCP2 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fifo_in128_o32_2048'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of fifo_in128_o32_2048 (xilinx.com:ip:fifo_generator:13.2) from (Rev. 1) to (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Mon May  7 20:30:15 2018
+| Host         : DESKTOP-JPATCP2 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fifo_ddr3_rd_p6'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of fifo_ddr3_rd_p6 (xilinx.com:ip:fifo_generator:13.2) from (Rev. 1) to (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Mon May  7 20:30:14 2018
+| Host         : DESKTOP-JPATCP2 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'cmd_fifo'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of cmd_fifo (xilinx.com:ip:fifo_generator:13.2) from (Rev. 1) to (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Mon May  7 20:30:13 2018
+| Host         : DESKTOP-JPATCP2 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tfgg484-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'A7_ddr3_mig'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of A7_ddr3_mig from xilinx.com:ip:mig_7series:4.0 (Rev. 5) to xilinx.com:ip:mig_7series:4.1
+

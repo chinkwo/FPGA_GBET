@@ -1,7 +1,7 @@
 onbreak {quit -force}
 onerror {quit -force}
 
-asim -t 1ps +access +r +m+fifo_ddr3_rd_p6 -L xil_defaultlib -L xpm -L fifo_generator_v13_2_1 -L unisims_ver -L unimacro_ver -L secureip -O5 xil_defaultlib.fifo_ddr3_rd_p6 xil_defaultlib.glbl
+asim -t 1ps +access +r +m+fifo_ddr3_rd_p6 -L xilinx_vip -L xil_defaultlib -L xpm -L fifo_generator_v13_2_2 -L unisims_ver -L unimacro_ver -L secureip -O5 xil_defaultlib.fifo_ddr3_rd_p6 xil_defaultlib.glbl
 
 do {wave.do}
 

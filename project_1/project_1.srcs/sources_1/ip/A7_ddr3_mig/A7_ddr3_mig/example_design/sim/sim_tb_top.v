@@ -49,7 +49,7 @@
 //   ____  ____
 //  /   /\/   /
 // /___/  \  /    Vendor             : Xilinx
-// \   \   \/     Version            : 4.0
+// \   \   \/     Version            : 4.1
 //  \   \         Application        : MIG
 //  /   /         Filename           : sim_tb_top.v
 // /___/   /\     Date Last Modified : $Date: 2011/06/07 13:45:16 $

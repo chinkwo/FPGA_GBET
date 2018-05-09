@@ -47,14 +47,14 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:ip:mult_gen:12.0
--- IP Revision: 13
+-- IP Revision: 14
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
 
-LIBRARY mult_gen_v12_0_13;
-USE mult_gen_v12_0_13.mult_gen_v12_0_13;
+LIBRARY mult_gen_v12_0_14;
+USE mult_gen_v12_0_14.mult_gen_v12_0_14;
 
 ENTITY mult_gen_0 IS
   PORT (
@@ -68,7 +68,7 @@ END mult_gen_0;
 ARCHITECTURE mult_gen_0_arch OF mult_gen_0 IS
   ATTRIBUTE DowngradeIPIdentifiedWarnings : STRING;
   ATTRIBUTE DowngradeIPIdentifiedWarnings OF mult_gen_0_arch: ARCHITECTURE IS "yes";
-  COMPONENT mult_gen_v12_0_13 IS
+  COMPONENT mult_gen_v12_0_14 IS
     GENERIC (
       C_VERBOSITY : INTEGER;
       C_MODEL_TYPE : INTEGER;
@@ -99,13 +99,13 @@ ARCHITECTURE mult_gen_0_arch OF mult_gen_0 IS
       SCLR : IN STD_LOGIC;
       P : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
     );
-  END COMPONENT mult_gen_v12_0_13;
+  END COMPONENT mult_gen_v12_0_14;
   ATTRIBUTE X_CORE_INFO : STRING;
-  ATTRIBUTE X_CORE_INFO OF mult_gen_0_arch: ARCHITECTURE IS "mult_gen_v12_0_13,Vivado 2017.4";
+  ATTRIBUTE X_CORE_INFO OF mult_gen_0_arch: ARCHITECTURE IS "mult_gen_v12_0_14,Vivado 2018.1";
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
-  ATTRIBUTE CHECK_LICENSE_TYPE OF mult_gen_0_arch : ARCHITECTURE IS "mult_gen_0,mult_gen_v12_0_13,{}";
+  ATTRIBUTE CHECK_LICENSE_TYPE OF mult_gen_0_arch : ARCHITECTURE IS "mult_gen_0,mult_gen_v12_0_14,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF mult_gen_0_arch: ARCHITECTURE IS "mult_gen_0,mult_gen_v12_0_13,{x_ipProduct=Vivado 2017.4,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=mult_gen,x_ipVersion=12.0,x_ipCoreRevision=13,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_VERBOSITY=0,C_MODEL_TYPE=0,C_OPTIMIZE_GOAL=1,C_XDEVICEFAMILY=artix7,C_HAS_CE=0,C_HAS_SCLR=0,C_LATENCY=1,C_A_WIDTH=16,C_A_TYPE=0,C_B_WIDTH=16,C_B_TYPE=0,C_OUT_HIGH=31,C_OUT_LOW=0,C_MULT_TYPE=0,C_CE_OVERRIDES_SCLR=0,C_CCM_IMP=0,C_B_VALUE=10000001,C_HAS_ZERO_DETECT=0,C_ROUND_OUTPUT=0,C_ROUND_PT=0}";
+  ATTRIBUTE CORE_GENERATION_INFO OF mult_gen_0_arch: ARCHITECTURE IS "mult_gen_0,mult_gen_v12_0_14,{x_ipProduct=Vivado 2018.1,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=mult_gen,x_ipVersion=12.0,x_ipCoreRevision=14,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_VERBOSITY=0,C_MODEL_TYPE=0,C_OPTIMIZE_GOAL=1,C_XDEVICEFAMILY=artix7,C_HAS_CE=0,C_HAS_SCLR=0,C_LATENCY=1,C_A_WIDTH=16,C_A_TYPE=0,C_B_WIDTH=16,C_B_TYPE=0,C_OUT_HIGH=31,C_OUT_LOW=0,C_MULT_TYPE=0,C_CE_OVERRIDES_SCLR=0,C_CCM_IMP=0,C_B_VALUE=10000001,C_HAS_ZERO_DETECT=0,C_ROUND_OUTPUT=0,C_ROUND_PT=0}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER OF P: SIGNAL IS "XIL_INTERFACENAME p_intf, LAYERED_METADATA undef";
@@ -117,7 +117,7 @@ ARCHITECTURE mult_gen_0_arch OF mult_gen_0 IS
   ATTRIBUTE X_INTERFACE_PARAMETER OF CLK: SIGNAL IS "XIL_INTERFACENAME clk_intf, ASSOCIATED_BUSIF p_intf:b_intf:a_intf, ASSOCIATED_RESET sclr, ASSOCIATED_CLKEN ce, FREQ_HZ 10000000, PHASE 0.000";
   ATTRIBUTE X_INTERFACE_INFO OF CLK: SIGNAL IS "xilinx.com:signal:clock:1.0 clk_intf CLK";
 BEGIN
-  U0 : mult_gen_v12_0_13
+  U0 : mult_gen_v12_0_14
     GENERIC MAP (
       C_VERBOSITY => 0,
       C_MODEL_TYPE => 0,
