@@ -1,10 +1,21 @@
 # FPGA_GBET  
 在FPGA上实现千兆以太网图像传输的功能  
 ----------  
+## 开发环境  
+Vivado、Modelsim、Artix-7-xc7a35t-fgg484-2  
 ## 项目概况(Project Overview)  
-使用FPGA实现千兆以太网MAC层协议记忆UDP协议，完成与PC机或者其他设备进行千兆以太网通信。千兆以太网联合DDR3等存储器可以实现图像的存储，显示和传输的功能。  
+使用FPGA实现千兆以太网MAC层协议以及UDP协议，完成与PC机或者其他设备进行千兆以太网通信。千兆以太网联合DDR3等存储器可以实现图像的存储，显示和传输的功能。 
+## 项目描述    
+- PC 机将图像信息以UDP协议封装的形式通过RG45双绞线发送到以太网PHY芯片；
+通过RGMII接口进行双倍数据速率 (DDR) 数据和单倍数据速率 (SDR) 数据之间的转换；
+- RGMII传出的数据经过时序稳定和CRC解码之后，提取出数据中有效的像素数据；
+- 提取出的像素数据在FIFO中进行缓存，通过阈值控制，以达到跨时钟域传输数据的目的，数据传输给DDR3控制模块写入DDR3 SDRAM；
+- 当一副图像存储完成后，会产生一个标志信息，UDP/IP协议模块会通过校验和算法进行计算，并将计算结果封装到图像数据中传递给CRC校验模块；
+- CRC校验模块对数据包进行进一步封装，按照UDP/IP的格式，发送给PHY芯片，PHY芯片再通过RG45双绞线发送给PC机，最终发送到上位机； 
+- 同时图像显示模块也会不停读取DDR3 SDRAM中的图像信息，通过HDMI接口芯片显示在显示器上。
+ 
 ## 结构框图(Structure Diagram)  
-![结构框图](https://github.com/chinkwo/FPGA_GBET/blob/master/img-folder/%E5%8D%83%E5%85%86%E7%BB%93%E6%9E%84%E5%9B%BE.png) 
+![结构框图](https://github.com/chinkwo/FPGA_GBET/blob/master/img-folder/%E7%BB%93%E6%9E%84%E5%9B%BE.png) 
 ## 效果描述(Effect Description)  
 通过上位机软件和下位机逻辑系统完成不同平台之间的数据交互，上位机软件可以实时显示来自逻辑系统的图像。此项目是一个通用平台，可以用于多路数据采集等不同应用。
 ## 应用案例(Applications)   
